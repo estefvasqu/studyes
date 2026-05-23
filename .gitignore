@@ -1,5 +1,7 @@
 # Token y configuración sensible
 config/settings.json
+.env
+.env.local
 
 # Python
 __pycache__/

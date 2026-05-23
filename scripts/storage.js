@@ -21,40 +21,20 @@ const Storage = (() => {
     return res.json();
   }
 
-  // ── Guardar via GitHub API (celu / Netlify) ────────────────────
-  async function guardarEnGitHub(rutaArchivo, contenido) {
-    const config = await fetch('/config/settings.json').then(r => r.json());
-    const url = `https://api.github.com/repos/${config.github_user}/${config.github_repo}/contents/data/${rutaArchivo}`;
-
-    const actual = await fetch(url, {
-      headers: { 'Authorization': `token ${config.github_token}` },
-    }).then(r => r.json());
-
-    const body = JSON.stringify({
-      message: `StudyES: actualizar ${rutaArchivo}`,
-      content: btoa(unescape(encodeURIComponent(
-        JSON.stringify(contenido, null, 2)
-      ))),
-      sha: actual.sha,
-      branch: config.github_branch || 'main',
+  // ── Guardar via Netlify Function (celu / Netlify) ──────────────
+  async function guardarEnNetlify(path, data) {
+    const res = await fetch('/netlify-save', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ path: `data/${path}`, data }),
     });
-
-    const res = await fetch(url, {
-      method: 'PUT',
-      headers: {
-        'Authorization': `token ${config.github_token}`,
-        'Content-Type': 'application/json',
-      },
-      body,
-    });
-
     if (!res.ok) {
       const err = await res.json().catch(() => ({}));
-      throw new Error(`GitHub API error: ${err.message || res.status}`);
+      throw new Error(`Error al guardar: ${err.error || res.status}`);
     }
   }
 
-  // ── Guardar: local si hay servidor, GitHub si no ──────────────
+  // ── Guardar: local si hay servidor, Netlify Function si no ─────
   async function save(path, data) {
     if (await hayServidorLocal()) {
       const res = await fetch('/save', {
@@ -65,7 +45,7 @@ const Storage = (() => {
       if (!res.ok) throw new Error(`No se pudo guardar: ${path}`);
       return res.json();
     } else {
-      await guardarEnGitHub(path, data);
+      await guardarEnNetlify(path, data);
     }
   }
 
