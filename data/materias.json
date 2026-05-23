@@ -1,0 +1,21 @@
+{
+  "materias": [
+    {
+      "id": "micro2",
+      "nombre": "Microeconomía II",
+      "descripcion": "Teoría de juegos, oligopolio, información asimétrica",
+      "color": "#30364F",
+      "carpeta_material": "Microeconomia_II",
+      "fecha_parcial": "2026-06-08",
+      "tiene_guias": true
+    },
+    {
+      "id": "desarrollo",
+      "nombre": "Desarrollo Económico",
+      "descripcion": "Teorías del desarrollo, crecimiento, modelos",
+      "color": "#5C7A5E",
+      "carpeta_material": "Desarrollo_Economico",
+      "fecha_parcial": "2026-06-11"
+    }
+  ]
+}

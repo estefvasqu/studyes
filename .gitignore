@@ -1,0 +1,16 @@
+# Token y configuración sensible
+config/settings.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.swp

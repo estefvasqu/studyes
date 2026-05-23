@@ -1,0 +1,43 @@
+/* StudyES — sistema de diseño global */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:          #F0F0DB;
+  --surface:     #FAFAF2;
+  --text:        #30364F;
+  --muted:       #6B7A8D;
+  --ok:          #5C7A5E;
+  --border:      rgba(48, 54, 79, 0.10);
+  --shadow:      0 2px 12px rgba(48, 54, 79, 0.10);
+  --radius-card: 8px;
+  --radius-btn:  4px;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Jost', system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 3.5rem 1.75rem 5rem;
+}

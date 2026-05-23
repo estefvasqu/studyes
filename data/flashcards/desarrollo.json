@@ -1,0 +1,26 @@
+[
+  {
+    "id": "des_001",
+    "tema": "Modelos de Crecimiento",
+    "frente": "¿Qué predice el modelo de Solow sobre el crecimiento a largo plazo?",
+    "reverso": "El crecimiento sostenido depende del progreso tecnológico exógeno. El capital tiene rendimientos decrecientes; sin cambio tecnológico la economía converge a un estado estacionario con output per cápita constante.",
+    "tags": [],
+    "srs": { "interval": 1, "easiness_factor": 2.5, "repetitions": 0, "next_review": 0 }
+  },
+  {
+    "id": "des_002",
+    "tema": "Subdesarrollo",
+    "frente": "¿Qué es una trampa de pobreza?",
+    "reverso": "Equilibrio de bajo nivel donde los países pobres no logran acumular suficiente capital para crecer, ya sea por rendimientos crecientes a escala o por umbrales mínimos de inversión que no son alcanzados.",
+    "tags": [],
+    "srs": { "interval": 1, "easiness_factor": 2.5, "repetitions": 0, "next_review": 0 }
+  },
+  {
+    "id": "des_003",
+    "tema": "Desarrollo Humano",
+    "frente": "¿Qué distingue el enfoque de las capacidades de Amartya Sen?",
+    "reverso": "El desarrollo es la expansión de libertades reales. Se mide por las capacidades efectivas de las personas (lo que pueden ser y hacer), no solo por el ingreso per cápita o el crecimiento del PBI.",
+    "tags": [],
+    "srs": { "interval": 1, "easiness_factor": 2.5, "repetitions": 0, "next_review": 0 }
+  }
+]

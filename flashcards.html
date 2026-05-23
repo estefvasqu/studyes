@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión — StudyES</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <div class="page">
+    <header class="dash-header">
+      <div class="dash-header-top">
+        <a href="#" id="back-link" class="back-link">← DASHBOARD</a>
+        <p class="site-date" id="dash-fecha"></p>
+      </div>
+    </header>
+
+    <div id="session-view">
+      <!-- Progreso -->
+      <div class="session-header">
+        <div class="session-progress-info">
+          <span class="progress-text" id="progress-text"></span>
+          <span class="progress-materia" id="progress-materia"></span>
+        </div>
+        <div class="session-progress-track">
+          <div class="session-progress-fill" id="progress-fill" style="width:0%"></div>
+        </div>
+      </div>
+
+      <!-- Flip card -->
+      <div class="card-scene" id="card-scene" onclick="flipCard()">
+        <!-- renderizado por JS -->
+      </div>
+
+      <!-- Calificación -->
+      <div class="calificacion-btns" id="cal-btns">
+        <button class="btn-cal mal"        onclick="calificar(1)">NO LO SABÍA</button>
+        <button class="btn-cal dificultad" onclick="calificar(3)">CON DIFICULTAD</button>
+        <button class="btn-cal bien"       onclick="calificar(5)">LO SABÍA</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/storage.js"></script>
+  <script src="scripts/srs.js"></script>
+  <script src="scripts/plan.js"></script>
+  <script>
+    // ── Estado global ───────────────────────────────────────────────
+    const params    = new URLSearchParams(window.location.search);
+    const materiaId = params.get('materia') || 'micro2';
+
+    let materia      = null;
+    let allCards     = [];
+    let sessionCards = [];
+    let currentIndex = 0;
+    let isFlipped    = false;
+    let isProcessing = false;
+    let stats        = { total: 0, buenas: 0, dificultad: 0, malas: 0 };
+
+    // ── Helpers ─────────────────────────────────────────────────────
+    function hexToRgba(hex, alpha) {
+      const r = parseInt(hex.slice(1, 3), 16);
+      const g = parseInt(hex.slice(3, 5), 16);
+      const b = parseInt(hex.slice(5, 7), 16);
+      return `rgba(${r},${g},${b},${alpha})`;
+    }
+
+    function hoy() {
+      return new Date().toISOString().split('T')[0];
+    }
+
+    function formatFechaES(dateStr) {
+      // dateStr: "YYYY-MM-DD"
+      const d = new Date(dateStr + 'T00:00:00');
+      const s = d.toLocaleDateString('es-AR', { weekday: 'long', day: 'numeric', month: 'long' });
+      return s.charAt(0).toUpperCase() + s.slice(1);
+    }
+
+    // ── Renderizado de card ──────────────────────────────────────────
+    function renderCurrentCard() {
+      const card = sessionCards[currentIndex];
+      const tema = card.tema || 'Sin tema';
+
+      document.getElementById('card-scene').innerHTML = `
+        <div class="card-inner" id="card-inner">
+          <div class="card-face card-front">
+            <span class="card-tema-label">${tema}</span>
+            <p class="card-frente-text">${card.frente}</p>
+            <span class="card-hint">click para ver respuesta</span>
+          </div>
+          <div class="card-face card-back">
+            <span class="card-tema-label">${tema}</span>
+            <p class="card-reverso-text">${card.reverso}</p>
+          </div>
+        </div>`;
+
+      // resetear estado de flip y botones
+      isFlipped = false;
+      const calBtns = document.getElementById('cal-btns');
+      calBtns.classList.remove('visible');
+      calBtns.querySelectorAll('button').forEach(b => b.disabled = false);
+    }
+
+    function updateProgress() {
+      const total   = sessionCards.length;
+      const current = currentIndex + 1;
+      const pct     = total > 0 ? Math.round(((currentIndex) / total) * 100) : 0;
+
+      document.getElementById('progress-text').textContent =
+        `Card ${current} de ${total}`;
+      document.getElementById('progress-fill').style.width = pct + '%';
+    }
+
+    // ── Flip ─────────────────────────────────────────────────────────
+    function flipCard() {
+      if (isFlipped || isProcessing) return;
+      isFlipped = true;
+      document.getElementById('card-inner').classList.add('flipped');
+      // mostrar botones de calificación después de que termina el flip
+      setTimeout(() => {
+        document.getElementById('cal-btns').classList.add('visible');
+      }, 420);
+    }
+
+    // ── Calificación ─────────────────────────────────────────────────
+    async function calificar(calidad) {
+      if (!isFlipped || isProcessing) return;
+      isProcessing = true;
+
+      // deshabilitar botones inmediatamente
+      document.getElementById('cal-btns').querySelectorAll('button')
+        .forEach(b => b.disabled = true);
+
+      // actualizar stats de sesión
+      if      (calidad === 5) stats.buenas++;
+      else if (calidad === 3) stats.dificultad++;
+      else                    stats.malas++;
+      stats.total++;
+
+      // aplicar SM-2 a la card
+      const card = sessionCards[currentIndex];
+      SRS.actualizarSRS(card, calidad);
+
+      // sincronizar en allCards
+      const idx = allCards.findIndex(c => c.id === card.id);
+      if (idx !== -1) allCards[idx] = card;
+
+      // guardar inmediatamente (sin bloquear UX si falla)
+      Storage.save(`flashcards/${materiaId}.json`, allCards).catch(console.error);
+
+      // avanzar
+      currentIndex++;
+
+      if (currentIndex >= sessionCards.length) {
+        await mostrarResumen();
+      } else {
+        isProcessing = false;
+        renderCurrentCard();
+        updateProgress();
+      }
+    }
+
+    // ── Progreso y racha ─────────────────────────────────────────────
+    async function guardarProgreso() {
+      const today = hoy();
+      let progreso = {};
+      try { progreso = await Storage.load(`progreso/${materiaId}.json`); } catch (_) {}
+
+      const ayer = new Date();
+      ayer.setDate(ayer.getDate() - 1);
+      const ayerStr = ayer.toISOString().split('T')[0];
+
+      let racha = progreso.racha_dias || 0;
+      const ultimo = progreso.ultimo_acceso;
+
+      if (ultimo === today) {
+        // ya estudió hoy — racha se mantiene
+      } else if (ultimo === ayerStr) {
+        racha += 1;
+      } else {
+        racha = 1;
+      }
+
+      const sesiones = progreso.sesiones || [];
+      const entradaHoy = {
+        fecha:            today,
+        cards_estudiadas: stats.total,
+        correctas:        stats.buenas + stats.dificultad,
+        incorrectas:      stats.malas,
+      };
+      const idxHoy = sesiones.findIndex(s => s.fecha === today);
+      if (idxHoy >= 0) sesiones[idxHoy] = entradaHoy;
+      else             sesiones.push(entradaHoy);
+
+      const updatedProgreso = {
+        racha_dias:     racha,
+        ultimo_acceso:  today,
+        sesiones,
+      };
+
+      await Storage.save(`progreso/${materiaId}.json`, updatedProgreso);
+      return updatedProgreso;
+    }
+
+    // ── Pantalla de resumen ──────────────────────────────────────────
+    async function mostrarResumen() {
+      const progreso = await guardarProgreso();
+
+      // próxima sesión: card con next_review más cercano
+      const futuras = allCards
+        .filter(c => c.srs?.next_review && c.srs.next_review !== 0)
+        .sort((a, b) => String(a.srs.next_review).localeCompare(String(b.srs.next_review)));
+
+      let proximaLabel = 'No hay cards pendientes';
+      if (futuras.length > 0) {
+        proximaLabel = formatFechaES(futuras[0].srs.next_review);
+      }
+
+      document.querySelector('.page').innerHTML = `
+        <header class="dash-header">
+          <div class="dash-header-top">
+            <a href="dashboard.html?materia=${materiaId}" class="back-link">← DASHBOARD</a>
+          </div>
+        </header>
+
+        <div class="summary-wrap">
+          <h1 class="summary-titulo">SESIÓN COMPLETADA</h1>
+
+          <div class="summary-stats">
+            <div class="stat-card">
+              <div class="stat-value" style="color:var(--c)">${stats.total}</div>
+              <div class="stat-label">Cards estudiadas</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value" style="color:#5C7A5E">${stats.buenas}</div>
+              <div class="stat-label">Lo sabía</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value" style="color:#8B7355">${stats.dificultad}</div>
+              <div class="stat-label">Con dificultad</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value" style="color:#B85C38">${stats.malas}</div>
+              <div class="stat-label">No lo sabía</div>
+            </div>
+          </div>
+
+          <div class="proxima-sesion">
+            Próxima sesión: <strong>${proximaLabel}</strong>
+          </div>
+
+          <div class="summary-btns">
+            <a href="index.html" class="btn-summary-sec">VOLVER AL INICIO</a>
+            <a href="dashboard.html?materia=${materiaId}&tab=temas" class="btn-summary-pri">VER TEMAS</a>
+          </div>
+        </div>`;
+    }
+
+    // ── Sin cards pendientes ─────────────────────────────────────────
+    function mostrarSinCards() {
+      document.getElementById('session-view').innerHTML = `
+        <div class="session-empty">
+          <p>Estás al día ✓ — no hay cards pendientes para hoy.</p>
+          <a href="dashboard.html?materia=${materiaId}" class="btn-iniciar">VOLVER AL DASHBOARD</a>
+        </div>`;
+    }
+
+    // ── Init ─────────────────────────────────────────────────────────
+    async function init() {
+      // fecha
+      const fechaStr = new Date().toLocaleDateString('es-AR', {
+        weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
+      });
+      document.getElementById('dash-fecha').textContent =
+        fechaStr.charAt(0).toUpperCase() + fechaStr.slice(1);
+
+      document.getElementById('back-link').href = `dashboard.html?materia=${materiaId}`;
+
+      try {
+        const { materias } = await Storage.load('materias.json');
+        materia = materias.find(m => m.id === materiaId);
+
+        if (!materia) {
+          document.getElementById('session-view').innerHTML =
+            `<p class="empty-state" style="color:#C0604A">
+               Materia no encontrada: <strong>${materiaId}</strong>
+             </p>`;
+          return;
+        }
+
+        allCards = await Storage.load(`flashcards/${materiaId}.json`).catch(() => []);
+
+        // aplicar color de materia
+        document.body.style.setProperty('--c', materia.color);
+        document.body.style.setProperty('--g', hexToRgba(materia.color, 0.15));
+        document.getElementById('progress-materia').textContent =
+          materia.nombre.toUpperCase();
+        document.title = `Sesión ${materia.nombre} — StudyES`;
+
+        // filtrar cards pendientes hoy
+        sessionCards = Plan.seleccionarHoy(allCards);
+
+        if (sessionCards.length === 0) {
+          mostrarSinCards();
+          return;
+        }
+
+        renderCurrentCard();
+        updateProgress();
+
+      } catch (err) {
+        document.getElementById('session-view').innerHTML =
+          `<p class="empty-state">No se pudo conectar con el servidor.<br>
+           Asegurate de que <code>start.bat</code> esté corriendo.</p>`;
+        console.error(err);
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>

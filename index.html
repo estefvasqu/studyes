@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyES — FCE UBA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <h1 class="site-title">STUDYES</h1>
+      <p class="site-date" id="fecha"></p>
+    </header>
+    <div class="bienvenida-banner" id="bienvenida-banner" style="display:none">
+      <p class="bienvenida-texto" id="bienvenida-texto"></p>
+      <button class="bienvenida-close" id="bienvenida-close" aria-label="Cerrar">×</button>
+    </div>
+
+    <main>
+      <div class="materia-grid" id="materia-grid">
+        <p class="empty-state">Cargando materias...</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="scripts/storage.js"></script>
+  <script src="scripts/srs.js"></script>
+  <script src="scripts/plan.js"></script>
+  <script>
+    // ── Fecha en español ────────────────────────────────────────────
+    const fechaStr = new Date().toLocaleDateString('es-AR', {
+      weekday: 'long',
+      day:     'numeric',
+      month:   'long',
+      year:    'numeric',
+    });
+    document.getElementById('fecha').textContent =
+      fechaStr.charAt(0).toUpperCase() + fechaStr.slice(1);
+
+    // ── Helpers ─────────────────────────────────────────────────────
+    function hexToRgba(hex, alpha) {
+      const r = parseInt(hex.slice(1, 3), 16);
+      const g = parseInt(hex.slice(3, 5), 16);
+      const b = parseInt(hex.slice(5, 7), 16);
+      return `rgba(${r},${g},${b},${alpha})`;
+    }
+
+    function renderCard(m, cards, progreso, guias = null) {
+      const due      = Plan.seleccionarHoy(cards).length;
+      const total    = cards.length;
+      const studied  = cards.filter(c => c.srs && c.srs.repetitions > 0).length;
+      const pct      = total > 0 ? Math.round((studied / total) * 100) : 0;
+      const racha    = progreso.racha_dias || progreso.racha || 0;
+      const rachaIcon = racha > 0 ? '🔥 ' : '';
+      const glow     = hexToRgba(m.color, 0.15);
+      const nombre   = m.nombre.toUpperCase();
+
+      const badgeHTML = due === 0
+        ? `<span class="badge badge-ok">Al día ✓</span>`
+        : `<span class="badge badge-due" style="
+              color:${m.color};
+              background:${hexToRgba(m.color, 0.08)};
+              border-color:${hexToRgba(m.color, 0.25)}"
+           >${due} card${due !== 1 ? 's' : ''} para hoy</span>`;
+
+      const totalLabel = total > 0 ? ` · ${total} tarjeta${total !== 1 ? 's' : ''}` : '';
+
+      // Ajuste 3 — progreso de guías prácticas
+      let guiaProgressHTML = '';
+      if (guias) {
+        const allEj    = guias.guias.flatMap(g => g.ejercicios);
+        const ejTotal  = allEj.length;
+        const ejHechos = allEj.filter(e => e.hecho).length;
+        const pctGuia  = ejTotal > 0 ? Math.round((ejHechos / ejTotal) * 100) : 0;
+        guiaProgressHTML = `
+          <div class="card-guia-progress">
+            <div class="progress-track">
+              <div class="progress-fill" style="width:${pctGuia}%;background:#30364F"></div>
+            </div>
+            <span class="progress-label">Guía práctica: ${ejHechos}/${ejTotal} ejercicios completados</span>
+          </div>`;
+      }
+
+      // Ajuste 1 — días al parcial
+      let parcialHTML = '';
+      if (m.fecha_parcial) {
+        const hoyDate     = new Date(); hoyDate.setHours(0, 0, 0, 0);
+        const parcialDate = new Date(m.fecha_parcial + 'T00:00:00');
+        const dias  = Math.round((parcialDate - hoyDate) / 86400000);
+        const color = dias > 14 ? '#6B7A8D' : dias >= 7 ? '#8B7355' : '#B85C38';
+        const texto = dias > 0
+          ? `📅 Faltan ${dias} día${dias !== 1 ? 's' : ''} para el parcial`
+          : dias === 0 ? `📅 El parcial es hoy`
+          : `📅 El parcial fue hace ${Math.abs(dias)} día${Math.abs(dias) !== 1 ? 's' : ''}`;
+        parcialHTML = `
+          <div class="card-separator"></div>
+          <span class="card-parcial" style="color:${color}">${texto}</span>`;
+      }
+
+      return `
+        <div class="materia-card" style="--c:${m.color};--g:${glow}">
+          <div class="card-top">
+            <span class="card-nombre">${nombre}</span>
+            ${badgeHTML}
+          </div>
+          <p class="card-desc">${m.descripcion}</p>
+          <div class="card-progress">
+            <div class="progress-track">
+              <div class="progress-fill" style="width:${pct}%;background:${m.color}"></div>
+            </div>
+            <span class="progress-label">${pct}% dominado${totalLabel}</span>
+          </div>
+          ${guiaProgressHTML}
+          <div class="card-bottom">
+            <span class="card-racha">Racha: ${rachaIcon}${racha} día${racha !== 1 ? 's' : ''}</span>
+            <a href="dashboard.html?materia=${m.id}" class="btn-estudiar">ESTUDIAR HOY</a>
+          </div>
+          ${parcialHTML}
+        </div>`;
+    }
+
+    // ── Carga y renderizado ─────────────────────────────────────────
+    async function init() {
+      const grid = document.getElementById('materia-grid');
+      try {
+        const { materias } = await Storage.load('materias.json');
+
+        const results = await Promise.all(
+          materias.map(async (m) => {
+            let cards    = [];
+            let progreso = {};
+            let guias    = null;
+            try { cards    = await Storage.load(`flashcards/${m.id}.json`); } catch (_) {}
+            try { progreso = await Storage.load(`progreso/${m.id}.json`);   } catch (_) {}
+            if (m.tiene_guias) {
+              try { guias = await Storage.load(`guias/${m.id}.json`); } catch (_) {}
+            }
+            return { m, cards, progreso, guias };
+          })
+        );
+
+        grid.innerHTML = results
+          .map(({ m, cards, progreso, guias }) => renderCard(m, cards, progreso, guias))
+          .join('');
+
+        // ── Banner de bienvenida ─────────────────────────────────────
+        const hoyStr   = new Date().toISOString().split('T')[0];
+        const totalDue = results.reduce((s, { cards: c }) => s + Plan.seleccionarHoy(c).length, 0);
+        const yaEstudio = results.every(({ progreso: p }) => p.ultimo_acceso === hoyStr);
+
+        if (totalDue > 0 && !yaEstudio) {
+          document.getElementById('bienvenida-texto').textContent =
+            `Buenos días Estef — tenés ${totalDue} card${totalDue !== 1 ? 's' : ''} para repasar hoy`;
+          document.getElementById('bienvenida-banner').style.display = 'flex';
+          document.getElementById('bienvenida-close').addEventListener('click', () => {
+            document.getElementById('bienvenida-banner').style.display = 'none';
+          });
+        }
+
+      } catch (err) {
+        grid.innerHTML = `<p class="empty-state">No se pudo conectar con el servidor.<br>
+          Asegurate de que <code>start.bat</code> esté corriendo.</p>`;
+        console.error(err);
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>

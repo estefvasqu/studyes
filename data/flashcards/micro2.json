@@ -1,0 +1,26 @@
+[
+  {
+    "id": "micro2_001",
+    "tema": "Teoría de Juegos",
+    "frente": "¿Qué es el Equilibrio de Nash?",
+    "reverso": "Perfil de estrategias donde ningún jugador puede mejorar su pago desviándose unilateralmente, dado el comportamiento de los demás jugadores.",
+    "tags": [],
+    "srs": { "interval": 1, "easiness_factor": 2.5, "repetitions": 0, "next_review": 0 }
+  },
+  {
+    "id": "micro2_002",
+    "tema": "Oligopolio",
+    "frente": "¿Qué caracteriza al duopolio de Cournot?",
+    "reverso": "Las empresas eligen cantidades simultáneamente. En equilibrio cada firma maximiza beneficios dado el output de la rival; el precio queda entre el competitivo y el monopólico.",
+    "tags": [],
+    "srs": { "interval": 1, "easiness_factor": 2.5, "repetitions": 0, "next_review": 0 }
+  },
+  {
+    "id": "micro2_003",
+    "tema": "Información Asimétrica",
+    "frente": "¿Qué es la selección adversa?",
+    "reverso": "Problema de información asimétrica precontractual: la parte desinformada no puede distinguir tipos, lo que lleva a que los tipos 'malos' desplacen a los buenos del mercado (Akerlof, 1970).",
+    "tags": [],
+    "srs": { "interval": 1, "easiness_factor": 2.5, "repetitions": 0, "next_review": 0 }
+  }
+]
