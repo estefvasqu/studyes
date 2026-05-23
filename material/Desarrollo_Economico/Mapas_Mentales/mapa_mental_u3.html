@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mapa Mental · Unidad 3 — Bienestar y Desarrollo Humano</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:        #f4ede0;
+    --bg-grain:  #ece3d2;
+    --ink:       #1f1a14;
+    --ink-soft:  #4a4036;
+    --ink-mute:  #7a6f60;
+    --rule:      #d8cdb8;
+    --paper:     #fbf6ec;
+
+    /* Paleta por rama */
+    --c-1: #b8541f;   /* Bienestar - terracota */
+    --c-2: #3d6b4a;   /* Desarrollo Humano - verde botánico */
+    --c-3: #c79a2a;   /* Pilares - mostaza */
+    --c-4: #7a3d52;   /* Enfoques - burdeos */
+    --c-5: #2f5d7a;   /* DDHH - azul tinta */
+
+    --c-1-soft: #f3dccb;
+    --c-2-soft: #d5e3d9;
+    --c-3-soft: #f1e3b9;
+    --c-4-soft: #ead1d9;
+    --c-5-soft: #cfdde6;
+
+    --shadow-1: 0 1px 0 rgba(31,26,20,.04), 0 2px 6px rgba(31,26,20,.05);
+    --shadow-2: 0 1px 0 rgba(31,26,20,.05), 0 8px 24px -8px rgba(31,26,20,.18);
+  }
+
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:'Plus Jakarta Sans', system-ui, sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.55;
+    min-height:100vh;
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(184,84,31,.05), transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(61,107,74,.05), transparent 40%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.12  0 0 0 0 0.1  0 0 0 0 0.08  0 0 0 0.06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    background-attachment: fixed;
+  }
+
+  /* ============ HEADER ============ */
+  header{
+    padding: clamp(28px, 5vw, 56px) clamp(20px,5vw,64px) 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--rule);
+  }
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom: 18px;
+  }
+  .eyebrow::before, .eyebrow::after{
+    content:""; height:1px; background:var(--rule); flex:1;
+  }
+  .eyebrow::before{max-width:40px}
+
+  h1{
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: clamp(36px, 6vw, 68px);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin: 0 0 14px;
+    font-variation-settings: "opsz" 120;
+  }
+  h1 em{
+    font-style: italic;
+    color: var(--c-1);
+    font-weight: 400;
+  }
+  .lede{
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(15px, 1.6vw, 19px);
+    color: var(--ink-soft);
+    max-width: 720px;
+    margin: 0 0 26px;
+  }
+  .legend{
+    display:flex; flex-wrap:wrap; gap: 8px 22px;
+    font-size: 12px;
+    color: var(--ink-soft);
+    font-family:'JetBrains Mono', monospace;
+    letter-spacing:.05em;
+  }
+  .legend span{
+    display:inline-flex; align-items:center; gap:8px;
+  }
+  .legend i{
+    width: 10px; height:10px; border-radius:50%;
+    display:inline-block;
+  }
+
+  .controls{
+    margin-top: 20px;
+    display:flex; gap:10px; flex-wrap:wrap;
+  }
+  .controls button{
+    font-family:'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    background: transparent;
+    color: var(--ink-soft);
+    border: 1px solid var(--rule);
+    padding: 9px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all .2s ease;
+  }
+  .controls button:hover{
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+
+  /* ============ MAIN LAYOUT ============ */
+  main{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px clamp(20px,5vw,64px) 80px;
+  }
+
+  /* Núcleo central */
+  .core{
+    position: relative;
+    text-align:center;
+    margin: 0 auto 56px;
+    padding: 32px 28px;
+    max-width: 560px;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    box-shadow: var(--shadow-2);
+  }
+  .core::before{
+    content:"U3";
+    position:absolute;
+    top: -14px; left: 50%;
+    transform: translateX(-50%);
+    background: var(--ink);
+    color: var(--paper);
+    font-family:'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .2em;
+    padding: 5px 12px;
+    border-radius: 999px;
+  }
+  .core h2{
+    font-family:'Fraunces', serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: clamp(24px, 3vw, 34px);
+    margin: 6px 0 8px;
+    letter-spacing: -.01em;
+  }
+  .core p{
+    margin: 0;
+    font-size: 14px;
+    color: var(--ink-soft);
+    max-width: 460px;
+    margin-inline:auto;
+  }
+
+  /* Grid de ramas */
+  .branches{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 24px;
+  }
+
+  /* ============ RAMA ============ */
+  .branch{
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-1);
+    position: relative;
+    transition: box-shadow .25s ease, transform .25s ease;
+  }
+  .branch:hover{
+    box-shadow: var(--shadow-2);
+  }
+  .branch[data-color="1"]{ --bc: var(--c-1); --bcs: var(--c-1-soft); }
+  .branch[data-color="2"]{ --bc: var(--c-2); --bcs: var(--c-2-soft); }
+  .branch[data-color="3"]{ --bc: var(--c-3); --bcs: var(--c-3-soft); }
+  .branch[data-color="4"]{ --bc: var(--c-4); --bcs: var(--c-4-soft); }
+  .branch[data-color="5"]{ --bc: var(--c-5); --bcs: var(--c-5-soft); }
+
+  .branch::before{
+    content:"";
+    position: absolute; left:0; top:0; bottom:0;
+    width: 5px;
+    background: var(--bc);
+  }
+
+  .branch-head{
+    padding: 22px 24px 18px 28px;
+    cursor: pointer;
+    display:flex;
+    align-items:flex-start;
+    gap: 16px;
+    user-select: none;
+    transition: background .2s ease;
+  }
+  .branch-head:hover{ background: rgba(0,0,0,.015) }
+
+  .branch-num{
+    font-family:'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--bc);
+    background: var(--bcs);
+    padding: 4px 9px;
+    border-radius: 4px;
+    letter-spacing: .1em;
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
+
+  .branch-title-wrap{ flex: 1; min-width: 0; }
+  .branch-title{
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: -.005em;
+    margin: 0 0 4px;
+    line-height: 1.2;
+  }
+  .branch-subtitle{
+    font-size: 13px;
+    color: var(--ink-mute);
+    font-style: italic;
+    font-family: 'Fraunces', serif;
+  }
+
+  .chev{
+    margin-top: 8px;
+    width: 14px; height: 14px;
+    border-right: 1.5px solid var(--ink-soft);
+    border-bottom: 1.5px solid var(--ink-soft);
+    transform: rotate(45deg);
+    transition: transform .3s ease;
+    flex-shrink: 0;
+  }
+  .branch.open .chev{
+    transform: rotate(-135deg);
+    margin-top: 13px;
+  }
+
+  .branch-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s cubic-bezier(.4,0,.2,1);
+  }
+  .branch.open .branch-body{
+    max-height: 4000px;
+  }
+  .branch-inner{
+    padding: 0 28px 26px;
+    border-top: 1px dashed var(--rule);
+    padding-top: 18px;
+    margin-top: 4px;
+  }
+
+  /* ============ NODOS / SUBNODOS ============ */
+  .node{
+    margin: 14px 0;
+    padding-left: 18px;
+    position: relative;
+  }
+  .node::before{
+    content:"";
+    position: absolute;
+    left: 0; top: 9px;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--bc);
+  }
+  .node-label{
+    font-weight: 600;
+    font-size: 14.5px;
+    color: var(--ink);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px dotted transparent;
+    transition: border-color .2s;
+  }
+  .node-label:hover{
+    border-bottom-color: var(--bc);
+  }
+  .node-label .arrow{
+    font-size: 10px;
+    color: var(--ink-mute);
+    transition: transform .25s;
+    font-family:'JetBrains Mono', monospace;
+  }
+  .node.open > .node-label .arrow{
+    transform: rotate(90deg);
+  }
+  .node-desc{
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    margin-top: 4px;
+    font-family:'Fraunces', serif;
+    font-style: italic;
+  }
+
+  /* sub-listas (3er nivel) */
+  .sub{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease;
+    padding-left: 12px;
+    margin-left: 4px;
+    border-left: 1px solid var(--rule);
+  }
+  .node.open > .sub{
+    max-height: 2000px;
+  }
+  .sub-item{
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: rgba(0,0,0,.02);
+    border-radius: 6px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .sub-item strong{
+    color: var(--bc);
+    font-weight: 600;
+    font-size: 12.5px;
+    letter-spacing: .01em;
+    display: block;
+    margin-bottom: 2px;
+    font-family:'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+  }
+
+  /* tooltips */
+  .tip{
+    position: relative;
+    border-bottom: 1px dotted var(--ink-mute);
+    cursor: help;
+  }
+  .tip::after{
+    content: attr(data-tip);
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background: var(--ink);
+    color: var(--paper);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 11.5px;
+    font-family:'Plus Jakarta Sans',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    width: max-content;
+    max-width: 260px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s, transform .2s;
+    z-index: 10;
+    box-shadow: var(--shadow-2);
+  }
+  .tip:hover::after{
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  /* badges para autores */
+  .author{
+    display:inline-block;
+    background: var(--bcs);
+    color: var(--bc);
+    font-family:'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    padding: 2px 7px;
+    border-radius: 3px;
+    margin-right: 6px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  /* contraste especial Bienestarista vs No Bienestarista */
+  .compare{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  @media (max-width: 540px){
+    .compare{ grid-template-columns: 1fr; }
+  }
+  .compare-card{
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+  .compare-card.welfare{
+    background: #f7e7d8;
+    border: 1px solid #e4c7a8;
+    color: #5a3a1f;
+  }
+  .compare-card.nonwelfare{
+    background: #e0e9e3;
+    border: 1px solid #b9cdc0;
+    color: #234430;
+  }
+  .compare-card h4{
+    font-family:'Fraunces', serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 15px;
+    margin: 0 0 6px;
+  }
+  .compare-card ul{
+    margin: 6px 0 0; padding-left: 18px;
+  }
+  .compare-card li{ margin: 3px 0; }
+
+  /* arrow connector vista decorativa */
+  .connectors{
+    display: flex; justify-content: center;
+    margin: -28px 0 28px;
+    opacity: .35;
+  }
+  .connectors svg{ width: 100%; max-width: 600px; height: 40px; }
+
+  /* footer */
+  footer{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 32px clamp(20px,5vw,64px);
+    border-top: 1px solid var(--rule);
+    font-family:'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* responsive */
+  @media (max-width: 640px){
+    .branch-head{ padding: 18px 18px 14px 22px; gap: 12px; }
+    .branch-inner{ padding: 16px 18px 22px; }
+    .core{ padding: 24px 18px; }
+  }
+
+  /* print friendly */
+  @media print{
+    body{ background:white; }
+    .branch-body{ max-height:none !important; }
+    .sub{ max-height:none !important; }
+    .controls, .chev, .node-label .arrow{ display:none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Unidad 03 · Desarrollo Humano · Mapa Mental</div>
+  <h1>Bienestar &amp; <em>Desarrollo Humano</em></h1>
+  <p class="lede">De los medios a los fines, del ingreso a las capacidades. Una cartografía visual para fijar conceptos, autores y tensiones del paradigma del desarrollo humano.</p>
+
+  <div class="legend">
+    <span><i style="background:var(--c-1)"></i>Bienestar</span>
+    <span><i style="background:var(--c-2)"></i>Desarrollo Humano</span>
+    <span><i style="background:var(--c-3)"></i>Pilares Procedimentales</span>
+    <span><i style="background:var(--c-4)"></i>Enfoques del Bienestar</span>
+    <span><i style="background:var(--c-5)"></i>Derechos Humanos</span>
+  </div>
+
+  <div class="controls">
+    <button id="expand-all">Expandir todo</button>
+    <button id="collapse-all">Colapsar todo</button>
+    <button onclick="window.print()">Imprimir</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- NÚCLEO -->
+  <section class="core">
+    <h2>Bienestar y Desarrollo Humano</h2>
+    <p>Cinco ramas conectadas: qué entendemos por bienestar, cómo lo amplía el desarrollo humano, sobre qué pilares procesales se sostiene, qué enfoques compiten para medirlo, y cómo dialoga con los derechos.</p>
+  </section>
+
+  <div class="connectors" aria-hidden="true">
+    <svg viewBox="0 0 600 40" fill="none">
+      <path d="M 300 0 C 300 20, 80 20, 80 38" stroke="var(--c-1)" stroke-width="1.2"/>
+      <path d="M 300 0 C 300 20, 200 20, 200 38" stroke="var(--c-2)" stroke-width="1.2"/>
+      <path d="M 300 0 L 300 38" stroke="var(--c-3)" stroke-width="1.2"/>
+      <path d="M 300 0 C 300 20, 400 20, 400 38" stroke="var(--c-4)" stroke-width="1.2"/>
+      <path d="M 300 0 C 300 20, 520 20, 520 38" stroke="var(--c-5)" stroke-width="1.2"/>
+    </svg>
+  </div>
+
+  <section class="branches">
+
+    <!-- ============ RAMA 1: BIENESTAR ============ -->
+    <article class="branch" data-color="1">
+      <div class="branch-head">
+        <span class="branch-num">01</span>
+        <div class="branch-title-wrap">
+          <h3 class="branch-title">Bienestar</h3>
+          <div class="branch-subtitle">calidad de vida — estándar de vida</div>
+        </div>
+        <div class="chev"></div>
+      </div>
+      <div class="branch-body">
+        <div class="branch-inner">
+
+          <div class="node">
+            <span class="node-label">¿Qué es? <span class="arrow">›</span></span>
+            <div class="node-desc">Calidad y estándar de vida de las personas.</div>
+            <div class="sub">
+              <div class="sub-item">
+                <strong>Antes</strong>
+                Se entendía en <span class="tip" data-tip="El PIB per cápita era el indicador dominante hasta los años 70.">términos de ingreso</span>: cuánto produce o gana un país.
+              </div>
+              <div class="sub-item">
+                <strong>Ahora</strong>
+                Visión centrada <em>en las personas</em> y en sus <span class="tip" data-tip="Sen: lo que la persona realmente puede hacer y ser, no sólo lo que posee.">libertades reales</span>.
+              </div>
+            </div>
+          </div>
+
+          <div class="node">
+            <span class="node-label">Transformaciones del concepto <span class="arrow">›</span></span>
+            <div class="node-desc">Cuatro giros históricos clave en la noción de bienestar.</div>
+            <div class="sub">
+              <div class="sub-item"><strong>Medios → Fines</strong> Antes importaban los recursos; hoy importa qué se puede <em>ser y hacer</em> con ellos.</div>
+              <div class="sub-item"><strong>Económico → Multidimensional</strong> Del foco económico al cruce con salud, educación, género, sociología.</div>
+              <div class="sub-item"><strong>Necesidades → Derecho</strong> Ya no “necesito educación” sino “<em>tengo derecho a</em> la educación”.</div>
+              <div class="sub-item"><strong>PBI → Múltiples indicadores</strong> Del PIB único a indicadores múltiples: brechas de género, IDH, NBI, IPM, etc.</div>
+            </div>
+          </div>
+
+          <div class="node">
+            <span class="node-label">Bienestar ↔ Desigualdad ↔ Pobreza <span class="arrow">›</span></span>
+            <div class="node-desc">Tres conceptos distintos pero relacionados.</div>
+            <div class="sub">
+              <div class="sub-item"><strong>Bienestar</strong> Calidad de vida (base conceptual).</div>
+              <div class="sub-item"><strong>Desigualdad</strong> Diferencias de bienestar entre personas o grupos.</div>
+              <div class="sub-item"><strong>Pobreza</strong> Carencia o privación del bienestar mínimo → <em>falta de bienestar</em>.</div>
+              <div class="sub-item"><strong>Relación</strong> Puede haber desigualdad sin pobreza, y pobreza con poca desigualdad. El bienestar es el concepto-base.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- ============ RAMA 2: DESARROLLO HUMANO ============ -->
+    <article class="branch" data-color="2">
+      <div class="branch-head">
+        <span class="branch-num">02</span>
+        <div class="branch-title-wrap">
+          <h3 class="branch-title">Desarrollo Humano</h3>
+          <div class="branch-subtitle">ampliar las opciones de vida</div>
+        </div>
+        <div class="chev"></div>
+      </div>
+      <div class="branch-body">
+        <div class="branch-inner">
+
+          <div class="node">
+            <span class="node-label">¿Qué implica? <span class="arrow">›</span></span>
+            <div class="node-desc">Ampliar las opciones de vida de las personas y darles mayor libertad para elegir.</div>
+            <div class="sub">
+              <div class="sub-item"><strong>Idea fuerza</strong> Mayor libertad para elegir cómo vivir. Las personas son el centro y el fin, no un medio.</div>
+              <div class="sub-item"><strong>Diferencia clave</strong> Crecimiento económico = más PIB. Desarrollo humano = bienestar integral de las personas.</div>
+            </div>
+          </div>
+
+          <div class="node">
+            <span class="node-label">Autores clave <span class="arrow">›</span></span>
+            <div class="node-desc">Los tres referentes del paradigma.</div>
+            <div class="sub">
+              <div class="sub-item">
+                <strong><span class="author">Mahbub ul Haq</span></strong>
+                Las personas son el <em>centro</em> del desarrollo. Diseñó el IDH junto a Sen. Idea: ampliar opciones, no solo ingresos.
+              </div>
+              <div class="sub-item">
+                <strong><span class="author">Amartya Sen</span></strong>
+                Desarrollo = <span class="tip" data-tip="Libertad positiva: condiciones reales para hacer y ser, no sólo ausencia de obstáculos.">expansión de las libertades reales</span>. Crítico del enfoque utilitarista. Padre del enfoque de capacidades.
+              </div>
+              <div class="sub-item">
+                <strong><span class="author">Paul Streeten</span></strong>
+                El <em>fin</em> del desarrollo son las personas, no la producción. No hay relación automática entre ingreso y bienestar.
+              </div>
+            </div>
+          </div>
+
+          <div class="node">
+            <span class="node-label">Preocupaciones centrales <span class="arrow">›</span></span>
+            <div class="node-desc">Las dos caras del paradigma.</div>
+            <div class="sub">
+              <div class="sub-item"><strong>a) Construcción de capacidades</strong> Invertir en personas: educación, salud, capacitación. Hacerlas más capaces.</div>
+              <div class="sub-item"><strong>b) Uso de esas capacidades</strong> Generar oportunidades reales: empleo, mercado, políticas. Si alguien estudia pero no consigue trabajo, el sistema falla.</div>
+            </div>
+          </div>
+
+          <div class="node">
+            <span class="node-label">Diferencia con el liberalismo económico <span class="arrow">›</span></span>
+            <div class="node-desc">Dos formas de entender la “libertad”.</div>
+            <div class="sub">
+              <div class="sub-item"><strong>Liberalismo</strong> Libertad = ausencia de interferencias. Mercado libre = más libertad. Aplica políticas generales.</div>
+              <div class="sub-item"><strong>Desarrollo humano</strong> Libertad = capacidad real de hacer/ser lo valorado. Incluye libertad positiva. Adapta políticas al contexto.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- ============ RAMA 3: PILARES PROCEDIMENTALES ============ -->
+    <article class="branch" data-color="3">
+      <div class="branch-head">
+        <span class="branch-num">03</span>
+        <div class="branch-title-wrap">
+          <h3 class="branch-title">Pilares Procedimentales</h3>
+          <div class="branch-subtitle">lo que debe respetarse mientras hay crecimiento</div>
+        </div>
+        <div class="chev"></div>
+      </div>
+      <div class="branch-body">
+        <div class="branch-inner">
+
+          <div class="node">
+            <span class="node-label">¿Qué son? <span class="arrow">›</span></span>
+            <div class="node-desc">Principios que el proceso de desarrollo debe respetar mientras hay crecimiento. Cuatro pilares.</div>
+          </div>
+
+          <div class="node">
+            <span class="node-label">Eficiencia <span class="arrow">›</span></span>
+            <div class="node-desc">Lograr mayor bienestar con los recursos disponibles.</div>
+            <div class="sub">
+              <div class="sub-item">Obtener el máximo resultado posible. No es un fin en sí mismo, sino un medio para más bienestar.</div>
+            </div>
+          </div>
+
+          <div class="node">
+            <span class="node-label">Equidad <span class="arrow">›</span></span>
+            <div class="node-desc">Ayudar más a quienes más lo necesitan.</div>
+            <div class="sub">
+              <div class="sub-item">Justicia en la distribución de oportunidades. No es igualdad mecánica: es <em>igual valor moral</em> con tratamientos diferenciados según necesidad.</div>
+            </div>
+          </div>
+
+          <div class="node">
+            <span class="node-label">Potenciación <span class="arrow">›</span></span>
+            <div class="node-desc">Personas con rol activo.</div>
+            <div class="sub">
+              <div class="sub-item">Las personas deben ser <em>actores activos</em> en su desarrollo. Capacidad de decidir y actuar, no estar limitadas por el contexto. Conecta con la idea de <span class="tip" data-tip="Sen: la habilidad de actuar y perseguir objetivos que uno valora.">agencia</span>.</div>
+            </div>
+          </div>
+
+          <div class="node">
+            <span class="node-label">Sustentabilidad <span class="arrow">›</span></span>
+            <div class="node-desc">Futuro de las generaciones.</div>
+            <div class="sub">
+              <div class="sub-item"><strong>Social</strong> Que el desarrollo no genere conflictos o desigualdades graves.</div>
+              <div class="sub-item"><strong>Política</strong> Que las políticas duren en el tiempo, más allá de cada gobierno.</div>
+              <div class="sub-item"><strong>Cultural</strong> Que respete culturas y tradiciones.</div>
+              <div class="sub-item"><strong>Financiera</strong> Que sea económicamente viable sin generar deudas impagables.</div>
+              <div class="sub-item"><strong>Ambiental</strong> No comprometer la posibilidad de bienestar de las generaciones futuras.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- ============ RAMA 4: ENFOQUES DEL BIENESTAR ============ -->
+    <article class="branch" data-color="4">
+      <div class="branch-head">
+        <span class="branch-num">04</span>
+        <div class="branch-title-wrap">
+          <h3 class="branch-title">Enfoques del Bienestar</h3>
+          <div class="branch-subtitle">cómo medirlo: utilidad vs. más allá del dinero</div>
+        </div>
+        <div class="chev"></div>
+      </div>
+      <div class="branch-body">
+        <div class="branch-inner">
+
+          <p style="font-size:13px;color:var(--ink-soft);margin-top:4px;font-family:'Fraunces',serif;font-style:italic;">Dos grandes familias de enfoques se enfrentan al definir qué es el bienestar:</p>
+
+          <div class="compare">
+            <div class="compare-card welfare">
+              <h4>Bienestarista (Welfarist)</h4>
+              <p style="margin:6px 0 0">Bienestar = <strong>utilidad</strong>. Medición: <strong>ingreso</strong>. Si alguien no consume, es porque no quiere (preferencia revelada).</p>
+              <p style="margin:6px 0 0"><em>Lógica de la economía neoclásica tradicional.</em></p>
+            </div>
+            <div class="compare-card nonwelfare">
+              <h4>No Bienestarista</h4>
+              <p style="margin:6px 0 0">Va <strong>más allá del dinero</strong>. Critica al bienestarista y propone medir el bienestar por lo que las personas pueden ser y hacer.</p>
+              <p style="margin:6px 0 0"><em>Dos ramas: Necesidades Básicas y Capacidades.</em></p>
+            </div>
+          </div>
+
+          <div class="node" style="margin-top:24px">
+            <span class="node-label">Problemas del Bienestarista <span class="arrow">›</span></span>
+            <div class="node-desc">Tres críticas centrales.</div>
+            <div class="sub">
+              <div class="sub-item"><strong>1. Utilidad subjetiva</strong> No se puede comparar felicidad entre personas. El bienestar depende de la percepción individual.</div>
+              <div class="sub-item"><strong>2. Ingreso es medio, no fin</strong> Tener dinero permite cosas, pero no garantiza resultados (acceso real, salud, educación).</div>
+              <div class="sub-item"><strong>3. Preferencias distorsionadas</strong> <span class="tip" data-tip="Quienes están privados ajustan sus aspiraciones a lo posible, no a lo que valorarían en libertad real.">Preferencias adaptativas</span>: los pobres pueden “no querer” lo que no pueden tener.</div>
+            </div>
+          </div>
+
+          <div class="node">
+            <span class="node-label">No Bienestarista — Necesidades Básicas <span class="arrow">›</span></span>
+            <div class="node-desc">Capacidad de cubrir el mínimo de necesidades esenciales (consumo, acceso a servicios).</div>
+            <div class="sub">
+              <div class="sub-item">
+                <strong>Definición</strong>
+                Consumo mínimo (alimentos, vivienda, vestimenta) + servicios esenciales (agua, salud, educación, transporte, saneamiento).
+              </div>
+              <div class="sub-item">
+                <strong>Pros</strong>
+                Listado de mínimos claro. Fácil de operacionalizar y medir.
+              </div>
+              <div class="sub-item">
+                <strong>Contras</strong>
+                Personas con <em>rol pasivo</em> (no distingue si recibió ayuda o lo logró). Piensa en <em>medios y no fines</em> (vivir cerca de una escuela ≠ estar educado).
+              </div>
+            </div>
+          </div>
+
+          <div class="node">
+            <span class="node-label">No Bienestarista — Capacidades (Sen) <span class="arrow">›</span></span>
+            <div class="node-desc">Lo que las personas realmente pueden hacer o ser que consideran valioso.</div>
+            <div class="sub">
+              <div class="sub-item">
+                <strong>Funcionamiento</strong>
+                <em>Resultados</em>: estados y actividades que conforman el bienestar real (estar bien alimentado, educado, sano).
+              </div>
+              <div class="sub-item">
+                <strong>Capacidades</strong>
+                <em>Oportunidades</em>: libertad real para elegir entre distintos funcionamientos.
+              </div>
+              <div class="sub-item">
+                <strong>Agencia</strong>
+                <em>Acción activa</em>: habilidad de actuar y perseguir objetivos que uno valora. Ser actor de la propia vida.
+              </div>
+              <div class="sub-item">
+                <strong>Idea clave</strong>
+                Tener un recurso no garantiza bienestar: depende de la capacidad de cada persona para convertirlo en algo útil.
+              </div>
+            </div>
+          </div>
+
+          <div class="node">
+            <span class="node-label">Brecha entre recurso y bienestar <span class="arrow">›</span></span>
+            <div class="node-desc">Factores de conversión: condiciones que determinan si un recurso se traduce en funcionamiento.</div>
+            <div class="sub">
+              <div class="sub-item">
+                <strong>Internos</strong>
+                Características personales: edad, condición física, habilidad, salud.
+              </div>
+              <div class="sub-item">
+                <strong>Externos</strong>
+                Condición social, cultural y medioambiental. Estructuras que habilitan o limitan.
+              </div>
+              <div class="sub-item">
+                <strong>Ejemplo</strong>
+                Dos personas con la misma bicicleta: una sabe andar y vive cerca del trabajo; la otra no o vive en una zona sin caminos. <em>Mismo recurso, capacidades distintas</em>.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- ============ RAMA 5: DERECHOS HUMANOS ============ -->
+    <article class="branch" data-color="5">
+      <div class="branch-head">
+        <span class="branch-num">05</span>
+        <div class="branch-title-wrap">
+          <h3 class="branch-title">Enfoque de los Derechos Humanos</h3>
+          <div class="branch-subtitle">todos tienen derechos fundamentales</div>
+        </div>
+        <div class="chev"></div>
+      </div>
+      <div class="branch-body">
+        <div class="branch-inner">
+
+          <div class="node">
+            <span class="node-label">Idea central <span class="arrow">›</span></span>
+            <div class="node-desc">Todas las personas, por el solo hecho de serlo, tienen derechos fundamentales que deben garantizarse universalmente.</div>
+            <div class="sub">
+              <div class="sub-item">
+                <strong>Derechos fundamentales</strong>
+                Salud, educación, trabajo, igualdad, no discriminación. Buscan asegurar una vida digna.
+              </div>
+            </div>
+          </div>
+
+          <div class="node">
+            <span class="node-label">Los 5 principios <span class="arrow">›</span></span>
+            <div class="node-desc">Características que definen los derechos humanos.</div>
+            <div class="sub">
+              <div class="sub-item"><strong>1. Universales</strong> Aplican a todas las personas, sin excepción.</div>
+              <div class="sub-item"><strong>2. Iguales</strong> Sin discriminación de ningún tipo.</div>
+              <div class="sub-item"><strong>3. Inalienables</strong> No pueden quitarse ni cederse.</div>
+              <div class="sub-item"><strong>4. Indivisibles</strong> Todos son igualmente importantes; no hay jerarquía.</div>
+              <div class="sub-item"><strong>5. Interdependientes</strong> Están relacionados entre sí: garantizar uno requiere garantizar los otros.</div>
+            </div>
+          </div>
+
+          <div class="node">
+            <span class="node-label">Comparación con Capacidades <span class="arrow">›</span></span>
+            <div class="node-desc">Ambos ponen a las personas como fin, pero difieren en flexibilidad.</div>
+            <div class="sub">
+              <div class="sub-item">
+                <strong>Derechos humanos</strong>
+                Normas <em>universales, fijas e iguales</em> para todos. El Estado tiene la obligación de garantizarlos.
+              </div>
+              <div class="sub-item">
+                <strong>Capacidades</strong>
+                Más <em>flexible y contextual</em>. Define qué capacidades importan según cada sociedad, mediante debate social.
+              </div>
+              <div class="sub-item">
+                <strong>Punto en común</strong>
+                Tratar a las personas como <em>fines en sí mismas</em>, no como medios.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+  </section>
+</main>
+
+<footer>
+  <span>U3 — Bienestar y Desarrollo Humano</span>
+  <span>Click en cada rama para expandir · Hover en términos punteados para tooltip</span>
+</footer>
+
+<script>
+  // Toggle de ramas
+  document.querySelectorAll('.branch-head').forEach(head => {
+    head.addEventListener('click', () => {
+      head.closest('.branch').classList.toggle('open');
+    });
+  });
+
+  // Toggle de nodos internos
+  document.querySelectorAll('.node-label').forEach(label => {
+    label.addEventListener('click', (e) => {
+      e.stopPropagation();
+      label.closest('.node').classList.toggle('open');
+    });
+  });
+
+  // Botones globales
+  document.getElementById('expand-all').addEventListener('click', () => {
+    document.querySelectorAll('.branch, .node').forEach(el => el.classList.add('open'));
+  });
+  document.getElementById('collapse-all').addEventListener('click', () => {
+    document.querySelectorAll('.branch, .node').forEach(el => el.classList.remove('open'));
+  });
+
+  // Auto-abrir la primera rama al cargar, como invitación visual
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      document.querySelector('.branch')?.classList.add('open');
+    }, 300);
+  });
+</script>
+
+</body>
+</html>

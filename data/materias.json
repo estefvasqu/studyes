@@ -7,7 +7,8 @@
       "color": "#30364F",
       "carpeta_material": "Microeconomia_II",
       "fecha_parcial": "2026-06-08",
-      "tiene_guias": true
+      "tiene_guias": true,
+      "cards_por_dia": 8
     },
     {
       "id": "desarrollo",
@@ -15,7 +16,8 @@
       "descripcion": "Teorías del desarrollo, crecimiento, modelos",
       "color": "#5C7A5E",
       "carpeta_material": "Desarrollo_Economico",
-      "fecha_parcial": "2026-06-11"
+      "fecha_parcial": "2026-06-11",
+      "cards_por_dia": 8
     }
   ]
 }

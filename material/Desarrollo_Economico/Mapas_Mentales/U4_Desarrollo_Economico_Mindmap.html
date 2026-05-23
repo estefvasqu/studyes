@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>U4 Desarrollo Económico — Mapa Mental</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', sans-serif; background: #1A3B1B; color: #fff; height: 100vh; overflow: hidden; }
+  #header { background: #1A3B1B; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #97BC62; flex-shrink: 0; }
+  #header h1 { font-size: 18px; color: #97BC62; }
+  #header p { font-size: 12px; color: #aaa; margin-top: 2px; }
+  #controls { display: flex; gap: 8px; }
+  button { background: #2C5F2D; color: #fff; border: 1px solid #97BC62; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-size: 12px; }
+  button:hover { background: #3d7a3e; }
+  #mindmap { width: 100%; height: calc(100vh - 60px); overflow: auto; background: #f5f5f5; }
+  svg { font-family: 'Segoe UI', sans-serif; }
+  .node circle { stroke-width: 2; cursor: pointer; transition: r 0.2s; }
+  .node circle:hover { r: calc(r + 3px); }
+  .node text { font-size: 12px; cursor: pointer; user-select: none; }
+  .link { fill: none; stroke-width: 1.5; opacity: 0.6; }
+  .tooltip { position: absolute; background: rgba(26,59,27,0.95); color: #fff; padding: 8px 12px; border-radius: 6px; font-size: 12px; max-width: 300px; pointer-events: none; border: 1px solid #97BC62; z-index: 100; line-height: 1.5; }
+</style>
+</head>
+<body>
+<div id="header">
+  <div>
+    <h1>🌳 U4 — Pobreza e Inequidad · Mapa Mental Interactivo</h1>
+    <p>Desarrollo Económico · UBA FCE · Click en nodo para expandir/colapsar · Hover para definición</p>
+  </div>
+  <div id="controls">
+    <button onclick="expandAll()">Expandir todo</button>
+    <button onclick="collapseAll()">Colapsar todo</button>
+    <button onclick="resetZoom()">Centrar</button>
+  </div>
+</div>
+<div id="mindmap"></div>
+<div class="tooltip" id="tooltip" style="display:none"></div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const data = {
+  name: "U4 Desarrollo\nEconómico",
+  color: "#2C5F2D",
+  textColor: "#fff",
+  def: "Unidad 4: Pobreza e Inequidad. Dos grandes bloques: Medición de la pobreza (U4_1) y Desigualdad y Crecimiento (U4_5).",
+  children: [
+    {
+      name: "U4_1\nMedición de\nla Pobreza",
+      color: "#2C5F2D",
+      textColor: "#fff",
+      def: "Metodologías para identificar quiénes son pobres y cuantificar la magnitud del fenómeno.",
+      children: [
+        {
+          name: "2 Etapas",
+          color: "#4A7C3F",
+          textColor: "#fff",
+          def: "Toda medición requiere: (1) Identificación — definir criterio para distinguir pobre de no pobre; (2) Agregación — índice que resume cuántos son y qué tan pobres son.",
+          children: [
+            { name: "Identificación", color: "#97BC62", textColor: "#1A1A1A", def: "¿Quién es pobre? Se define un umbral (ej.: ingreso < CBT). Es la primera decisión metodológica." },
+            { name: "Agregación\n(FGT)", color: "#97BC62", textColor: "#1A1A1A", def: "¿Cuántos y cuán pobres? FGT: α=0 Incidencia (% de pobres), α=1 Brecha (profundidad), α=2 Severidad (desigualdad dentro de los pobres). Foster, Greer & Thorbecke (1983)." }
+          ]
+        },
+        {
+          name: "Enfoques",
+          color: "#4A7C3F",
+          textColor: "#fff",
+          def: "Definen qué se entiende por necesidad y cómo se establece el umbral.",
+          children: [
+            { name: "Absoluto\n(Sen, Rowntree)", color: "#97BC62", textColor: "#1A1A1A", def: "Las necesidades son universales e independientes del nivel de riqueza de los demás. Apropiado para países en desarrollo. Umbral fijo (ej.: mínimo calórico)." },
+            { name: "Relativo\n(Townsend 1979)", color: "#97BC62", textColor: "#1A1A1A", def: "Las necesidades surgen de la comparación social. Umbral variable: ej. < 50% del ingreso mediano. Concepto de 'privación relativa'. Apropiado para países desarrollados." }
+          ]
+        },
+        {
+          name: "Método Monetario\n(más usado en AR)",
+          color: "#4A7C3F",
+          textColor: "#fff",
+          def: "Indirecto y unidimensional. Mide si el hogar tiene el ingreso necesario, no si lo usó bien.",
+          children: [
+            { name: "CBA\nLinea de\nIndigencia", color: "#97BC62", textColor: "#1A1A1A", def: "Canasta Básica Alimentaria: ingreso mínimo para cubrir requerimientos calóricos. CBA hogar = valor CBA (adulto equiv.) × N° adultos equiv. Si ingreso < CBA → INDIGENTE." },
+            { name: "Coef. de Engel\n→ CBT", color: "#97BC62", textColor: "#1A1A1A", def: "CE = Gasto alimentario / Gasto total. Ley de Engel: a mayor ingreso, menor % en alimentos. CBT = CBA × (1/CE). Si ingreso < CBT → POBRE." },
+            { name: "Caso CABA", color: "#97BC62", textColor: "#1A1A1A", def: "CABA define la CBT componente a componente (alquiler, luz, gas, educación, transporte, salud, etc.) en lugar de usar el multiplicador 1/CE del INDEC." }
+          ]
+        },
+        {
+          name: "NBI",
+          color: "#4A7C3F",
+          textColor: "#fff",
+          def: "Necesidades Básicas Insatisfechas. Método DIRECTO: evalúa si el hogar accedió efectivamente al bien. Basta UNA privación para ser clasificado como pobre.",
+          children: [
+            { name: "Hacinamiento", color: "#c8dfa8", textColor: "#1A1A1A", def: "Más de 3 personas por cuarto habitable." },
+            { name: "Vivienda\ninadecuada", color: "#c8dfa8", textColor: "#1A1A1A", def: "Materiales precarios en paredes, pisos o techo." },
+            { name: "Sin agua\npotable", color: "#c8dfa8", textColor: "#1A1A1A", def: "Abastecimiento inadecuado de agua en el hogar." },
+            { name: "Sin servicios\nsanitarios", color: "#c8dfa8", textColor: "#1A1A1A", def: "Carencia de baño o retrete." },
+            { name: "Inasistencia\nescolar", color: "#c8dfa8", textColor: "#1A1A1A", def: "Niños en edad escolar que no concurren a la escuela." },
+            { name: "Baja cap.\neconómica", color: "#c8dfa8", textColor: "#1A1A1A", def: "Indicador indirecto: bajo nivel educativo y ocupacional del jefe de hogar." }
+          ]
+        },
+        {
+          name: "IPM\nAlkire-Foster",
+          color: "#4A7C3F",
+          textColor: "#fff",
+          def: "Índice de Pobreza Multidimensional. Absoluto + Multidimensional. M₀ = H × A (Incidencia × Intensidad). Metodología: elegir dimensiones → indicadores → umbrales → ponderaciones → identificar pobres → calcular H, A, M₀.",
+          children: [
+            { name: "H = Incidencia", color: "#97BC62", textColor: "#1A1A1A", def: "Proporción de hogares multidimensionalmente pobres (superan el umbral k de privaciones)." },
+            { name: "A = Intensidad", color: "#97BC62", textColor: "#1A1A1A", def: "Proporción promedio de dimensiones en que los hogares pobres sufren privaciones." },
+            { name: "M₀ = H × A", color: "#97BC62", textColor: "#1A1A1A", def: "Índice síntesis que combina incidencia e intensidad. Muestra cuántos son pobres Y cuán privados están." }
+          ]
+        },
+        {
+          name: "Método\nConsensual",
+          color: "#4A7C3F",
+          textColor: "#fff",
+          def: "Relativo + Multidimensional. Universidad de Bristol. La sociedad define las necesidades por consenso (>50% las considera necesarias). Se verifica si la privación es por falta de recursos (no por elección). Townsend (1979): umbral entre 2 y 4 privaciones."
+        }
+      ]
+    },
+    {
+      name: "U4_5\nDesigualdad y\nCrecimiento",
+      color: "#97BC62",
+      textColor: "#1A1A1A",
+      def: "Teorías de justicia, tipos de desigualdad, vínculos con el crecimiento y políticas redistributivas.",
+      children: [
+        {
+          name: "Justicia Social\n(teorías)",
+          color: "#6E932F",
+          textColor: "#fff",
+          def: "Evalúan cómo se organizan las instituciones para repartir costos y beneficios sociales.",
+          children: [
+            { name: "Convencionalismo", color: "#97BC62", textColor: "#1A1A1A", def: "La justicia es lo que la sociedad acuerda según sus tradiciones. Crítica: puede justificar prácticas injustas (esclavitud, discriminación)." },
+            { name: "Utilitarismo\n(Teleología)", color: "#97BC62", textColor: "#1A1A1A", def: "Maximizar la utilidad o felicidad total. Crítica: puede sacrificar a una minoría; no funciona en sociedades plurales sin un 'bien' compartido." },
+            { name: "Rawls\n(Maximin)", color: "#97BC62", textColor: "#1A1A1A", def: "Velo de ignorancia: las reglas son justas si las elegiríamos sin saber en qué posición naceremos. Principio de diferencia: las desigualdades solo son aceptables si benefician al más desaventajado." },
+            { name: "Sen 1979\n¿Igualdad de qué?", color: "#97BC62", textColor: "#1A1A1A", def: "Enfoque de Capacidades: la igualdad no debe medirse en recursos sino en lo que cada persona puede hacer y ser. Factores de conversión: el mismo ingreso genera distintas capacidades según la persona." }
+          ]
+        },
+        {
+          name: "Tipos de\nDesigualdad",
+          color: "#6E932F",
+          textColor: "#fff",
+          def: "La desigualdad tiene múltiples dimensiones que no se reducen a ingresos.",
+          children: [
+            { name: "Vertical", color: "#97BC62", textColor: "#1A1A1A", def: "Jerarquía de ingresos: distancia entre quienes están arriba y abajo en la distribución. Medida por el Coeficiente de Gini." },
+            { name: "Horizontal", color: "#97BC62", textColor: "#1A1A1A", def: "Diferencias sistemáticas entre grupos (etnia, género, religión). Ej: pueblos indígenas con mayor pobreza estructural por pertenencia grupal." },
+            { name: "Distributiva", color: "#97BC62", textColor: "#1A1A1A", def: "¿Quién tiene qué? Enfoque material: cómo se reparten recursos y oportunidades." },
+            { name: "Relacional", color: "#97BC62", textColor: "#1A1A1A", def: "¿Cómo se tratan? Dominación, discriminación, falta de reconocimiento del igual valor moral. Injusticia de trato independiente del ingreso." },
+            { name: "Personal\nvs. Funcional", color: "#97BC62", textColor: "#1A1A1A", def: "Personal: cuánto llega a cada hogar (Gini). Funcional: cómo se reparte el PBI entre trabajo y capital. Si el capital gana más del PBI, empeora la distribución personal." }
+          ]
+        },
+        {
+          name: "Curva de\nKuznets",
+          color: "#6E932F",
+          textColor: "#fff",
+          def: "Hipótesis (1955): con el desarrollo, la desigualdad describe una U invertida: primero sube, luego baja. Mecanismo: sector moderno atrae trabajadores rurales → brecha inicial → luego 'efecto derrame'. Evidencia empírica: NO se cumple automáticamente en PED.",
+          children: [
+            { name: "Cambios\ndesiguales", color: "#97BC62", textColor: "#1A1A1A", def: "Fase inicial: sector moderno paga más → brecha entre sectores crece." },
+            { name: "Cambios\ncompensatorios", color: "#97BC62", textColor: "#1A1A1A", def: "Fase tardía: sector tradicional se achica, salarios rurales suben por escasez → efecto derrame. No ocurre en PED: los rurales no tienen el capital humano requerido." }
+          ]
+        },
+        {
+          name: "8 Canales\nDesigualdad↔Crecimiento",
+          color: "#6E932F",
+          textColor: "#fff",
+          def: "La desigualdad y el crecimiento se afectan mutuamente a través de 8 mecanismos identificados en la literatura.",
+          children: [
+            { name: "1. Nivel de desarrollo\n(Kuznets)", color: "#c8dfa8", textColor: "#1A1A1A", def: "La modernización productiva genera desigualdad transitoria (U invertida). No automático en PED." },
+            { name: "2. Sesgo\ntecnológico", color: "#c8dfa8", textColor: "#1A1A1A", def: "Tecnología favorece al trabajo calificado. Sube demanda y salarios de calificados, baja los de no calificados → amplía brecha estructuralmente." },
+            { name: "3. Inestabilidad\nsocial", color: "#c8dfa8", textColor: "#1A1A1A", def: "Alta desigualdad → conflictos → incertidumbre → desalienta inversión privada → menos crecimiento." },
+            { name: "4. Economía\npolítica", color: "#c8dfa8", textColor: "#1A1A1A", def: "Votante mediano presiona por redistribución → impuestos al capital → desincentiva inversión e innovación. Élites usan lobby para bloquear reformas." },
+            { name: "5. Crédito\nimperfecto", color: "#c8dfa8", textColor: "#1A1A1A", def: "Información asimétrica + sin garantías → bancos no prestan a pobres → no pueden invertir en educación ni emprendimientos → frena productividad." },
+            { name: "6. Ahorros", color: "#c8dfa8", textColor: "#1A1A1A", def: "Ricos ahorran más. Redistribuir a pobres (que gastan en subsistencia) baja ahorro nacional → baja inversión → baja crecimiento. (En países de ingreso medio el efecto puede invertirse.)" },
+            { name: "7. Instituciones", color: "#c8dfa8", textColor: "#1A1A1A", def: "Concentración económica → captura del Estado por élites → políticas ineficientes → mala calidad institucional → perpetúa bajo crecimiento." },
+            { name: "8. Fertilidad", color: "#c8dfa8", textColor: "#1A1A1A", def: "Hogares pobres: más hijos, menos inversión por hijo → fuerza laboral de bajo capital humano → limita productividad estructural." }
+          ]
+        },
+        {
+          name: "América Latina",
+          color: "#6E932F",
+          textColor: "#fff",
+          def: "Región más desigual del mundo. Problema: acumulación excesiva en la cúspide, no pobreza masiva extrema.",
+          children: [
+            { name: "Mejora 2000s\n(Beccaria)", color: "#97BC62", textColor: "#1A1A1A", def: "Reducción del Gini por: boom de commodities + empleo formal + sindicalización + suba salario mínimo + reducción brecha calificado/no calificado." },
+            { name: "Freno 2008\nReversión 2014", color: "#97BC62", textColor: "#1A1A1A", def: "Caída de materias primas + baja dinámica laboral. Demostró que la mejora fue coyuntural, no estructural. El efecto derrame de Kuznets no operó." },
+            { name: "CEPAL 2025", color: "#97BC62", textColor: "#1A1A1A", def: "Pobreza de ingresos en mínimo desde 1990. Desigualdad sigue estancada. 80% percibe distribución como injusta. 70% apoya redistribución estatal." }
+          ]
+        },
+        {
+          name: "3 Tipos de\nPolíticas",
+          color: "#6E932F",
+          textColor: "#fff",
+          def: "Las políticas para reducir la desigualdad pueden actuar antes, durante o después del mercado.",
+          children: [
+            { name: "1. Pre-distributivas\n(antes del mercado)", color: "#97BC62", textColor: "#1A1A1A", def: "Igualan el punto de partida antes de que opere el mercado. Ej: educación temprana, salud materno-infantil, estimulación en primera infancia. Base: Rawls y Sen." },
+            { name: "2. Intervención\nen mercados", color: "#97BC62", textColor: "#1A1A1A", def: "Regulan abusos durante el funcionamiento del mercado. Ej: salario mínimo, fomento sindical, leyes antimonopolio, subsidios al transporte." },
+            { name: "3. Redistributivas\n(después del mercado)", color: "#97BC62", textColor: "#1A1A1A", def: "Extraen recursos de ricos para darlos a vulnerables. Ej: impuestos progresivos, transferencias condicionadas, seguro de desempleo. Insuficientes en PED por baja recaudación." }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+const tooltip = document.getElementById('tooltip');
+let svg, g, zoom, root;
+
+function init() {
+  const container = document.getElementById('mindmap');
+  const W = container.clientWidth;
+  const H = container.clientHeight;
+
+  svg = d3.select('#mindmap').append('svg')
+    .attr('width', W).attr('height', H);
+
+  zoom = d3.zoom()
+    .scaleExtent([0.15, 3])
+    .on('zoom', (e) => g.attr('transform', e.transform));
+
+  svg.call(zoom);
+  g = svg.append('g').attr('transform', `translate(${W/2},${H/2})`);
+
+  root = d3.hierarchy(data);
+  root.x0 = 0; root.y0 = 0;
+
+  root.descendants().forEach(d => {
+    if (d.depth > 1) {
+      d._children = d.children;
+      d.children = null;
+    }
+  });
+
+  update(root);
+}
+
+function update(source) {
+  const treeLayout = d3.tree().nodeSize([55, 220]);
+  treeLayout(root);
+
+  const duration = 400;
+  const nodes = root.descendants();
+  const links = root.links();
+
+  const link = g.selectAll('.link')
+    .data(links, d => d.target.data.name);
+
+  const linkEnter = link.enter().append('path')
+    .attr('class', 'link')
+    .attr('stroke', d => d.source.data.color || '#97BC62')
+    .attr('d', d3.linkHorizontal()
+      .x(d => source.y0 || 0)
+      .y(d => source.x0 || 0));
+
+  linkEnter.merge(link)
+    .transition().duration(duration)
+    .attr('d', d3.linkHorizontal()
+      .x(d => d.y)
+      .y(d => d.x));
+
+  link.exit().transition().duration(duration)
+    .attr('d', d3.linkHorizontal()
+      .x(d => source.y)
+      .y(d => source.x))
+    .remove();
+
+  const node = g.selectAll('.node')
+    .data(nodes, d => d.data.name);
+
+  const nodeEnter = node.enter().append('g')
+    .attr('class', 'node')
+    .attr('transform', d => `translate(${source.y0||0},${source.x0||0})`)
+    .on('click', (e, d) => { toggle(d); update(d); })
+    .on('mouseover', (e, d) => showTip(e, d))
+    .on('mousemove', (e) => moveTip(e))
+    .on('mouseout', hideTip);
+
+  const nodeSize = d => d.depth === 0 ? 28 : d.depth === 1 ? 20 : d.depth === 2 ? 16 : 12;
+
+  nodeEnter.append('circle')
+    .attr('r', d => nodeSize(d))
+    .attr('fill', d => d.data.color || '#97BC62')
+    .attr('stroke', d => d._children ? '#fff' : 'none')
+    .attr('stroke-width', 2);
+
+  nodeEnter.each(function(d) {
+    const lines = d.data.name.split('\n');
+    const el = d3.select(this);
+    const r = nodeSize(d);
+    lines.forEach((line, i) => {
+      el.append('text')
+        .attr('x', 0)
+        .attr('y', (i - (lines.length-1)/2) * 14)
+        .attr('text-anchor', 'middle')
+        .attr('dominant-baseline', 'middle')
+        .attr('fill', d.data.textColor || '#fff')
+        .attr('font-size', d.depth === 0 ? '13px' : d.depth === 1 ? '11px' : '10px')
+        .attr('font-weight', d.depth <= 1 ? 'bold' : 'normal')
+        .attr('pointer-events', 'none')
+        .text(line);
+    });
+    if (d._children) {
+      el.append('text')
+        .attr('x', r + 4).attr('y', 0)
+        .attr('dominant-baseline', 'middle')
+        .attr('fill', '#97BC62').attr('font-size', '12px')
+        .attr('pointer-events', 'none')
+        .text('+');
+    }
+  });
+
+  const nodeMerge = nodeEnter.merge(node);
+  nodeMerge.transition().duration(duration)
+    .attr('transform', d => `translate(${d.y},${d.x})`);
+
+  nodeMerge.select('circle')
+    .attr('fill', d => d.data.color || '#97BC62')
+    .attr('stroke', d => d._children ? '#fff' : 'none');
+
+  node.exit().transition().duration(duration)
+    .attr('transform', d => `translate(${source.y},${source.x})`)
+    .remove();
+
+  nodes.forEach(d => { d.x0 = d.x; d.y0 = d.y; });
+}
+
+function toggle(d) {
+  if (d.children) {
+    d._children = d.children;
+    d.children = null;
+  } else {
+    d.children = d._children;
+    d._children = null;
+  }
+}
+
+function showTip(e, d) {
+  if (!d.data.def) return;
+  tooltip.style.display = 'block';
+  tooltip.innerHTML = `<strong>${d.data.name.replace(/\n/g,' ')}</strong><br><br>${d.data.def}`;
+  moveTip(e);
+}
+function moveTip(e) {
+  let x = e.clientX + 15, y = e.clientY - 10;
+  if (x + 310 > window.innerWidth) x = e.clientX - 320;
+  tooltip.style.left = x + 'px';
+  tooltip.style.top = y + 'px';
+}
+function hideTip() { tooltip.style.display = 'none'; }
+
+function expandAll() {
+  root.descendants().forEach(d => {
+    if (d._children) { d.children = d._children; d._children = null; }
+  });
+  update(root);
+}
+
+function collapseAll() {
+  root.descendants().forEach(d => {
+    if (d.depth > 1 && d.children) { d._children = d.children; d.children = null; }
+  });
+  update(root);
+}
+
+function resetZoom() {
+  svg.transition().duration(500)
+    .call(zoom.transform, d3.zoomIdentity.translate(svg.attr('width')/2, svg.attr('height')/2).scale(0.7));
+}
+
+window.addEventListener('load', init);
+window.addEventListener('resize', () => {
+  const c = document.getElementById('mindmap');
+  d3.select('#mindmap svg').attr('width', c.clientWidth).attr('height', c.clientHeight);
+});
+</script>
+</body>
+</html>

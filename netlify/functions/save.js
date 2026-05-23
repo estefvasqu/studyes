@@ -46,7 +46,9 @@ exports.handler = async (event) => {
       };
     }
 
-    return { statusCode: 200, body: JSON.stringify({ ok: true }) };
+    const result    = await res.json();
+    const commitSha = result?.commit?.sha || null;
+    return { statusCode: 200, body: JSON.stringify({ ok: true, sha: commitSha }) };
 
   } catch (err) {
     return {

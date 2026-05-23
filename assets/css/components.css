@@ -124,13 +124,19 @@
   color: var(--muted);
 }
 
-/* ── Card bottom (racha + botón) ─────────────── */
+/* ── Card bottom (racha + botón + CPD) ──────── */
 .card-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.card-bottom-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  margin-top: 0.25rem;
 }
 
 .card-racha {
@@ -157,6 +163,52 @@
 
 .btn-estudiar:hover {
   opacity: 0.85;
+}
+
+/* ── Selector CPD (cards por día) ────────────── */
+.card-cpd {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cpd-label {
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.cpd-btns {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.cpd-btns .btn-prior-manual {
+  font-size: 0.78rem;
+  font-weight: 500;
+  min-width: 1.8rem;
+  text-align: center;
+  color: var(--text);
+}
+
+/* ── Indicador de sincronización (header) ────── */
+.sync-indicator {
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin-top: 0.15rem;
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+.sync-indicator[data-state="syncing"],
+.sync-indicator[data-state="synced"],
+.sync-indicator[data-state="pending"] {
+  opacity: 1;
+}
+
+.sync-indicator[data-state="pending"] {
+  color: #8B7355;
 }
 
 /* ── Estado vacío ────────────────────────────── */
@@ -1074,6 +1126,208 @@
   width: 1.4rem;
   text-align: center;
 }
+
+/* ════════════════════════════════════════════════
+   CARDS POR DÍA — selector en index
+   ════════════════════════════════════════════════ */
+
+.cards-dia-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.cards-dia-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-right: 0.1rem;
+}
+
+.cards-dia-btn {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.18rem 0.55rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 120ms;
+  letter-spacing: 0.03em;
+}
+.cards-dia-btn.active {
+  background: var(--c);
+  border-color: var(--c);
+  color: #fff;
+}
+.cards-dia-btn:hover:not(.active) {
+  border-color: var(--c);
+  color: var(--c);
+}
+
+/* ════════════════════════════════════════════════
+   TAB HISTORIAL
+   ════════════════════════════════════════════════ */
+
+.hist-seccion-titulo {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1rem;
+}
+
+.hist-dias {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.hist-entry {
+  background: var(--surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow);
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--c, #30364F);
+}
+
+.hist-entry-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.hist-entry-fecha {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--text);
+  text-transform: uppercase;
+}
+
+.hist-entry-cards {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--c, #30364F);
+}
+
+.hist-barra-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.45rem;
+}
+
+.hist-barra {
+  flex: 1;
+  height: 6px;
+  background: var(--border);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.hist-barra-bien {
+  height: 100%;
+  background: #5C7A5E;
+  border-radius: 99px;
+  transition: width 0.4s ease;
+}
+
+.hist-barra-stats {
+  font-size: 0.72rem;
+  color: var(--muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.hist-temas {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+  line-height: 1.4;
+}
+
+.hist-racha {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.hist-empty {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: var(--muted);
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* prioridades */
+.prioridades-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.prior-item {
+  background: var(--surface);
+  border-radius: var(--radius-card);
+  padding: 0.85rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: var(--shadow);
+}
+
+.prior-icono {
+  font-size: 1rem;
+  flex-shrink: 0;
+  width: 1.2rem;
+  text-align: center;
+  line-height: 1;
+}
+
+.prior-nombre {
+  flex: 1;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.prior-meta {
+  font-size: 0.72rem;
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.1rem;
+  flex-shrink: 0;
+}
+
+.btn-prior-manual {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0 0.1rem;
+  opacity: 0.3;
+  transition: opacity 120ms, transform 100ms;
+  flex-shrink: 0;
+}
+.btn-prior-manual:hover  { opacity: 0.8; transform: scale(1.15); }
+.btn-prior-manual.activo { opacity: 1; }
 
 /* ════════════════════════════════════════════════
    TEMAS — SVG estado

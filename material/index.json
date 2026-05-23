@@ -1,17 +1,31 @@
 {
   "Microeconomia_II": {
-    "Teoria": [],
+    "Teoria": [
+      "Resúmen.docx"
+    ],
     "Ejercicios": [],
     "Resumenes": [],
     "Examenes": [],
-    "Presentaciones": [],
+    "Presentaciones": [
+      "JuegosDinamicos.pptx"
+    ],
     "Mapas_Mentales": []
   },
   "Desarrollo_Economico": {
-    "Teoria": [],
+    "Teoria": [
+      "Resumen.docx"
+    ],
     "Resumenes": [],
     "Examenes": [],
-    "Presentaciones": [],
-    "Mapas_Mentales": []
+    "Presentaciones": [
+      "Desarrollo_Humano_U3.pptx",
+      "Economía_del_Desarrollo_U1.pptx",
+      "U4_Desarrollo_Economico_Presentacion.pptx",
+      "U6_Educacion_Desarrollo.pptx"
+    ],
+    "Mapas_Mentales": [
+      "mapa_mental_u3.html",
+      "U4_Desarrollo_Economico_Mindmap.html"
+    ]
   }
 }

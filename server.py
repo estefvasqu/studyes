@@ -1,13 +1,62 @@
+import base64
 import http.server
 import json
 import os
 import shutil
+import socketserver
+import urllib.error
 import urllib.parse
+import urllib.request
 from pathlib import Path
 
 BASE_DIR     = Path(__file__).parent
 DATA_DIR     = BASE_DIR / "data"
 MATERIAL_DIR = Path(r'C:\Users\estef\OneDrive\UBA\Material_UBA')
+
+
+def _load_config():
+    cfg = {}
+    # 1. config/settings.json (clave preferida — gitignoreada)
+    settings_path = BASE_DIR / 'config' / 'settings.json'
+    if settings_path.exists():
+        try:
+            data = json.loads(settings_path.read_text(encoding='utf-8'))
+            cfg['GITHUB_TOKEN']  = data.get('github_token',  '')
+            cfg['GITHUB_USER']   = data.get('github_user',   '')
+            cfg['GITHUB_REPO']   = data.get('github_repo',   '')
+            cfg['GITHUB_BRANCH'] = data.get('github_branch', 'main')
+        except Exception:
+            pass
+    # 2. .env (override opcional)
+    env_path = BASE_DIR / '.env'
+    if env_path.exists():
+        try:
+            for line in env_path.read_text(encoding='utf-8').splitlines():
+                line = line.strip()
+                if line and not line.startswith('#') and '=' in line:
+                    k, _, v = line.partition('=')
+                    cfg[k.strip()] = v.strip().strip('"').strip("'")
+        except Exception:
+            pass
+    return cfg
+
+_config = _load_config()
+
+
+def _gh_creds():
+    """Devuelve (token, user, repo, branch) desde env o config."""
+    token  = os.environ.get('GITHUB_TOKEN')  or _config.get('GITHUB_TOKEN',  '')
+    user   = os.environ.get('GITHUB_USER')   or _config.get('GITHUB_USER',   '')
+    repo   = os.environ.get('GITHUB_REPO')   or _config.get('GITHUB_REPO',   '')
+    branch = os.environ.get('GITHUB_BRANCH') or _config.get('GITHUB_BRANCH', 'main')
+    return token, user, repo, branch
+
+
+def _gh_headers(token):
+    h = {'User-Agent': 'StudyES-local', 'Content-Type': 'application/json'}
+    if token:
+        h['Authorization'] = f'token {token}'
+    return h
 
 MIME_TYPES = {
     '.pdf':  'application/pdf',
@@ -38,6 +87,24 @@ class StudyESHandler(http.server.SimpleHTTPRequestHandler):
 
         if path == '/ping':
             self._respond(200, {'ok': True})
+
+        elif path == '/github-latest-sha':
+            qs       = urllib.parse.parse_qs(parsed.query)
+            rel_path = qs.get('path', [''])[0]
+            if not rel_path:
+                self._respond(400, {'error': 'Falta parámetro path'})
+                return
+            try:
+                token, user, repo, _ = _gh_creds()
+                api_url = f'https://api.github.com/repos/{user}/{repo}/commits?path=data/{rel_path}&per_page=1'
+                req = urllib.request.Request(api_url, headers=_gh_headers(token))
+                with urllib.request.urlopen(req, timeout=3) as r:
+                    commits = json.loads(r.read())
+                sha = commits[0]['sha'] if commits else None
+                self._respond(200, {'sha': sha})
+            except Exception as e:
+                self._respond(500, {'error': str(e)})
+
         elif path.startswith('/api/material/'):
             carpeta = path[len('/api/material/'):]
             self._list_material(carpeta)
@@ -139,6 +206,110 @@ class StudyESHandler(http.server.SimpleHTTPRequestHandler):
                 self._respond(200, {'ok': True})
             except Exception as e:
                 self._respond(500, {'error': str(e)})
+
+        elif path == '/github-sync':
+            length = int(self.headers.get('Content-Length', 0))
+            body   = self.rfile.read(length)
+            try:
+                payload  = json.loads(body)
+                rel_path = payload.get('path', '')
+                data     = payload.get('data')
+
+                token, user, repo, branch = _gh_creds()
+                if not all([token, user, repo]):
+                    self._respond(503, {'error': 'GitHub no configurado: falta token/user/repo en config/settings.json'})
+                    return
+
+                api_url = f'https://api.github.com/repos/{user}/{repo}/contents/{rel_path}'
+                hdrs    = _gh_headers(token)
+
+                # SHA actual del archivo (necesario para el PUT de GitHub)
+                blob_sha = None
+                try:
+                    req = urllib.request.Request(api_url, headers=hdrs)
+                    with urllib.request.urlopen(req) as r:
+                        blob_sha = json.loads(r.read()).get('sha')
+                except urllib.error.HTTPError as e:
+                    if e.code != 404:
+                        raise
+
+                content_b64 = base64.b64encode(
+                    json.dumps(data, ensure_ascii=False, indent=2).encode('utf-8')
+                ).decode('ascii')
+
+                put_body = {
+                    'message': f'StudyES: actualizar {rel_path}',
+                    'content': content_b64,
+                    'branch':  branch,
+                }
+                if blob_sha:
+                    put_body['sha'] = blob_sha
+
+                put_req = urllib.request.Request(
+                    api_url,
+                    data=json.dumps(put_body).encode('utf-8'),
+                    headers=hdrs,
+                    method='PUT',
+                )
+                with urllib.request.urlopen(put_req) as r:
+                    result     = json.loads(r.read())
+                    commit_sha = result.get('commit', {}).get('sha')
+                self._respond(200, {'ok': True, 'sha': commit_sha})
+
+            except urllib.error.HTTPError as e:
+                err_text = e.read().decode('utf-8', errors='ignore')
+                try:
+                    msg = json.loads(err_text).get('message', str(e))
+                except Exception:
+                    msg = str(e)
+                self._respond(e.code, {'error': msg})
+            except Exception as e:
+                self._respond(500, {'error': str(e)})
+
+        elif path == '/github-pull':
+            length = int(self.headers.get('Content-Length', 0))
+            body   = self.rfile.read(length)
+            try:
+                payload  = json.loads(body)
+                rel_path = payload.get('path', '')
+
+                token, user, repo, branch = _gh_creds()
+                hdrs = _gh_headers(token)
+
+                # Descargar contenido raw desde GitHub
+                raw_url = f'https://raw.githubusercontent.com/{user}/{repo}/{branch}/data/{rel_path}'
+                raw_req = urllib.request.Request(raw_url, headers={'User-Agent': 'StudyES-local'})
+                if token:
+                    raw_req.add_header('Authorization', f'token {token}')
+                with urllib.request.urlopen(raw_req, timeout=5) as r:
+                    file_data = json.loads(r.read())
+
+                # Sobreescribir en disco local
+                target = (DATA_DIR / rel_path).resolve()
+                if not str(target).startswith(str(DATA_DIR.resolve())):
+                    self._respond(403, {'error': 'Ruta no permitida'})
+                    return
+                target.parent.mkdir(parents=True, exist_ok=True)
+                with open(target, 'w', encoding='utf-8') as f:
+                    json.dump(file_data, f, ensure_ascii=False, indent=2)
+
+                # Obtener SHA del último commit que tocó este archivo
+                sha = None
+                try:
+                    commits_url = f'https://api.github.com/repos/{user}/{repo}/commits?path=data/{rel_path}&per_page=1'
+                    req = urllib.request.Request(commits_url, headers=hdrs)
+                    with urllib.request.urlopen(req, timeout=3) as r:
+                        commits = json.loads(r.read())
+                        if commits:
+                            sha = commits[0]['sha']
+                except Exception:
+                    pass
+
+                self._respond(200, {'ok': True, 'sha': sha})
+
+            except Exception as e:
+                self._respond(500, {'error': str(e)})
+
         else:
             self._respond(404, {'error': 'Ruta no encontrada'})
 
@@ -169,9 +340,13 @@ class StudyESHandler(http.server.SimpleHTTPRequestHandler):
         print(f'  {self.address_string()} — {fmt % args}')
 
 
+class ThreadedHTTPServer(socketserver.ThreadingMixIn, http.server.HTTPServer):
+    daemon_threads = True
+
+
 if __name__ == '__main__':
     os.chdir(BASE_DIR)
-    server = http.server.HTTPServer(('localhost', 8000), StudyESHandler)
+    server = ThreadedHTTPServer(('localhost', 8000), StudyESHandler)
     print('=' * 40)
     print('  StudyES corriendo en http://localhost:8000')
     print('  Presioná Ctrl+C para detener')
