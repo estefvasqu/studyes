@@ -16,3 +16,9 @@ desktop.ini
 # Editor
 .vscode/
 *.swp
+
+# Archivos pesados de material
+*.mp4
+*.mp3
+*.zip
+*.rar

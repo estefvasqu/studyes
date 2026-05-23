@@ -184,7 +184,8 @@
       if (t === 'pptx' || t === 'ppt')       return `<span class="mat-emoji">📊</span>`;
       if (t === 'html')                      return `<span class="mat-emoji">🗺</span>`;
       if (t === 'xlsx' || t === 'xls')       return `<span class="mat-emoji">📊</span>`;
-      return `<span class="mat-emoji">📎</span>`;
+      if (t === 'png' || t === 'jpg' || t === 'jpeg') return `<span class="mat-emoji">🖼</span>`;
+      return `<span class="mat-emoji">📁</span>`;
     }
 
     function grupoHTML(titulo, archivos) {
@@ -204,23 +205,26 @@
     async function renderMaterial() {
       const panel = document.getElementById('panel-material');
       try {
-        const res  = await fetch(`/api/material/${encodeURIComponent(materia.carpeta_material)}`);
-        const data = await res.json();
+        const res     = await fetch('material/index.json');
+        const index   = await res.json();
+        const carpeta = materia.carpeta_material;
+        const datos   = index[carpeta] || {};
 
-        const hayGrupos = Object.keys(data.grupos || {}).length > 0;
-        const haySueltos = (data.sin_subcarpeta || []).length > 0;
+        const grupos = Object.entries(datos).filter(([, files]) => files.length > 0);
 
-        if (!hayGrupos && !haySueltos) {
-          panel.innerHTML = `<p class="material-empty">Todavía no hay archivos en esta carpeta.</p>`;
+        if (grupos.length === 0) {
+          panel.innerHTML = `<p class="material-empty">Todavía no hay archivos cargados.</p>`;
           return;
         }
 
         let html = '';
-        for (const [sub, archivos] of Object.entries(data.grupos || {})) {
+        for (const [sub, nombres] of grupos) {
+          const archivos = nombres.map(nombre => ({
+            nombre,
+            tipo: nombre.split('.').pop().toLowerCase(),
+            url:  `material/${carpeta}/${sub}/${encodeURIComponent(nombre)}`,
+          }));
           html += grupoHTML(SUBCARPETA_LABELS[sub] || sub, archivos);
-        }
-        if (haySueltos) {
-          html += grupoHTML('Otros', data.sin_subcarpeta);
         }
         panel.innerHTML = html;
       } catch (err) {
