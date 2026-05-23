@@ -36,7 +36,9 @@ class StudyESHandler(http.server.SimpleHTTPRequestHandler):
         parsed = urllib.parse.urlparse(self.path)
         path   = urllib.parse.unquote(parsed.path)
 
-        if path.startswith('/api/material/'):
+        if path == '/ping':
+            self._respond(200, {'ok': True})
+        elif path.startswith('/api/material/'):
             carpeta = path[len('/api/material/'):]
             self._list_material(carpeta)
         elif path.startswith('/material-file/'):
