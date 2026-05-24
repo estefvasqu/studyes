@@ -49,10 +49,10 @@
       "introducción"
     ],
     "srs": {
-      "easiness_factor": 2.5,
+      "easiness_factor": 1.96,
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-23"
+      "next_review": "2026-05-25"
     }
   },
   {
