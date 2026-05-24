@@ -20,9 +20,9 @@
     "tags": [],
     "srs": {
       "interval": 1,
-      "easiness_factor": 2.5,
+      "easiness_factor": 1.96,
       "repetitions": 0,
-      "next_review": 0
+      "next_review": "2026-05-25"
     }
   },
   {
