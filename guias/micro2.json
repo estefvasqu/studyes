@@ -21,6 +21,12 @@
           "nombre": "Ejercicio 6",
           "hecho": false,
           "nota": ""
+        },
+        {
+          "id": "practica6_1779632614676",
+          "nombre": "Ejercicio 10",
+          "hecho": false,
+          "nota": "#Stackelberg"
         }
       ]
     },
