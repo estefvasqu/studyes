@@ -51,6 +51,12 @@
           "nombre": "Ejercicio 7",
           "hecho": false,
           "nota": "Dilema del Prisionero generalizado"
+        },
+        {
+          "id": "practica7_1779632799649",
+          "nombre": "Ejercicio 9",
+          "hecho": false,
+          "nota": "Cournot con colusión y contrato ejecutable"
         }
       ]
     },
