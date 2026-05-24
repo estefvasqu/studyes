@@ -55,7 +55,7 @@
     }
 
     function renderCard(m, cards, progreso, guias = null) {
-      const due      = Plan.seleccionarHoy(cards, m.cards_por_dia).length;
+      const due      = Plan.getCardsDeHoy(cards, m.cards_por_dia).length;
       const total    = cards.length;
       const studied  = cards.filter(c => c.srs && c.srs.repetitions > 0).length;
       const pct      = total > 0 ? Math.round((studied / total) * 100) : 0;
@@ -193,7 +193,7 @@
           // Recalcular y actualizar badge
           const result = results.find(r => r.m.id === id);
           if (result) {
-            const due     = Plan.seleccionarHoy(result.cards, val).length;
+            const due     = Plan.getCardsDeHoy(result.cards, val).length;
             const card    = btn.closest('.materia-card');
             const badgeEl = card.querySelector('.badge');
             if (badgeEl) {
@@ -217,7 +217,7 @@
 
         // ── Banner de bienvenida ─────────────────────────────────────
         const hoyStr   = new Date().toISOString().split('T')[0];
-        const totalDue = results.reduce((s, { m, cards: c }) => s + Plan.seleccionarHoy(c, m.cards_por_dia).length, 0);
+        const totalDue = results.reduce((s, { m, cards: c }) => s + Plan.getCardsDeHoy(c, m.cards_por_dia).length, 0);
         const yaEstudio = results.every(({ progreso: p }) => p.ultimo_acceso === hoyStr);
 
         if (totalDue > 0 && !yaEstudio) {

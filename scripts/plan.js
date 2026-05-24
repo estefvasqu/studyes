@@ -1,33 +1,27 @@
-// Planificación de sesión diaria con límite de cards por materia
-
 const Plan = (() => {
-  const LIMITE_DIARIO = 8;
 
-  /**
-   * Devuelve hasta `limitePorDia` cards pendientes para hoy.
-   * Si limitePorDia === 'todas', no aplica límite.
-   * Ordena: temas prioritarios primero, luego next_review más antiguo, luego repetitions=0.
-   */
-  function seleccionarHoy(cards, limitePorDia, prioridades) {
-    const prios  = prioridades || [];
-    const limite = limitePorDia === 'todas' ? Infinity
-                 : (Number(limitePorDia) > 0) ? Number(limitePorDia)
-                 :                              LIMITE_DIARIO;
+  function getCardsDeHoy(todasLasCards, cardsPorDia) {
+    const hoy = new Date().toISOString().split('T')[0];
 
-    const pendientes = cards.filter(c => SRS.isDue(c));
+    const pendientes = todasLasCards
+      .filter(c => {
+        const nr = c.srs?.next_review;
+        if (!nr || nr === 0) return true;   // card nueva, siempre pendiente
+        return String(nr) <= hoy;
+      })
+      .sort((a, b) => {
+        // next_review === 0 o ausente → string vacío → ordena primero
+        const ra = (!a.srs?.next_review || a.srs.next_review === 0) ? '' : String(a.srs.next_review);
+        const rb = (!b.srs?.next_review || b.srs.next_review === 0) ? '' : String(b.srs.next_review);
+        return ra.localeCompare(rb);
+      });
 
-    pendientes.sort((a, b) => {
-      const aPrio = prios.includes(a.tema) ? 0 : 1;
-      const bPrio = prios.includes(b.tema) ? 0 : 1;
-      if (aPrio !== bPrio) return aPrio - bPrio;
-      const ra = String(a.srs?.next_review ?? '');
-      const rb = String(b.srs?.next_review ?? '');
-      if (ra !== rb) return ra < rb ? -1 : 1;
-      return (a.srs?.repetitions ?? 0) - (b.srs?.repetitions ?? 0);
-    });
-
-    return pendientes.slice(0, limite);
+    if (cardsPorDia === 'todas' || cardsPorDia === Infinity) {
+      return pendientes;
+    }
+    const n = Number(cardsPorDia);
+    return pendientes.slice(0, n > 0 ? n : 8);
   }
 
-  return { seleccionarHoy, LIMITE_DIARIO };
+  return { getCardsDeHoy };
 })();

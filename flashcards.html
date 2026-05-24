@@ -314,7 +314,7 @@
         document.title = `Sesión ${materia.nombre} — StudyES`;
 
         // filtrar cards pendientes hoy
-        sessionCards = Plan.seleccionarHoy(allCards, materia.cards_por_dia);
+        sessionCards = Plan.getCardsDeHoy(allCards, materia.cards_por_dia);
 
         if (sessionCards.length === 0) {
           mostrarSinCards();

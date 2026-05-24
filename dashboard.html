@@ -79,7 +79,7 @@
 
     // ── Tab HOY ─────────────────────────────────────────────────────
     function renderHoy() {
-      const due = Plan.seleccionarHoy(cards);
+      const due = Plan.getCardsDeHoy(cards, materia?.cards_por_dia);
 
       if (due.length === 0) {
         document.getElementById('panel-hoy').innerHTML =
