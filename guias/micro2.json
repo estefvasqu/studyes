@@ -45,6 +45,12 @@
           "nombre": "Ejercicio 4",
           "hecho": false,
           "nota": "inciso b"
+        },
+        {
+          "id": "practica7_1779632761721",
+          "nombre": "Ejercicio 7",
+          "hecho": false,
+          "nota": "Dilema del Prisionero generalizado"
         }
       ]
     },
