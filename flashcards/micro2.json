@@ -544,5 +544,18 @@
       "repetitions": 0,
       "next_review": 0
     }
+  },
+  {
+    "id": "micro2_1779635877518",
+    "tema": "Selección adversa",
+    "frente": "Selección adversa",
+    "reverso": "es una consecuencia específica de la información asimétrica, que ocurre antes de firmar el contrato. El empresario no sabe el tipo del trabajador, entonces no puede diseñar contratos separados para cada tipo → el trabajador puede intentar \"hacerse pasar\" por el otro tipo si le conviene.\n\n\n* información simétrica → no hay selección adversa → solo hay RP\n* información asimétrica → hay selección adversa → aparecen las RCI (restricciones de compatibilidad de incentivos) además de las RP",
+    "tags": [],
+    "srs": {
+      "easiness_factor": 2.5,
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": 0
+    }
   }
 ]
