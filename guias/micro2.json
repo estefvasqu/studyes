@@ -1,0 +1,36 @@
+{
+  "guias": [
+    {
+      "id": "practica6",
+      "nombre": "Práctica 6",
+      "ejercicios": [
+        {
+          "id": "practica6_1779632401716",
+          "nombre": "Ejercicio 2",
+          "hecho": false,
+          "nota": "#tipoparcial, #formaextensiva"
+        }
+      ]
+    },
+    {
+      "id": "practica7",
+      "nombre": "Práctica 7",
+      "ejercicios": []
+    },
+    {
+      "id": "practica8",
+      "nombre": "Práctica 8",
+      "ejercicios": []
+    },
+    {
+      "id": "practica9",
+      "nombre": "Práctica 9",
+      "ejercicios": []
+    },
+    {
+      "id": "parciales",
+      "nombre": "Parciales Viejos",
+      "ejercicios": []
+    }
+  ]
+}
