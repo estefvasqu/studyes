@@ -33,7 +33,14 @@
     {
       "id": "practica7",
       "nombre": "Práctica 7",
-      "ejercicios": []
+      "ejercicios": [
+        {
+          "id": "practica7_1779632682852",
+          "nombre": "Ejercicio 3",
+          "hecho": false,
+          "nota": "bien público con juego repetido"
+        }
+      ]
     },
     {
       "id": "practica8",
