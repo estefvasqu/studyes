@@ -1,0 +1,535 @@
+[
+  {
+    "id": "micro2_001",
+    "tema": "Teoría de Juegos",
+    "frente": "¿Qué es el Equilibrio de Nash?",
+    "reverso": "Perfil de estrategias donde ningún jugador puede mejorar su pago desviándose unilateralmente, dado el comportamiento de los demás jugadores.",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.6,
+      "repetitions": 1,
+      "next_review": "2026-05-25"
+    }
+  },
+  {
+    "id": "micro2_002",
+    "tema": "Oligopolio",
+    "frente": "¿Qué caracteriza al duopolio de Cournot?",
+    "reverso": "Las empresas eligen cantidades simultáneamente. En equilibrio cada firma maximiza beneficios dado el output de la rival; el precio queda entre el competitivo y el monopólico.",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_003",
+    "tema": "Información Asimétrica",
+    "frente": "¿Qué es la selección adversa?",
+    "reverso": "Problema de información asimétrica precontractual: la parte desinformada no puede distinguir tipos, lo que lleva a que los tipos 'malos' desplacen a los buenos del mercado (Akerlof, 1970).",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_004",
+    "tema": "Forma Extensiva",
+    "frente": "¿Cuáles son los tres componentes básicos del árbol en forma extensiva?",
+    "reverso": "- Nodos: puntos del árbol donde se toma una decisión (decisión) o termina el juego (terminal).\n- Ramas: flechas que conectan nodos; representan las acciones disponibles desde ese nodo.\n- Conjuntos de información (h): grupo de nodos que el jugador no puede distinguir entre sí porque no observó alguna acción previa.",
+    "tags": [
+      "forma extensiva",
+      "árbol",
+      "nodos"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_005",
+    "tema": "Forma Extensiva",
+    "frente": "¿Qué diferencia hay entre la forma normal y la forma extensiva de un juego?",
+    "reverso": "Forma normal (matriz): muestra todas las estrategias y los pagos en cada celda. Ideal para juegos simultáneos.\n\nForma extensiva (árbol): captura la secuencia de decisiones y muestra qué sabe cada jugador en cada turno. Ideal para juegos dinámicos.",
+    "tags": [
+      "forma normal",
+      "forma extensiva"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_006",
+    "tema": "Conjuntos de Información",
+    "frente": "Definición precisa de conjunto de información (h).",
+    "reverso": "Es un grupo de nodos de decisión donde un jugador toma decisiones pero NO puede distinguir en cuál de ellos está, porque no observó alguna acción previa.\n\nConsecuencia: la estrategia asigna una acción a cada conjunto de información, no a cada nodo individual. La misma acción aplica a todos los nodos del conjunto.",
+    "tags": [
+      "conjunto información",
+      "definición"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_007",
+    "tema": "Conjuntos de Información",
+    "frente": "¿Qué significa que un conjunto de información sea unitario?",
+    "reverso": "Significa que el conjunto tiene un único nodo: el jugador sabe exactamente dónde está en el árbol cuando le toca decidir.\n\nSi un conjunto tiene más de un nodo (no unitario), el jugador tiene información incompleta sobre el historial.",
+    "tags": [
+      "unitario",
+      "información"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_008",
+    "tema": "Información Perfecta vs Imperfecta",
+    "frente": "¿Cuándo un juego tiene información perfecta y cuándo imperfecta?",
+    "reverso": "Perfecta: todos los conjuntos de información son unitarios. Cuando un jugador decide, conoce todas las acciones previas. Ejemplo: ajedrez.\n\nImperfecta: al menos un conjunto tiene más de un nodo. Existe algún momento en que un jugador no sabe qué ocurrió antes. Ejemplo: Cournot simultáneo representado en forma extensiva.",
+    "tags": [
+      "información perfecta",
+      "imperfecta"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_009",
+    "tema": "Subjuego",
+    "frente": "¿Qué tres condiciones debe cumplir una parte del árbol para ser un subjuego?",
+    "reverso": "1. Inicia en un nodo unitario: el jugador sabe exactamente dónde está al comenzar.\n2. Incluye todos los sucesores: contiene todos los nodos descendientes hasta los nodos terminales.\n3. No corta conjuntos de información: si un nodo de un conjunto h está dentro, todos los nodos de h deben estar dentro (o todos fuera).",
+    "tags": [
+      "subjuego",
+      "definición"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_010",
+    "tema": "ENPS",
+    "frente": "¿Qué es un Equilibrio Perfecto en Subjuegos (ENPS)?",
+    "reverso": "Un perfil de estrategias es ENPS si induce un Equilibrio de Nash en CADA subjuego del juego.\n\nNo basta con que nadie quiera desviarse en el juego completo: nadie debe querer desviarse en ninguna continuación posible, incluso en partes del árbol fuera del camino de equilibrio.",
+    "tags": [
+      "ENPS",
+      "equilibrio"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_011",
+    "tema": "ENPS vs EN",
+    "frente": "Relación entre ENPS y Equilibrio de Nash. ¿Es ENPS ⊂ EN o al revés?",
+    "reverso": "ENPS ⊂ EN: todo ENPS es EN, pero NO todo EN es ENPS.\n\nEl ENPS es una refinación del EN: elimina aquellos equilibrios de Nash que dependen de amenazas no creíbles en subjuegos que no se alcanzan en el camino de equilibrio.",
+    "tags": [
+      "ENPS",
+      "EN",
+      "refinación"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_012",
+    "tema": "Racionalidad Secuencial",
+    "frente": "¿Qué exige el principio de racionalidad secuencial?",
+    "reverso": "Que cada jugador tome decisiones óptimas en cada punto del árbol donde le toca decidir, dado lo que hacen los demás.\n\nNo alcanza con que la estrategia sea buena 'en promedio' o en el juego completo: debe ser óptima localmente en cada nodo alcanzado. Esto es lo que hace que las amenazas no creíbles se descarten.",
+    "tags": [
+      "racionalidad secuencial",
+      "ENPS"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_013",
+    "tema": "Backward Induction",
+    "frente": "Pasos de la inducción hacia atrás (backward induction).",
+    "reverso": "1. Resolver los subjuegos terminales: identificar los nodos más cercanos al final y elegir la acción que maximiza el pago del jugador que decide. Reemplazar el subjuego por los pagos resultantes.\n2. Subir un nivel y repetir: con los subjuegos sustituidos, hay nuevos nodos más cercanos al final.\n3. Continuar recursivamente hasta la raíz del árbol.\n\nSolo funciona directamente en juegos con información perfecta.",
+    "tags": [
+      "backward induction",
+      "ENPS"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_014",
+    "tema": "Ultimátum",
+    "frente": "En el juego del ultimátum, ¿cuál es el ENPS y por qué?",
+    "reverso": "ENPS: el proponente ofrece el mínimo posible (ej. 1) y el respondedor acepta cualquier oferta positiva.\n\nPor qué (backward induction):\n- El respondedor compara aceptar (recibe x>0) vs rechazar (recibe 0): acepta toda oferta positiva.\n- El proponente anticipa esto y ofrece el mínimo, quedándose con casi todo.\n\nCon 12 galletas: J1 = 11, J2 = 1.",
+    "tags": [
+      "ultimátum",
+      "ENPS",
+      "negociación"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_015",
+    "tema": "Doble Ultimátum",
+    "frente": "¿Por qué en el Doble Ultimátum se invierte el poder de negociación?",
+    "reverso": "Porque el respondedor tiene una tercera opción: contraofertar. Esa contraoferta es una amenaza creíble: si rechaza la oferta inicial, puede garantizarse 11 galletas haciendo él la propuesta final.\n\nResultado: la proponente debe ofrecerle 11 al respondedor para que acepte. Si con 12 galletas: J1 (proponente) = 1, J2 (respondedor) = 11. El poder se invirtió.",
+    "tags": [
+      "doble ultimátum",
+      "poder"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_016",
+    "tema": "Modelo de Rubinstein",
+    "frente": "¿De qué depende el poder de negociación en el modelo de Rubinstein (infinitos turnos)?",
+    "reverso": "De la paciencia relativa de cada jugador, medida por el factor de descuento δ ∈ (0,1).\n\nComo no hay 'última palabra', el poder no viene de quién habla primero, sino de quién puede permitirse esperar. Esperar tiene costo (el descuento), así que el jugador más paciente extrae más excedente.\n\nResultado con 12 galletas: J1 recibe 12(1 − δ₂), J2 recibe 12·δ₂.",
+    "tags": [
+      "Rubinstein",
+      "paciencia",
+      "δ"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_017",
+    "tema": "Modelo de Rubinstein",
+    "frente": "¿Qué significa intuitivamente que δ → 0 o δ → 1?",
+    "reverso": "δ → 0: muy impaciente. Lo que pasa mañana vale casi nada. Quiere acuerdo ya, aunque sea malo.\n\nδ → 1: muy paciente. Valora casi igual lo de hoy y lo de mañana. Esperar no le molesta, así que puede aguantar negociando.\n\nImportante: δ no es probabilidad, es preferencia temporal.",
+    "tags": [
+      "δ",
+      "paciencia",
+      "Rubinstein"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_018",
+    "tema": "Stackelberg",
+    "frente": "¿En qué se diferencia Stackelberg de Cournot?",
+    "reverso": "Es el mismo modelo de duopolio en cantidades, pero con movimientos secuenciales:\n- Líder elige qL en T=1.\n- Seguidora observa qL y elige qS en T=2.\n\nHay información perfecta entre períodos. El poder de la líder viene de comprometerse primero: anticipa cómo reaccionará la seguidora y optimiza.",
+    "tags": [
+      "Stackelberg",
+      "Cournot",
+      "secuencial"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_019",
+    "tema": "Stackelberg",
+    "frente": "Resolución por backward induction: ¿cuánto produce la líder y cuánto la seguidora?",
+    "reverso": "Paso 1 (T=2): La seguidora maximiza dado qL, función de reacción:\nqS(qL) = (a−c)/(2b) − qL/2\n\nPaso 2 (T=1): La líder sustituye qS(qL) en su beneficio y maximiza:\nqL* = (a−c)/(2b)  [cantidad monopólica]\n\nPaso 3: qS* = qS(qL*) = (a−c)/(4b)  [la mitad de la líder]",
+    "tags": [
+      "Stackelberg",
+      "backward induction"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_020",
+    "tema": "Stackelberg",
+    "frente": "Beneficios de equilibrio en Stackelberg.",
+    "reverso": "Líder: πL = (a−c)²/(8b)  [el doble que la seguidora]\nSeguidora: πS = (a−c)²/(16b)  [la mitad de la líder]\n\nMoverse primero es ventaja: la líder explota la función de reacción de la seguidora y se queda con la mayor parte del excedente.",
+    "tags": [
+      "Stackelberg",
+      "beneficios"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_021",
+    "tema": "ENPS vs RPS",
+    "frente": "¡Trampa de examen! Diferencia entre ENPS y RPS en Stackelberg.",
+    "reverso": "ENPS (Equilibrio Perfecto en Subjuegos):\nIncluye la estrategia COMPLETA de la seguidora: qS(qL) = (a−c)/(2b) − qL/2\nEspecifica qué haría ante cualquier qL posible (incluso fuera de equilibrio). Es una FUNCIÓN.\n\nRPS (Resultado Perfecto en Subjuegos):\nSolo reporta lo que efectivamente ocurre: qL* = (a−c)/(2b) y qS* = (a−c)/(4b). Es un PAR DE NÚMEROS.",
+    "tags": [
+      "ENPS",
+      "RPS",
+      "trampa"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_022",
+    "tema": "Comparación 4 modelos OI",
+    "frente": "Ordenar Competencia Perfecta, Cournot, Stackelberg y Monopolio según cantidad, precio y beneficios.",
+    "reverso": "Cantidad total: QCP > QStack > QCou > QM\n\nPrecio: PM > PCou > PStack > PCP\n\nBeneficio firma: ΠM > ΠL_Stack > ΠCou > ΠS_Stack > ΠCP\n\nMoverse primero (líder) gana más que Cournot; pero ser seguidora gana menos que Cournot (peor de todos menos CP).",
+    "tags": [
+      "comparación",
+      "OI"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_023",
+    "tema": "Stackelberg con 3 firmas",
+    "frente": "Stackelberg con 1 líder y 2 seguidoras (que juegan Cournot entre sí). ¿Cuánto produce la líder?",
+    "reverso": "La líder produce la misma cantidad monopólica: q1* = (a−c)/(2b).\n\nCada seguidora produce menos que en el caso de una sola seguidora porque compiten entre ellas en T=2. La función de reacción de cada seguidora ahora es:\nq*(q1) = (a−c)/(3b) − q1/3\n\nCantidad total sube → precio baja → la líder gana menos aunque su cantidad no cambie.",
+    "tags": [
+      "Stackelberg",
+      "múltiples seguidoras"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_024",
+    "tema": "Valor Presente",
+    "frente": "Valor presente de las secuencias de pagos más usadas (con factor de descuento δ).",
+    "reverso": "Pagos constantes:\n- a, a, a, a, ... → a/(1−δ)\n- a, 1, 1, 1, ... → a + δ/(1−δ)\n- a, 2, 2, 2, ... → a + 2δ/(1−δ)\n\nPagos alternados (período 2):\n- a, 0, a, 0, ... → a/(1−δ²)\n- a, 1, a, 1, ... → (a + δ)/(1−δ²)\n\nTruco: cuando los pagos alternan cada 2 períodos, sirve usar el cambio de variable δ′ = δ².",
+    "tags": [
+      "valor presente",
+      "fórmulas",
+      "δ"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_025",
+    "tema": "Estrategia Trigger",
+    "frente": "¿En qué consiste la estrategia trigger (gatillo)?",
+    "reverso": "Contrato implícito de cooperación con castigo eterno:\n1. Empezar cooperando (jugar C en t=1).\n2. Seguir cooperando mientras el otro coopere.\n3. Si el otro se desvía una sola vez → jugar C̄ para siempre.\n\nLa amenaza es: 'si me traicionás una vez, te castigo para siempre.' Si el jugador valora suficientemente el futuro, prefiere no desviarse.",
+    "tags": [
+      "trigger",
+      "cooperación",
+      "castigo"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_026",
+    "tema": "Juego Repetido Finito",
+    "frente": "¿Por qué la estrategia trigger NO funciona en un juego repetido finito con fin conocido?",
+    "reverso": "Por el 'problema del último período'. Razonando por backward induction:\n- Período n (último): no hay futuro → no hay castigo → ambos juegan C̄.\n- Período n−1: ambos saben que en n se juega C̄ pase lo que pase → el futuro ya está arruinado → juegan C̄.\n- ...y así hacia atrás hasta el período 1.\n\nResultado: no hay cooperación en ningún período.",
+    "tags": [
+      "trigger",
+      "finito",
+      "último período"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_027",
+    "tema": "Juego con fin incierto",
+    "frente": "Si el juego continúa con probabilidad p en cada período, ¿cuál es la condición para cooperar?",
+    "reverso": "Comparar utilidad esperada de cooperar vs. desviarse:\nUE(coop) = 2/(1−p)\nUE(dev) = 3 + p/(1−p)\n\nUE(coop) ≥ UE(dev) ⟹ resolviendo:\np ≥ 1/2\n\nSi la probabilidad de que el juego continúe mañana es mayor a ½, conviene cooperar.",
+    "tags": [
+      "fin incierto",
+      "p",
+      "cooperación"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_028",
+    "tema": "Juego Repetido Infinito",
+    "frente": "Condición sobre δ para que el trigger sostenga cooperación en un juego infinito.",
+    "reverso": "Comparar Valor Presente de cooperar vs. desviarse:\nVP(coop) = 2/(1−δ)\nVP(dev) = 3 + δ/(1−δ)\n\nVP(coop) ≥ VP(dev) ⟹\nδ ≥ 1/2\n\nMisma forma matemática que p, pero conceptualmente δ es preferencia temporal (paciencia), no probabilidad de continuación.",
+    "tags": [
+      "infinito",
+      "δ",
+      "trigger"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_029",
+    "tema": "Toma y Daka",
+    "frente": "¿En qué se diferencia Toma y Daka (Tit-for-Tat) del trigger?",
+    "reverso": "Trigger: si te desviás una vez → te castigo para siempre.\n\nToma y Daka: simplemente copio lo que hiciste en el período anterior:\n- Si jugaste C ayer → yo juego C hoy.\n- Si jugaste C̄ ayer → yo juego C̄ hoy.\n\nEl castigo dura exactamente 1 período. Si volvés a cooperar, yo también vuelvo.",
+    "tags": [
+      "Toma y Daka",
+      "tit for tat"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_030",
+    "tema": "Toma y Daka",
+    "frente": "¿Por qué en Toma y Daka hay que verificar DOS condiciones de no-desviación?",
+    "reverso": "Porque cuando un jugador se desvía, tiene dos caminos posibles después:\n\nOpción 1: Alternar (desviarse, dejarse castigar, volver a desviarse...). Pagos: 3, 0, 3, 0... → VP = 3/(1−δ²)\n\nOpción 2: Jugar C̄ para siempre. Pagos: 3, 1, 1, 1... → VP = 3 + δ/(1−δ)\n\nCooperar debe ser mejor que ambas. Felizmente ambas condiciones dan el mismo umbral: δ ≥ ½.",
+    "tags": [
+      "Toma y Daka",
+      "desviación",
+      "trampa"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_031",
+    "tema": "Castigo Limitado",
+    "frente": "¿Qué es la estrategia de castigo limitado y dónde se ubica entre Toma y Daka y Trigger?",
+    "reverso": "Castigar al desviado durante exactamente K períodos jugando C̄, y después perdonar sin condición.\n\nEs una generalización:\n- K = 1 → Toma y Daka\n- K = N → castigo limitado de N períodos\n- K = ∞ → Trigger\n\nA mayor K, castigo más severo → se puede sostener cooperación con δ mínimo más bajo.",
+    "tags": [
+      "castigo limitado",
+      "K"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_032",
+    "tema": "Trampa de examen",
+    "frente": "¿Cuándo NO se puede aplicar backward induction directamente?",
+    "reverso": "Cuando el juego tiene información imperfecta, es decir, cuando hay al menos un conjunto de información no unitario.\n\nLa backward induction clásica requiere que en cada nodo el jugador sepa exactamente dónde está. Si hay conjuntos con varios nodos, el jugador no puede optimizar nodo por nodo: hay que usar otras técnicas (equilibrio bayesiano, perfecto bayesiano, etc.).",
+    "tags": [
+      "backward induction",
+      "info imperfecta",
+      "trampa"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  },
+  {
+    "id": "micro2_033",
+    "tema": "Trampa de examen",
+    "frente": "¿Es verdad que 'quien mueve primero siempre tiene ventaja'?",
+    "reverso": "FALSO. Depende del juego y de qué opciones tiene el rival:\n- Stackelberg: sí, la líder gana más que Cournot (ventaja de compromiso).\n- Ultimátum simple: sí, el proponente se queda con casi todo.\n- Doble ultimátum: NO. El respondedor, al poder contraofertar, termina con 11 de 12. El poder se invierte.\n- Rubinstein: el poder no es de quien mueve primero, sino de quien es más paciente.",
+    "tags": [
+      "trampa",
+      "primer movimiento"
+    ],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": 0
+    }
+  }
+]
