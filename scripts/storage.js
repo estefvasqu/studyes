@@ -16,7 +16,7 @@ const Storage = (() => {
 
   // ── Carga (relativa — funciona en local y en Netlify) ──────────
   async function load(path) {
-    const res = await fetch(`/data/${path}`);
+    const res = await fetch(`/data/${path}`, { cache: 'no-store' });
     if (!res.ok) throw new Error(`No se pudo cargar: ${path}`);
     return res.json();
   }
