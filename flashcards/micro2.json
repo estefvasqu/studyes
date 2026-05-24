@@ -531,5 +531,18 @@
       "repetitions": 0,
       "next_review": 0
     }
+  },
+  {
+    "id": "micro2_1779635720664",
+    "tema": "",
+    "frente": "Pasos generales para  Información perfecta/simétrica",
+    "reverso": "1. Escribir la utilidad del principal\n2. Plantear el problema de maximización para cada tipo por separado\n3. Escribir la RP de cada tipo e igualarla a la utilidad de reserva\n4. Sustituir w en el objetivo → eliminás w y queda todo en función de e\n5. Derivar respecto a e, igualar a cero (CPO) → despejar e*\n6. Sustituir e* para obtener w*\n7. Calcular el beneficio del principal para cada tipo y comparar\n\n\nLa señal práctica para saber si derivás:\n* ¿El enunciado dice \"el empresario diseña un contrato\" o \"elige e y w\"? → derivás\n* ¿Los valores posibles de e están dados explícitamente en el enunciado (e=1, e=2, etc.)? → no derivás, comparás directamente",
+    "tags": [],
+    "srs": {
+      "easiness_factor": 2.5,
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": 0
+    }
   }
 ]
