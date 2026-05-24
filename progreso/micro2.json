@@ -1,0 +1,22 @@
+{
+  "sesiones": [],
+  "racha_dias": 1,
+  "ultimo_acceso": "2026-05-24",
+  "prioridades_manuales": [],
+  "historial": [
+    {
+      "fecha": "2026-05-24",
+      "cards_estudiadas": 8,
+      "correctas": 7,
+      "incorrectas": 1,
+      "temas_practicados": [
+        "Teoría de Juegos",
+        "Oligopolio",
+        "Información Asimétrica",
+        "Forma Extensiva",
+        "Conjuntos de Información",
+        "Información Perfecta vs Imperfecta"
+      ]
+    }
+  ]
+}
