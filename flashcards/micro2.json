@@ -557,5 +557,18 @@
       "repetitions": 0,
       "next_review": 0
     }
+  },
+  {
+    "id": "micro2_1779636921566",
+    "tema": "",
+    "frente": "Tipos de RCI en contratos principal-agente",
+    "reverso": "RCI por cambio de acción (como el ejercicio de ayer):\n* El agente es de un solo tipo\n* Puede mentir sobre lo que hace (esfuerzo alto vs bajo)\n* La RCI compara: \"¿me conviene esforzarme alto o bajo dado el contrato?\" Entonces la RCI es unilateral\n* Contexto típico: riesgo moral (moral hazard)\n\n\nRCI por cambio de tipo (como el ejercicio de hoy)\n* Hay varios tipos de agentes (G y B)\n* Puede mentir sobre lo que es (hacerse pasar por el otro tipo)\n* La RCI compara: \"¿me conviene aceptar mi contrato o el del otro tipo?\". Entonces hay dos direcciones posibles de mentira: El tipo G podría querer hacerse pasar por B. El tipo B podría querer hacerse pasar por G\n* Contexto típico: selección adversa (adverse selection)\n\nRegla práctica para identificar cuál es:\n* ¿El enunciado habla de tipos distintos de agentes? → RCI por cambio de tipo\n* ¿El enunciado habla de acciones que el empresario no observa? → RCI por cambio de acción",
+    "tags": [],
+    "srs": {
+      "easiness_factor": 2.5,
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": 0
+    }
   }
 ]
