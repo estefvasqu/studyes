@@ -39,6 +39,12 @@
           "nombre": "Ejercicio 3",
           "hecho": false,
           "nota": "bien público con juego repetido"
+        },
+        {
+          "id": "practica7_1779632724168",
+          "nombre": "Ejercicio 4",
+          "hecho": false,
+          "nota": "inciso b"
         }
       ]
     },
