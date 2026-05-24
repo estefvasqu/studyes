@@ -185,21 +185,24 @@
         racha = 1;
       }
 
-      const sesiones = progreso.sesiones || [];
+      const temas_practicados = [...new Set(sessionCards.map(c => c.tema).filter(Boolean))];
+      const historial = progreso.historial || progreso.sesiones || [];
       const entradaHoy = {
         fecha:            today,
         cards_estudiadas: stats.total,
         correctas:        stats.buenas + stats.dificultad,
         incorrectas:      stats.malas,
+        temas_practicados,
       };
-      const idxHoy = sesiones.findIndex(s => s.fecha === today);
-      if (idxHoy >= 0) sesiones[idxHoy] = entradaHoy;
-      else             sesiones.push(entradaHoy);
+      const idxHoy = historial.findIndex(s => s.fecha === today);
+      if (idxHoy >= 0) historial[idxHoy] = entradaHoy;
+      else             historial.push(entradaHoy);
 
       const updatedProgreso = {
-        racha_dias:     racha,
-        ultimo_acceso:  today,
-        sesiones,
+        ...progreso,
+        racha_dias:    racha,
+        ultimo_acceso: today,
+        historial,
       };
 
       await Storage.save(`progreso/${materiaId}.json`, updatedProgreso);
@@ -208,7 +211,13 @@
 
     // ── Pantalla de resumen ──────────────────────────────────────────
     async function mostrarResumen() {
-      const progreso = await guardarProgreso();
+      let guardadoOk = false;
+      try {
+        await guardarProgreso();
+        guardadoOk = true;
+      } catch (err) {
+        console.error('Error al guardar progreso:', err);
+      }
 
       // próxima sesión: card con next_review más cercano
       const futuras = allCards
@@ -257,6 +266,9 @@
             <a href="index.html" class="btn-summary-sec">VOLVER AL INICIO</a>
             <a href="dashboard.html?materia=${materiaId}&tab=temas" class="btn-summary-pri">VER TEMAS</a>
           </div>
+          <p class="save-status" style="text-align:center;margin-top:1rem;font-size:.85rem;opacity:.75">
+            ${guardadoOk ? '✓ Progreso guardado' : '⚠ Error al guardar'}
+          </p>
         </div>`;
     }
 
@@ -302,7 +314,7 @@
         document.title = `Sesión ${materia.nombre} — StudyES`;
 
         // filtrar cards pendientes hoy
-        sessionCards = Plan.seleccionarHoy(allCards);
+        sessionCards = Plan.seleccionarHoy(allCards, materia.cards_por_dia);
 
         if (sessionCards.length === 0) {
           mostrarSinCards();
