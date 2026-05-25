@@ -570,5 +570,18 @@
       "repetitions": 0,
       "next_review": 0
     }
+  },
+  {
+    "id": "micro2_1779669209246",
+    "tema": "Equilibrio de Nash",
+    "frente": "Equilibrio de Nash Perfecto en Subjuegos",
+    "reverso": "Un equilibrio donde las decisiones son racionales en cada momento del juego, no solo al principio.\n\nO más simple:\nes un equilibrio en el que ningún jugador hace amenazas o promesas que después no cumpliría.",
+    "tags": [],
+    "srs": {
+      "easiness_factor": 2.5,
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": 0
+    }
   }
 ]
