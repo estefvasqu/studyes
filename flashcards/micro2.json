@@ -583,5 +583,18 @@
       "repetitions": 0,
       "next_review": 0
     }
+  },
+  {
+    "id": "micro2_1780148907318",
+    "tema": "Teoría de Juegos",
+    "frente": "Conjuntos de información",
+    "reverso": "**Si las decisiones son simultáneas**\n\nSupón que J1 elige entre A o B, y J2 también elige entre C o D.\n\nCuando J2 toma su decisión:\n- No sabe si J1 eligió A o B.\n- Por tanto, J2 no puede condicionar su acción a la elección de J1.\n\nEn el árbol extensivo, eso se representa uniendo los nodos de decisión de J2 mediante una línea punteada o conjunto de información.\n\n\n**Si las decisiones fueran secuenciales**\n\nSi J2 observa primero lo que hizo J1, entonces los nodos no se unen.\n\nAquí J2 sabe perfectamente dónde está:\n- Si J1 jugó A, está en el nodo izquierdo.\n- Si J1 jugó B, está en el nodo derecho.",
+    "tags": [],
+    "srs": {
+      "easiness_factor": 2.5,
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": 0
+    }
   }
 ]
