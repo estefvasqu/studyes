@@ -79,7 +79,14 @@
     {
       "id": "parciales",
       "nombre": "Parciales Viejos",
-      "ejercicios": []
+      "ejercicios": [
+        {
+          "id": "parciales_1780147268325",
+          "nombre": "Ejercicio 31: completar el inciso c.     Ejercicio 4: chequear si lo hice bien y como se escribe la conclusion",
+          "hecho": false,
+          "nota": "#2c2024"
+        }
+      ]
     }
   ]
 }
