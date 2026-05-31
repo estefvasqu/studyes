@@ -1,0 +1,40 @@
+{
+  "sesiones": [],
+  "racha_dias": 1,
+  "ultimo_acceso": "2026-05-31",
+  "prioridades_manuales": [],
+  "historial": [
+    {
+      "fecha": "2026-05-24",
+      "cards_estudiadas": 8,
+      "correctas": 0,
+      "incorrectas": 8,
+      "temas_practicados": [
+        "Modelos de Crecimiento",
+        "Subdesarrollo",
+        "Desarrollo Humano",
+        "Definición de Desarrollo Económico",
+        "Evolución del Concepto",
+        "Economía Tradicional vs del Desarrollo",
+        "Consenso de Washington",
+        "Desarrollo Sustentable"
+      ]
+    },
+    {
+      "fecha": "2026-05-31",
+      "cards_estudiadas": 8,
+      "correctas": 2,
+      "incorrectas": 6,
+      "temas_practicados": [
+        "Transición Demográfica",
+        "Mercados Poco Desarrollados",
+        "Migración Rural-Urbana",
+        "Países Grandes",
+        "IDH",
+        "Industrialización",
+        "Dimensiones del Desarrollo",
+        "Distribución del Poder"
+      ]
+    }
+  ]
+}
