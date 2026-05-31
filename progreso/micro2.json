@@ -1,7 +1,7 @@
 {
   "sesiones": [],
   "racha_dias": 1,
-  "ultimo_acceso": "2026-05-24",
+  "ultimo_acceso": "2026-05-31",
   "prioridades_manuales": [],
   "historial": [
     {
@@ -16,6 +16,23 @@
         "Forma Extensiva",
         "Conjuntos de Información",
         "Información Perfecta vs Imperfecta"
+      ]
+    },
+    {
+      "fecha": "2026-05-31",
+      "cards_estudiadas": 12,
+      "correctas": 10,
+      "incorrectas": 2,
+      "temas_practicados": [
+        "Subjuego",
+        "Modelo de Rubinstein",
+        "ENPS vs EN",
+        "Ultimátum",
+        "Doble Ultimátum",
+        "Stackelberg",
+        "ENPS",
+        "Backward Induction",
+        "Racionalidad Secuencial"
       ]
     }
   ]
