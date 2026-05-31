@@ -195,9 +195,9 @@
     ],
     "srs": {
       "interval": 1,
-      "easiness_factor": 2.5,
-      "repetitions": 0,
-      "next_review": 0
+      "easiness_factor": 2.6,
+      "repetitions": 1,
+      "next_review": "2026-06-01"
     }
   },
   {
