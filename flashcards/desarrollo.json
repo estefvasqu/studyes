@@ -10,7 +10,8 @@
       "easiness_factor": 1.96,
       "repetitions": 0,
       "next_review": "2026-05-25"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico"
   },
   {
     "id": "des_002",
@@ -23,7 +24,8 @@
       "easiness_factor": 1.96,
       "repetitions": 0,
       "next_review": "2026-05-25"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "des_003",
@@ -36,7 +38,8 @@
       "easiness_factor": 1.96,
       "repetitions": 0,
       "next_review": "2026-05-25"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_004",
@@ -53,7 +56,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-25"
-    }
+    },
+    "unidad": "U1 - Introducción al Desarrollo"
   },
   {
     "id": "desarrollo_005",
@@ -71,7 +75,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-25"
-    }
+    },
+    "unidad": "U1 - Introducción al Desarrollo"
   },
   {
     "id": "desarrollo_006",
@@ -88,7 +93,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-25"
-    }
+    },
+    "unidad": "U1 - Introducción al Desarrollo"
   },
   {
     "id": "desarrollo_007",
@@ -104,7 +110,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-25"
-    }
+    },
+    "unidad": "U1 - Introducción al Desarrollo"
   },
   {
     "id": "desarrollo_008",
@@ -120,7 +127,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-25"
-    }
+    },
+    "unidad": "U1 - Introducción al Desarrollo"
   },
   {
     "id": "desarrollo_009",
@@ -137,7 +145,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-06-01"
-    }
+    },
+    "unidad": "U1 - Introducción al Desarrollo"
   },
   {
     "id": "desarrollo_010",
@@ -154,7 +163,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-06-01"
-    }
+    },
+    "unidad": "U1 - Países en Desarrollo"
   },
   {
     "id": "desarrollo_011",
@@ -171,7 +181,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-06-01"
-    }
+    },
+    "unidad": "U1 - Países en Desarrollo"
   },
   {
     "id": "desarrollo_012",
@@ -188,7 +199,8 @@
       "interval": 1,
       "repetitions": 1,
       "next_review": "2026-06-01"
-    }
+    },
+    "unidad": "U1 - Países en Desarrollo"
   },
   {
     "id": "desarrollo_013",
@@ -204,7 +216,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-06-01"
-    }
+    },
+    "unidad": "U1 - Países en Desarrollo"
   },
   {
     "id": "desarrollo_014",
@@ -221,7 +234,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-06-01"
-    }
+    },
+    "unidad": "U1 - Países en Desarrollo"
   },
   {
     "id": "desarrollo_015",
@@ -238,7 +252,8 @@
       "interval": 1,
       "repetitions": 1,
       "next_review": "2026-06-01"
-    }
+    },
+    "unidad": "U1 - Países en Desarrollo"
   },
   {
     "id": "desarrollo_016",
@@ -255,7 +270,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-06-01"
-    }
+    },
+    "unidad": "U1 - Países en Desarrollo"
   },
   {
     "id": "desarrollo_017",
@@ -271,7 +287,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U1 - Países en Desarrollo"
   },
   {
     "id": "desarrollo_018",
@@ -288,7 +305,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U1 - Países en Desarrollo"
   },
   {
     "id": "desarrollo_019",
@@ -306,7 +324,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico"
   },
   {
     "id": "desarrollo_020",
@@ -323,7 +342,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico"
   },
   {
     "id": "desarrollo_021",
@@ -340,7 +360,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico"
   },
   {
     "id": "desarrollo_022",
@@ -357,7 +378,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico"
   },
   {
     "id": "desarrollo_023",
@@ -374,7 +396,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U1 - Países en Desarrollo"
   },
   {
     "id": "desarrollo_024",
@@ -391,7 +414,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico"
   },
   {
     "id": "desarrollo_025",
@@ -408,7 +432,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico"
   },
   {
     "id": "desarrollo_026",
@@ -425,7 +450,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico"
   },
   {
     "id": "desarrollo_027",
@@ -442,7 +468,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico"
   },
   {
     "id": "desarrollo_028",
@@ -459,7 +486,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico"
   },
   {
     "id": "desarrollo_029",
@@ -476,7 +504,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico"
   },
   {
     "id": "desarrollo_030",
@@ -493,7 +522,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico"
   },
   {
     "id": "desarrollo_031",
@@ -510,7 +540,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico (Argentina)"
   },
   {
     "id": "desarrollo_032",
@@ -527,7 +558,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico (Argentina)"
   },
   {
     "id": "desarrollo_033",
@@ -545,7 +577,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico (Argentina)"
   },
   {
     "id": "desarrollo_034",
@@ -562,7 +595,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_035",
@@ -579,7 +613,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_036",
@@ -596,7 +631,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_037",
@@ -613,7 +649,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_038",
@@ -630,7 +667,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_039",
@@ -647,7 +685,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_040",
@@ -665,7 +704,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_041",
@@ -682,7 +722,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_042",
@@ -699,7 +740,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_043",
@@ -716,7 +758,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_044",
@@ -733,7 +776,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_045",
@@ -749,7 +793,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_046",
@@ -762,11 +807,12 @@
       "comparación"
     ],
     "srs": {
-      "easiness_factor": 2.5,
+      "easiness_factor": 2.3600000000000003,
       "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-23"
-    }
+      "repetitions": 1,
+      "next_review": "2026-06-02"
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_047",
@@ -782,7 +828,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U1 - Introducción al Desarrollo"
   },
   {
     "id": "desarrollo_048",
@@ -799,7 +846,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_049",
@@ -816,7 +864,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_050",
@@ -833,7 +882,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_051",
@@ -850,7 +900,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_052",
@@ -868,7 +919,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_053",
@@ -886,7 +938,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_054",
@@ -904,7 +957,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_055",
@@ -921,7 +975,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_056",
@@ -938,7 +993,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_057",
@@ -955,7 +1011,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_058",
@@ -972,7 +1029,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_059",
@@ -989,7 +1047,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_060",
@@ -1006,7 +1065,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_061",
@@ -1023,7 +1083,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_062",
@@ -1041,7 +1102,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_063",
@@ -1059,7 +1121,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_064",
@@ -1076,7 +1139,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_065",
@@ -1094,7 +1158,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "N/A"
   },
   {
     "id": "desarrollo_066",
@@ -1112,7 +1177,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_067",
@@ -1130,7 +1196,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico"
   },
   {
     "id": "desarrollo_068",
@@ -1147,7 +1214,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "N/A"
   },
   {
     "id": "desarrollo_069",
@@ -1164,7 +1232,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "N/A"
   },
   {
     "id": "desarrollo_070",
@@ -1181,7 +1250,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "N/A"
   },
   {
     "id": "desarrollo_071",
@@ -1198,7 +1268,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "N/A"
   },
   {
     "id": "desarrollo_072",
@@ -1215,7 +1286,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "N/A"
   },
   {
     "id": "desarrollo_073",
@@ -1233,7 +1305,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "N/A"
   },
   {
     "id": "desarrollo_074",
@@ -1250,7 +1323,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "N/A"
   },
   {
     "id": "desarrollo_075",
@@ -1267,7 +1341,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_076",
@@ -1284,7 +1359,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "N/A"
   },
   {
     "id": "desarrollo_077",
@@ -1302,7 +1378,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "N/A"
   },
   {
     "id": "desarrollo_078",
@@ -1319,7 +1396,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "N/A"
   },
   {
     "id": "desarrollo_079",
@@ -1335,7 +1413,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "N/A"
   },
   {
     "id": "desarrollo_080",
@@ -1352,7 +1431,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico"
   },
   {
     "id": "desarrollo_081",
@@ -1369,7 +1449,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico"
   },
   {
     "id": "desarrollo_082",
@@ -1386,7 +1467,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_083",
@@ -1403,7 +1485,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_084",
@@ -1420,7 +1503,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_085",
@@ -1437,7 +1521,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_086",
@@ -1454,7 +1539,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "N/A"
   },
   {
     "id": "desarrollo_087",
@@ -1471,7 +1557,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_088",
@@ -1489,7 +1576,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_089",
@@ -1506,7 +1594,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
   },
   {
     "id": "desarrollo_090",
@@ -1523,7 +1612,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U3 - Desarrollo Humano"
   },
   {
     "id": "desarrollo_091",
@@ -1540,7 +1630,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "N/A"
   },
   {
     "id": "desarrollo_092",
@@ -1557,7 +1648,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "N/A"
   },
   {
     "id": "desarrollo_093",
@@ -1574,7 +1666,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "N/A"
   },
   {
     "id": "desarrollo_094",
@@ -1591,7 +1684,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "N/A"
   },
   {
     "id": "desarrollo_095",
@@ -1608,7 +1702,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
   },
   {
     "id": "desarrollo_096",
@@ -1625,7 +1720,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
   },
   {
     "id": "desarrollo_097",
@@ -1643,7 +1739,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
   },
   {
     "id": "desarrollo_098",
@@ -1660,7 +1757,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
   },
   {
     "id": "desarrollo_099",
@@ -1677,7 +1775,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
   },
   {
     "id": "desarrollo_100",
@@ -1693,7 +1792,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
   },
   {
     "id": "desarrollo_101",
@@ -1710,7 +1810,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
   },
   {
     "id": "desarrollo_102",
@@ -1727,7 +1828,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
   },
   {
     "id": "desarrollo_103",
@@ -1744,7 +1846,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
   },
   {
     "id": "desarrollo_104",
@@ -1760,7 +1863,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
   },
   {
     "id": "desarrollo_105",
@@ -1777,7 +1881,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
   },
   {
     "id": "desarrollo_106",
@@ -1794,7 +1899,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "N/A"
   },
   {
     "id": "desarrollo_107",
@@ -1811,7 +1917,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
   },
   {
     "id": "desarrollo_108",
@@ -1828,7 +1935,8 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
   },
   {
     "id": "desarrollo_109",
@@ -1845,6 +1953,566 @@
       "interval": 1,
       "repetitions": 0,
       "next_review": "2026-05-23"
-    }
+    },
+    "unidad": "U2 - Crecimiento Económico"
+  },
+  {
+    "id": "desarrollo_110",
+    "tema": "Tres Enfoques sobre Educación",
+    "frente": "¿Cuáles son los tres enfoques para analizar la relación entre educación y desarrollo? ¿Qué pregunta responde cada uno?",
+    "reverso": "• Capital Humano (HC): ¿qué pueden hacer las personas PARA LA ECONOMÍA? La educación aumenta productividad e ingresos.\n• Enfoque de Capacidades (CA - Sen): ¿qué pueden SER Y HACER las personas para sí mismas? La educación expande libertades reales.\n• Enfoque de Derechos: ¿qué está obligado a garantizar el Estado? La educación es un derecho exigible, independientemente de si es rentable.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_111",
+    "tema": "HC vs CA - Distinción Filosófica",
+    "frente": "¿Cuál es la diferencia filosófica central entre el Capital Humano y el Enfoque de Capacidades según Unterhalter?",
+    "reverso": "• HC: se pregunta qué pueden hacer las personas PARA LA ECONOMÍA. Las personas son objetivos pasivos de inversión: se les invierte, se les forma, se espera retorno.\n• CA: se pregunta qué pueden SER Y HACER las personas para sí mismas, para llevar una vida que tengan razones para valorar.\n• HC no distingue entre quien no va a la universidad por elección informada y quien no va por falta de recursos: el CA sí.\n• El HC excluye a quienes no producen (ancianos, discapacitados); el CA incluye a todos porque evalúa libertades, no productividad.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U3 - Desarrollo Humano"
+  },
+  {
+    "id": "desarrollo_112",
+    "tema": "Becker - Capital Humano",
+    "frente": "¿Qué es la teoría del Capital Humano y quiénes son sus autores fundacionales? ¿Por qué justifica la intervención estatal?",
+    "reverso": "• El HC emerge en los años 60: la educación es una inversión que genera un 'stock' de habilidades que aumenta productividad futura, análoga al capital físico.\n• Gary Becker (1964): formalizó que la decisión de estudiar puede modelarse como una inversión (costos presentes vs. beneficios futuros en salarios). Calculó tasas de retorno por nivel educativo.\n• Theodore Schultz: extendió el análisis comparando retornos según nivel de ingreso del país, patrones salariales y actitudes culturales.\n• Justificación estatal: las aspiraciones individuales y los objetivos de crecimiento económico se alinean a través de la educación; el Estado invierte porque le conviene económicamente.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_113",
+    "tema": "Competencias vs Capacidades",
+    "frente": "¿Qué son las competencias (HC) y las capacidades (CA)? Dá un ejemplo que muestre la diferencia operativa.",
+    "reverso": "• Competencias (HC): habilidades funcionales orientadas a resolver problemas definidos DESDE AFUERA por el mercado laboral. El criterio de éxito es externo: ¿resuelve el problema que el sistema demanda?\n• Capacidades (CA): libertades para elegir qué hacer y quién ser, orientadas DESDE ADENTRO por los propios valores del individuo. El criterio de éxito es interno: ¿puede esta persona elegir libremente su estilo de vida?\n• Ejemplo: enseñar a programar para conseguir empleo en el sector tech → competencia. Enseñar a programar porque la persona valora la autonomía tecnológica y quiere entender el mundo digital → capacidad.\n• El resultado puede ser el mismo, pero el fundamento normativo es completamente distinto y tiene consecuencias para el diseño de políticas.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_114",
+    "tema": "Preferencias Adaptativas en Educación",
+    "frente": "¿Qué son las preferencias adaptativas y por qué son un problema para el diseño de políticas educativas?",
+    "reverso": "• Las preferencias adaptativas ocurren cuando personas en situación de privación ajustan sus aspiraciones a lo que perciben como posible, no a lo que genuinamente valoran.\n• Ejemplo: un niño pobre que aspira solo a terminar la primaria no expresa una preferencia auténtica, sino adaptada a la restricción de su contexto.\n• Problema de política: si se usan estas preferencias para decidir inversión educativa, se concluiría que los pobres 'no valoran' la educación superior, legitimando no invertir en ella.\n• El CA rechaza esa inferencia: las preferencias adaptativas NO son preferencias genuinas y no deben usarse como criterio normativo.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_115",
+    "tema": "Cinco Roles del CA en Educación",
+    "frente": "¿Cuáles son los cinco roles del Enfoque de Capacidades aplicados a la educación?",
+    "reverso": "1. Superación de desigualdades: la educación puede romper ciclos de exclusión, pero solo si se atiende la calidad y no solo la cobertura.\n2. Democracia y deliberación: la educación forma ciudadanos capaces de participar en decisiones colectivas (rol sin precio de mercado).\n3. Razonamiento crítico sobre la propia vida: habilita la autonomía reflexiva, a diferencia del HC que solo requiere acumular habilidades útiles.\n4. El proceso importa tanto como el contenido (Nussbaum): una pedagogía autoritaria puede transmitir conocimientos técnicos pero destruir capacidades de agencia.\n5. Factores de conversión: los recursos educativos no se traducen automáticamente en capacidades; dependen de factores internos (cómo internaliza el aprendizaje) y externos (calidad docente, infraestructura).",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_116",
+    "tema": "Tres Etapas del Sistema Educativo",
+    "frente": "Explicá las tres etapas del sistema educativo (acceso, trayectoria, resultados) y cómo las evalúa cada enfoque.",
+    "reverso": "• Acceso: ¿los estudiantes están dentro del sistema? Indicadores: escolarización, asistencia escolar.\n• Trayectoria: ¿cómo transitan una vez dentro? Indicadores: repitencia, abandono, reingreso, sobreedad, promoción.\n• Resultados: ¿qué se aprende efectivamente? Indicadores: pruebas estandarizadas, acceso al empleo.\n• Cómo evalúa cada enfoque:\n  - HC: se concentra en los RESULTADOS (retornos al ingreso).\n  - Enfoque de Derechos: históricamente se concentra en el ACCESO.\n  - CA: exige mirar las TRES ETAPAS simultáneamente y los factores de conversión que operan en cada una.\n• Argentina: escolarización primaria casi universal (acceso alto), pero resultados en pruebas preocupantes y abandono significativo en secundaria.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_117",
+    "tema": "Curva de Heckman",
+    "frente": "Explicá la Curva de Heckman: ¿qué muestra, qué mecanismos la explican y qué implica para la política pública?",
+    "reverso": "• La curva muestra que la tasa de retorno de la inversión en capital humano es DECRECIENTE con la edad: máxima en la primera infancia (0-3 años), luego preescolar, luego escuela K-12, mínima en capacitación laboral adulta.\n• Mecanismo 1 — Self-productivity: habilidades adquiridas temprano potencian la adquisición de habilidades futuras.\n• Mecanismo 2 — Dynamic complementarity: las habilidades previas aumentan la productividad de las inversiones educativas posteriores (efecto multiplicador).\n• Implicancias de política: sistemas que concentran el gasto en educación superior invierten en el momento de menor retorno; hay que redirigir recursos hacia jardines, estimulación temprana y salud materno-infantil.\n• Riesgo ético: quienes no recibieron inversión temprana quedan en desventaja persistente → la infancia es irreemplazable por la concentración de ventanas críticas y sensibles.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_118",
+    "tema": "Ventanas Críticas y Sensibles",
+    "frente": "¿Qué son las ventanas críticas y sensibles en el desarrollo infantil y por qué son relevantes para la política educativa?",
+    "reverso": "• Ventanas críticas: períodos en los que determinadas habilidades SOLO pueden adquirirse en ese momento. Si no se aprovechan, la habilidad se pierde definitivamente. Ejemplo: adquisición de fonemas de ciertos idiomas en los primeros meses de vida.\n• Ventanas sensibles: períodos en los que una habilidad se adquiere con mucha mayor facilidad. Si no se aprovechan, la adquisición posterior requiere mucha más inversión. Ejemplo: aprender un idioma de adulto es posible pero mucho más costoso.\n• La infancia concentra la mayor cantidad de ventanas críticas y sensibles.\n• Implicancia: la inversión temprana no solo tiene retorno propio, sino que amplifica el retorno de todas las inversiones educativas posteriores. Perderse la etapa temprana no es solo 'perder esa etapa', sino perder el multiplicador de todo lo que sigue.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_119",
+    "tema": "Enfoque de Derechos Humanos",
+    "frente": "Explicá el esquema de las 4-A de Tomasevsky y cuál es la crítica del Enfoque de Capacidades al Enfoque de Derechos.",
+    "reverso": "• Las 4-A:\n  1. Asequibilidad: que exista educación (gratuita, obligatoria, diversidad cultural).\n  2. Accesibilidad: que sea realmente accesible; obligatoria y gratuita; niveles superiores sin excluir por ingresos.\n  3. Aceptabilidad: educación de calidad y respetuosa (docentes capacitados, contenidos adecuados, sin violencia, respeto cultural).\n  4. Adaptabilidad: el sistema debe adaptarse a los estudiantes, no al revés.\n• Crítica del CA (Tikly y Barret, 2011): el enfoque de derechos se concentra en el ACCESO y descuida la trayectoria y los resultados. Se construyen escuelas, se matriculan niños, pero la experiencia educativa puede ser de muy baja calidad. Una educación que no expande capacidades reales no cumple su función, aunque formalmente exista.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U3 - Desarrollo Humano"
+  },
+  {
+    "id": "desarrollo_120",
+    "tema": "Educación y Reproducción de Desigualdad",
+    "frente": "¿Cómo puede la educación reproducir la desigualdad en lugar de reducirla? Incluí la trampa estructural.",
+    "reverso": "• Aunque los diferenciales de ingreso entre niveles educativos son altos, quienes llegan a esos niveles son desproporcionadamente de estratos medios y altos.\n• Barreras para los pobres: costos directos (aranceles, materiales), costo de oportunidad del trabajo infantil (proporcionalmente mayor para familias pobres), impacto cognitivo de la malnutrición, credencialismo creciente.\n• Trampa estructural: la selección en el sistema educativo opera por ingreso familiar, no por mérito. El Estado financia universidades con impuestos de todos (incluidos los pobres) → transferencia regresiva.\n• La educación deja de ser ascensor social y se convierte en mecanismo de reproducción de la desigualdad.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_121",
+    "tema": "Credencialismo",
+    "frente": "¿Qué es el credencialismo y cómo genera una espiral disfuncional en la relación entre educación y empleo?",
+    "reverso": "• Credencialismo: el diploma deja de certificar habilidades reales y se convierte en barrera de entrada arbitraria; ya no certifica productividad, sino que filtra candidatos en un mercado saturado.\n• La espiral disfuncional:\n  1. Empeora el mercado laboral → más personas demandan educación como señal diferenciadora.\n  2. El Estado provee más vacantes → la oferta de graduados supera la demanda laboral.\n  3. Desempleo profesional aumenta → graduados aceptan empleos para los que están sobrecalificados.\n  4. Los empleadores exigen más credenciales incluso para puestos simples → quienes no tienen esas credenciales quedan excluidos.\n  5. Quienes no consiguen trabajo permanecen más tiempo en el sistema educativo → aumentan los costos.\n• Conclusión: el beneficio social de toda esa expansión educativa es menor que la suma de los beneficios privados individuales (externalidad negativa).",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_122",
+    "tema": "Demanda Educativa - 5 Factores",
+    "frente": "Explicá los cinco factores que determinan la demanda individual de educación en países en desarrollo.",
+    "reverso": "1. Diferencial de ingresos entre sector moderno y tradicional: cuanto mayor la brecha salarial, mayor el incentivo a educarse (lógica HC).\n2. Probabilidad de conseguir empleo en el sector formal: no alcanza con tener el título; importa la probabilidad efectiva de insertarse. El desempleo entre profesionales reduce el retorno esperado.\n3. Costos privados directos: aranceles, materiales, transporte. A mayor costo, menor demanda. Para familias pobres esto puede ser excluyente.\n4. Costo de oportunidad indirecto: cada año adicional de educación implica renunciar al ingreso que el hijo podría generar. Para familias pobres este costo es altísimo y explica la deserción en la adolescencia.\n5. Factores no económicos: tradiciones culturales, estatus social (educación como símbolo), educación de los padres, tamaño de la familia.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_123",
+    "tema": "Curva del Gran Gatsby",
+    "frente": "¿Qué explica la Curva Gran Gatsby y qué factores, más allá de la educación, limitan la movilidad social intergeneracional?",
+    "reverso": "• La Curva Gran Gatsby muestra que a mayor desigualdad de ingresos (Gini alto), menor movilidad social intergeneracional: el origen socioeconómico pesa más sobre el destino.\n• Modelo de Becker y Tomes: la movilidad depende de tres canales: transmisión genética y de crianza, inversión en capital humano, y herencia.\n• Factores que limitan la movilidad más allá de la educación:\n  1. Capital social transmitido: las redes de contactos de los padres predicen fuertemente la movilidad ascendente.\n  2. Emparejamiento selectivo (homogamia): matrimonios entre pares del mismo nivel concentran recursos; familias ricas tienen menos hijos e invierten más en cada uno.\n  3. Segregación geográfica: alta correlación entre lugar de residencia y nivel socioeconómico; bienes públicos de menor calidad en zonas pobres.\n  4. Discriminación: barreras no formales en mercados de trabajo y vivienda.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
+  },
+  {
+    "id": "desarrollo_124",
+    "tema": "CA - Tres Implicancias para Educación",
+    "frente": "¿Cuáles son las tres implicancias del Enfoque de Capacidades para la educación y el desarrollo humano?",
+    "reverso": "1. Aspectos distributivos: la desigualdad educativa opera en los tres niveles (acceso, trayectoria, resultados) y se acumula. Con la misma experiencia educativa, algunas personas consiguen mejores resultados que otras, porque los factores de conversión (contexto familiar, autoestima, calidad docente) son desiguales.\n2. Valores sustantivos y contenido: la educación es simultáneamente MEDIO y FIN del desarrollo. No solo transfiere información: desarrolla la capacidad de razonar críticamente sobre la propia situación vital. No existe educación neutral: siempre hay valores incorporados en qué, cómo y a quién se enseña.\n3. Ciudadanía democrática: la educación refuerza capacidades cívicas (participar, deliberar), expande la agencia y genera reflexividad. Los procesos pedagógicos deben ser dialógicos, no transmisión unidireccional. Las diferencias entre personas sirven para aprender pero son moralmente irrelevantes.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_125",
+    "tema": "Beneficio Social vs Privado",
+    "frente": "¿Cuáles son los costos y beneficios sociales de la educación? ¿Por qué el beneficio social puede ser menor que la suma de los beneficios privados?",
+    "reverso": "• Costos sociales: no es solo lo que gasta el Estado, sino el costo de oportunidad social: recursos que podrían haberse usado de manera más productiva en otros sectores (infraestructura, salud primaria).\n• Costos privados: aranceles, materiales, costo de oportunidad del tiempo (ingreso sacrificado).\n• Beneficios sociales (Hopenhayn, CEPAL 2003): difusión de valores democráticos y éticos, formación de ciudadanía moderna, capacidades para la competitividad basada en progreso técnico. Tienen valor social intrínseco más allá del mercado laboral.\n• Por qué el beneficio social puede ser MENOR que la suma de privados: el credencialismo. Lo que conviene a cada individuo (educarse más para diferenciarse) no conviene al conjunto porque la expansión educativa genera diplomas inflados, desempleo calificado y sobrecalificación. Externalidad negativa de la sobreexpansión.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_126",
+    "tema": "Cambio Estructural - Causas",
+    "frente": "¿Qué es el cambio estructural y por qué importa para el desarrollo? ¿Qué fuerzas lo impulsan?",
+    "reverso": "• El cambio estructural es el proceso de transformación profunda de la estructura interna de producción de un país para lograr crecimiento sostenido: pasar de agricultura de subsistencia a industria y servicios.\n• Importa porque cada sector tiene un contenido factorial distinto (usa trabajo calificado, no calificado y capital en distintas proporciones). Cualquier cambio en el peso relativo de los sectores tiene efectos distributivos: afecta quién gana más y quién gana menos.\n• Fuerzas que lo impulsan:\n  - Fuerzas de mercado: cambios en precios internacionales, modernización, expansión económica diferencial.\n  - Intervenciones de política: subsidios, regímenes impositivos especiales, facilidades de financiamiento, apoyo a exportaciones.\n• La distinción importa porque tiene implicancias para la política: el Estado puede dejar correr las fuerzas de mercado o promover activamente un patrón de cambio con consecuencias distributivas deliberadas.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U2 - Crecimiento Económico"
+  },
+  {
+    "id": "desarrollo_127",
+    "tema": "Lewis - Mecanismo de Crecimiento",
+    "frente": "Explicá el modelo de Lewis: supuestos, mecanismo de crecimiento autosostenido y punto de llegada.",
+    "reverso": "• Punto de partida: dos sectores. Rural tradicional: superpoblado, producto marginal nulo, salario = producto medio de subsistencia. Moderno urbano: alta productividad, salarios ~30% superiores.\n• Oferta de trabajo: perfectamente elástica al nivel del salario de subsistencia + diferencial. Las empresas modernas pueden contratar sin subir el salario mientras haya excedente rural.\n• Mecanismo autosostenido: empresas contratan hasta PMgL = salario → obtienen ganancias → las reinvierten → más capital → se desplaza la demanda de trabajo a la derecha → absorben más trabajadores del campo → nuevas ganancias → el ciclo se repite.\n• Punto de llegada: cuando se agota el excedente rural, el trabajador adicional que migra representa pérdida real de producción agrícola → la oferta deja de ser perfectamente elástica → el cambio estructural se completó.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U3 - Desarrollo Humano"
+  },
+  {
+    "id": "desarrollo_128",
+    "tema": "Lewis - Críticas",
+    "frente": "¿Cuáles son las principales críticas al modelo de Lewis?",
+    "reverso": "1. La reinversión del capital puede destinarse a tecnología que reemplaza trabajadores en lugar de ampliar el empleo.\n2. El capital puede invertirse en el exterior, frenando el crecimiento del sector moderno nacional.\n3. En muchos países en desarrollo actuales el desempleo se concentra en las CIUDADES, no en el campo, contradiciendo el supuesto de Lewis.\n4. Los salarios del sector moderno no permanecen constantes: los sindicatos, las leyes laborales y las presiones sociales los elevan antes de que se agote el excedente rural.\n5. El modelo ignora barreras educativas, financieras, culturales y sociales que dificultan el traslado de trabajadores rurales al sector moderno.\n6. Trata a la economía como un bloque homogéneo, ignorando que agricultura, industria y servicios tienen dinámicas muy distintas.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U3 - Desarrollo Humano"
+  },
+  {
+    "id": "desarrollo_129",
+    "tema": "Kuznets vs Desarrollo Dual",
+    "frente": "Compará la hipótesis de Kuznets con la tesis del desarrollo dual respecto al vínculo entre crecimiento y desigualdad.",
+    "reverso": "• Kuznets: la desigualdad tiene forma de U invertida. Al inicio del desarrollo el sector moderno concentra ganancias (desigualdad sube). Con el tiempo más trabajadores migran, los salarios rurales suben por menor oferta laboral, y la desigualdad baja. El 'efecto derrame' y las políticas públicas aceleran la caída. Implicancia: la desigualdad es un costo temporal, no requiere intervención inmediata.\n• Desarrollo dual: la coexistencia de sectores modernos y atrasados NO es transitoria sino estructural y persistente. La concentración tiende a reproducirse: el poder económico y político se acumula en los sectores dominantes. El efecto derrame puede simplemente no ocurrir.\n• Diferencia clave: Kuznets ve la desigualdad como autolimitante; el desarrollo dual dice que sin intervención la dualidad se perpetúa y la desigualdad no cae automáticamente.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U3 - Desarrollo Humano"
+  },
+  {
+    "id": "desarrollo_130",
+    "tema": "PEA y PNEA - INDEC",
+    "frente": "¿Cómo clasifica el INDEC a la población según su condición de actividad? Describí la PEA, la PNEA y sus subcategorías.",
+    "reverso": "• PEA (Población Económicamente Activa): quienes tienen trabajo O buscan activamente. Incluye:\n  - Ocupados plenos (35-45 hs semanales)\n  - Subocupados (menos de 35 hs, quieren más): demandantes (buscan otro trabajo) y no demandantes.\n  - Sobreocupados (más de 45 hs)\n  - Desocupados abiertos: sin trabajo + buscan activamente + disponibles para trabajar.\n• PNEA (No Económicamente Activa): no trabajan ni buscan. Incluye:\n  - Inactivos típicos: jubilados, estudiantes, amas de casa.\n  - Inactivos marginales o desalentados: no buscan porque creen que no encontrarán, pero estarían disponibles. Representan desempleo oculto; cuando la economía mejora vuelven a la PEA.\n• El criterio de 'una hora' para la ocupación busca captar informalidad y mantener comparabilidad internacional.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_131",
+    "tema": "Tasas del Mercado Laboral",
+    "frente": "¿Qué miden la tasa de empleo, la tasa de desocupación y la tasa de dependencia económica? ¿Por qué no alcanza con mirar solo el desempleo?",
+    "reverso": "• Tasa de empleo = Ocupados / Población total → qué proporción de TODA la población trabaja (incluye niños, jubilados, inactivos).\n• Tasa de desocupación = Desocupados / PEA → cuántas personas dentro del mercado laboral no consiguen empleo. Siempre mayor que la tasa de desempleo (Desocupados/Población total) porque la PEA es menor.\n• Tasa de dependencia económica = Inactivos / PEA → cuántas personas fuera del mercado dependen de quienes están activos. Una tasa alta implica mayor presión sobre trabajadores y sistemas previsionales.\n• Por qué no alcanza con el desempleo: oculta subocupación, informalidad, sobreocupación e inactividad desalentada. El mercado tiene múltiples dimensiones de calidad que un solo indicador no captura.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_132",
+    "tema": "Niveles de Calificación",
+    "frente": "¿Qué es la calificación ocupacional y por qué pertenece al puesto y no a la persona? Describí los cuatro niveles.",
+    "reverso": "• La calificación ocupacional mide la complejidad objetiva del puesto de trabajo. Pertenece al puesto, NO a la persona: no importa cuántos títulos tenga alguien, sino qué conocimientos exige efectivamente la tarea.\n• Cuatro niveles:\n  1. Profesional: mayor complejidad, requiere conocimientos teóricos amplios, formación especializada, tareas diversas y cambiantes. Ejemplos: médicos, ingenieros, economistas.\n  2. Técnica: complejidad intermedia-alta, combina habilidades prácticas y conocimientos específicos. Ejemplos: técnicos, enfermeros, programadores medios.\n  3. Operativa: requiere habilidades manuales, experiencia, cierta capacitación. Ejemplos: operarios calificados, choferes, administrativos especializados.\n  4. No calificada: tareas simples, poca diversidad, escasa capacitación previa. Ejemplos: limpieza, carga y descarga, trabajo rural temporario.\n• Esta clasificación es clave para analizar desigualdades salariales y el impacto del cambio estructural.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_133",
+    "tema": "Problemas Estructurales del Empleo",
+    "frente": "Describí los cuatro problemas estructurales del empleo en países en desarrollo: desempleo educado, autoempleo, empleo femenino y empleo juvenil.",
+    "reverso": "• Desempleo educado: los menos educados no figuran como desempleados porque no pueden esperar y aceptan empleos informales precarios. Los más educados sí pueden esperar empleo acorde a su formación, por eso aparecen como desocupados. La economía no genera suficientes empleos calificados.\n• Autoempleo: en países en desarrollo es estrategia de supervivencia, no emprendimiento. Surge cuando el sector formal no crea empleos suficientes. Representa subocupación encubierta.\n• Empleo femenino: brecha salarial de género, menores oportunidades de ascenso, mayor precariedad. 'Child penalty': tras el primer hijo el empleo femenino cae ~40% en América del Sur y persiste 10 años.\n• Empleo juvenil: falta de experiencia + cohortes muy numerosas. Los 'nini' son el 18,6% de jóvenes en ALC (26,1% mujeres). Consecuencias: pérdida de habilidades, exclusión social, trayectorias laborales débiles.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_134",
+    "tema": "Categorías Ocupacionales INDEC",
+    "frente": "¿Cuáles son las cinco categorías ocupacionales del INDEC y qué caracteriza a cada una?",
+    "reverso": "1. Asalariados: trabajan en relación de dependencia, reciben salario, bajo condiciones definidas por un empleador. Incluye trabajadores externos o a domicilio si dependen de un solo establecimiento.\n2. Patrones: dueños o socios activos que organizan el proceso productivo y emplean AL MENOS UN asalariado (ese es el criterio clave).\n3. Trabajadores por cuenta propia: trabajan de forma independiente, sin empleados, con sus propios medios. Caso relevante: dependencia encubierta (un solo cliente).\n4. Trabajadores familiares sin salario: trabajan en emprendimientos familiares sin remuneración monetaria ni en especie. Frecuente en comercios familiares y explotaciones agropecuarias.\n5. Empleo doméstico: tiene características asalariadas pero el empleador es un hogar, no una empresa. Se analiza por separado por sus particularidades en registración, derechos laborales y sindicalización.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_135",
+    "tema": "Marx vs Weber",
+    "frente": "Explicá las contribuciones de Marx y Weber al análisis de la clase social y cómo se complementan en los esquemas empíricos modernos.",
+    "reverso": "• Marx: la clase se define por la relación con los medios de producción. Burguesía (propietaria) vs. proletariado (vende fuerza de trabajo). El mecanismo central es la plusvalía: los trabajadores producen más valor del que reciben como salario. La desigualdad es estructural al capitalismo.\n• Weber: estratificación multidimensional en tres órdenes:\n  1. Económico → Clase (posición de mercado, habilidades, educación)\n  2. Social → Estatus (prestigio, honor, reconocimiento)\n  3. Político → Poder (partidos, organizaciones)\n• Diferencia: Marx reduce la desigualdad a propiedad del capital; Weber incluye educación, redes y poder político como fuentes independientes.\n• Complementariedad en esquemas modernos: Goldthorpe (neo-weberiano) combina autonomía laboral, tipo de contrato y posición en la organización. Wright (neo-marxista) agrega calificaciones y bienes de organización como activos productivos. Sautú para Argentina usa capital y autoridad en clases medias, y calificación en clase trabajadora.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
+  },
+  {
+    "id": "desarrollo_136",
+    "tema": "Posiciones Contradictorias de Clase",
+    "frente": "¿Qué son las 'posiciones contradictorias de clase' según Wright y por qué son importantes?",
+    "reverso": "• Wright (neo-marxista) amplía Marx: la clase depende del control desigual de tres tipos de activos productivos: medios de producción, calificaciones y bienes de organización (autoridad).\n• Posiciones contradictorias: entre burguesía y proletariado existen posiciones donde una persona puede ser simultáneamente explotada Y explotadora.\n• Ejemplos:\n  - Gerente asalariado: es subordinado del capital, pero dirige y controla a trabajadores → explota y es explotado.\n  - Trabajador altamente calificado: no posee medios de producción, pero obtiene ventajas gracias al monopolio de sus habilidades → es explotado pero también explota.\n• Importancia: permite capturar la complejidad de las clases medias en el capitalismo moderno, que Marx simplificaba en solo dos clases. Explica por qué las identidades de clase son más complejas que la dicotomía propietarios/trabajadores.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U4 - Pobreza y Desigualdad"
+  },
+  {
+    "id": "desarrollo_137",
+    "tema": "Movilidad Ocupacional",
+    "frente": "¿Qué muestra la evidencia sobre movilidad ocupacional en Argentina en las dimensiones de calificación, formalidad, cuentapropismo y jerarquía?",
+    "reverso": "• Calificación: ~80% de hijos de padres con empleos no calificados termina en empleos no calificados. Solo 8,7% de hijos de padres no calificados acceden a puestos profesionales. Fuerte reproducción de desigualdad.\n• Formalidad: padres formales → 84,5% de hijos varones formales; padres informales → 74,2%. Brecha mayor en mujeres (73,7% vs. 50,2%). La informalidad se hereda junto con la vulnerabilidad que implica.\n• Cuentapropismo: padres cuentapropistas → 27,9% de hijos varones también cuentapropistas; vs. 18,1% de hijos de asalariados. El autoempleo de subsistencia también se reproduce.\n• Jerarquía: padres con jerarquía → 27,9% de hijos con jerarquía; padres sin jerarquía → 13,7%.\n• Conclusión: el mercado laboral NO es puramente meritocrático. El origen social condiciona fuertemente las trayectorias, y las mujeres enfrentan barreras adicionales en todas las dimensiones.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_138",
+    "tema": "Funciones del Trabajo - CA",
+    "frente": "¿Cuáles son las múltiples funciones del trabajo según el Enfoque de Capacidades? ¿Por qué va más allá de la función económica?",
+    "reverso": "• El trabajo no es solo fuente de ingresos; tiene valor intrínseco para el bienestar humano.\n• Seis funciones:\n  1. Económica: subsistencia del hogar, principal mecanismo para satisfacer necesidades básicas.\n  2. Psicológica: genera autoestima, satisfacción personal y sentido de logro. El desempleo afecta el bienestar emocional, no solo el ingreso.\n  3. Social: favorece la interacción, las redes y el sentido de pertenencia. El espacio laboral es ámbito de integración social.\n  4. Desarrollo personal: permite adquirir habilidades y acumular capital humano. Espacio de aprendizaje continuo.\n  5. Identitaria: la ocupación forma parte de la identidad social. Influye en el reconocimiento y el estatus.\n  6. Sanitaria: impacta en la salud física y mental. Puede generar bienestar o deterioro según las condiciones laborales.\n• Implicancia: el análisis del mercado laboral debe evaluar también calidad del empleo, condiciones, informalidad y precariedad, no solo cantidad de empleos.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "N/A"
+  },
+  {
+    "id": "desarrollo_139",
+    "tema": "Estructura Productiva",
+    "frente": "¿Cómo se relacionan estructura productiva, contenido factorial y distribución del ingreso? Usá el ejemplo de dos sectores.",
+    "reverso": "• La estructura productiva determina QUÉ sectores producen los bienes y servicios de un país y en qué proporción.\n• Cada sector tiene un contenido factorial distinto: usa trabajo calificado, no calificado y capital en proporciones diferentes.\n• Ejemplo:\n  - Sector A: intensivo en trabajo calificado.\n  - Sector B: intensivo en trabajo no calificado.\n  - Si el Sector A se expande y el Sector B se contrae → cae la demanda de trabajo no calificado → los salarios relativos de los no calificados bajan → en el corto plazo puede generarse desempleo entre ellos (el Sector B los despide y el Sector A no los absorbe porque no tienen el perfil).\n• Conclusión: cualquier cambio en el peso relativo de los sectores tiene efectos distributivos directos. El desarrollo económico no es distributivamente neutro: depende de qué sectores crecen y qué factores usan esos sectores.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U2 - Crecimiento Económico"
+  },
+  {
+    "id": "desarrollo_140",
+    "tema": "Qué son las Instituciones",
+    "frente": "¿Qué son las instituciones según North y cuáles son sus tres tipos? ¿Por qué reducen incertidumbre?",
+    "reverso": "• North define las instituciones como 'las reglas del juego en una sociedad: restricciones creadas por los seres humanos que estructuran la interacción humana'.\n• Tres tipos:\n  1. Formales: leyes, constituciones, derechos de propiedad, sistema judicial, contratos legales. Escritas, respaldadas por autoridad legal.\n  2. Informales: costumbres, normas sociales, valores culturales, tradiciones, reputación. No requieren coerción estatal; la sanción es social y reputacional.\n  3. Mecanismos de enforcement: personal (confianza interpersonal), cultural/moral (vergüenza social, ética) y de terceros (Estado, tribunales).\n• Reducen incertidumbre porque crean un marco previsible de interacción. Sin instituciones sólidas nadie puede planificar, invertir ni cooperar con desconocidos → caen inversión, ahorro, crédito e innovación.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
+  },
+  {
+    "id": "desarrollo_141",
+    "tema": "Coase - Costos de Transacción",
+    "frente": "¿Qué son los costos de transacción (Coase y North) y cuáles son sus tres categorías? ¿Cómo se vinculan con el desarrollo?",
+    "reverso": "• Costos de transacción: todos los costos asociados a realizar un intercambio económico más allá del costo físico de producir. No es el costo de fabricar algo, sino el costo de organizar el intercambio.\n• Tres categorías:\n  1. Búsqueda e información: obtener información relevante, identificar socios comerciales, verificar calidad, conocer precios. Ejemplo: un pequeño productor sin acceso a precios internacionales queda a merced de intermediarios.\n  2. Negociación y toma de decisiones: llegar a acuerdos, coordinar expectativas, redactar contratos. En instituciones débiles, la desconfianza multiplica estos costos hasta que muchas transacciones directamente no ocurren.\n  3. Monitoreo y cumplimiento (enforcement): verificar que las partes cumplan, auditar, litigar, sancionar. Si la justicia es lenta o corrupta, el enforcement se vuelve extremadamente caro.\n• Vínculo con desarrollo: instituciones que reducen estos costos aumentan el intercambio, la especialización, la inversión y la productividad.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
+  },
+  {
+    "id": "desarrollo_142",
+    "tema": "Inercia Institucional",
+    "frente": "¿Qué es el path dependency (dependencia de trayectoria) y por qué persisten instituciones ineficientes?",
+    "reverso": "• Path dependency: el pasado condiciona el futuro. Las instituciones actuales reflejan decisiones históricas que crearon organizaciones, intereses y estructuras de poder adaptadas a esas reglas.\n• Por qué persisten instituciones ineficientes:\n  - Las organizaciones adaptan sus capacidades al sistema vigente e invierten recursos en aprender ese sistema → resisten cambios que amenacen sus ventajas.\n  - Quienes tienen poder para cambiar las instituciones son frecuentemente quienes más se benefician de ellas.\n  - North: 'Si la matriz institucional premia la piratería, surgirán organizaciones piratas'.\n• No significa determinismo: el cambio es posible bajo tres condiciones:\n  1. Alineamiento de intereses: las élites perciben que instituciones más inclusivas les benefician a largo plazo.\n  2. Presión externa: acuerdos internacionales que fuerzan reformas.\n  3. Amenaza de conflicto social: la presión popular hace que las élites acepten reformas.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
+  },
+  {
+    "id": "desarrollo_143",
+    "tema": "Niveles Institucionales de Williamson",
+    "frente": "¿Cuáles son los cuatro niveles institucionales de Williamson y cuánto tarda en cambiar cada uno? ¿Qué crítica implica para las políticas de ajuste?",
+    "reverso": "• Nivel 1 — Instituciones informales profundas (100 a 1000 años): cultura, tradiciones, religión, valores, normas sociales. Las más persistentes; se transmiten entre generaciones y condicionan todos los niveles superiores. No se cambian 'por decreto'.\n• Nivel 2 — Reglas formales del juego (10 a 100 años): constituciones, sistema judicial, burocracia, derechos de propiedad, estructura del Estado. Modificables pero requieren largos procesos históricos y políticos.\n• Nivel 3 — Gobernanza y contratos (1 a 10 años): regulación sectorial, estructuras organizacionales, mecanismos de coordinación. Más flexibles.\n• Nivel 4 — Asignación de recursos (continuo): precios, salarios, subsidios, impuestos, tasas de interés. El nivel de la política económica cotidiana.\n• Crítica: los programas de ajuste solo modifican el nivel 4 (precios, gasto) sin transformar burocracias débiles, sistemas judiciales ineficientes o culturas políticas clientelares → las reformas superficiales chocan contra restricciones institucionales profundas.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
+  },
+  {
+    "id": "desarrollo_144",
+    "tema": "Instituciones y Organizaciones - North",
+    "frente": "¿Cómo distingue North entre instituciones y organizaciones? ¿Cuál es la dinámica entre ambas?",
+    "reverso": "• Instituciones = las REGLAS DEL JUEGO. Estructuran incentivos, delimitan comportamientos, generan previsibilidad. No tienen agencia propia; no 'actúan'.\n• Organizaciones = los JUGADORES. Sí tienen agencia: empresas, sindicatos, partidos políticos, asociaciones empresariales, burocracias estatales.\n• Dinámica central de North:\n  1. Las instituciones crean incentivos.\n  2. Los incentivos moldean qué organizaciones emergen y qué capacidades desarrollan.\n  3. Las organizaciones, una vez que acumulan recursos y poder, intentan modificar las instituciones a su favor.\n  4. El resultado es un proceso dinámico y político, no un equilibrio óptimo permanente.\n• Implicancia: construir instituciones no es un problema técnico; es profundamente político. Las reglas están constantemente disputadas por actores con intereses concretos.\n• El cambio institucional es gradual porque las organizaciones existentes se adaptaron al sistema previo y resisten cambios costosos para ellas.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
+  },
+  {
+    "id": "desarrollo_145",
+    "tema": "Instituciones Inclusivas vs Extractivas",
+    "frente": "Explicá las instituciones inclusivas vs. extractivas según Acemoglu y Robinson. ¿Cómo se refuerzan mutuamente?",
+    "reverso": "• Acemoglu y Robinson: el éxito o fracaso de los países depende principalmente de sus instituciones, no de geografía, cultura ni recursos naturales.\n• Instituciones inclusivas: permiten participación amplia, competencia, derechos relativamente universales, movilidad social. Promueven innovación y crecimiento sostenido.\n• Instituciones extractivas: concentran poder, riqueza y oportunidades en una élite reducida. Desalientan la inversión y la innovación en el resto.\n• Cómo se refuerzan mutuamente (círculo vicioso):\n  - Élites políticas diseñan reglas económicas a su favor.\n  - Élites económicas usan su riqueza para mantener poder político.\n  - Instituciones extractivas producen concentración económica → que refuerza concentración política → que reproduce instituciones extractivas.\n• Para América Latina: las instituciones extractivas generan acceso desigual a educación, crédito, justicia y propiedad → las desigualdades iniciales se reproducen intergeneracionalmente.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
+  },
+  {
+    "id": "desarrollo_146",
+    "tema": "El Mercado como Institución",
+    "frente": "¿Por qué el mercado es en sí mismo una institución? ¿Qué tres tipos de instituciones necesita para funcionar?",
+    "reverso": "• El mercado es una construcción social, no un fenómeno natural. No surge espontáneamente con las características deseables; cuando lo hace sin respaldo institucional, no cumple sus funciones de coordinación.\n• Fundamento teórico: Polanyi ('embeddedness') — la economía está incrustada en la sociedad. Las prácticas sociales, normas culturales y relaciones de poder afectan cómo funcionan los mercados. La regulación social no es una distorsión, es una condición de su funcionamiento.\n• Los supuestos neoclásicos nunca se cumplen en la realidad (información perfecta, competencia perfecta, ausencia de externalidades) → tampoco se puede esperar el resultado óptimo del modelo.\n• Tres tipos de instituciones que necesita:\n  1. Estabilizadoras: macroeconómicas (inflación baja, finanzas sostenibles, estabilidad cambiaria). Sin ellas nadie puede planificar a largo plazo.\n  2. Legitimadoras: redistributivas (protección social, seguridad social). Hacen que el mercado sea socialmente viable.\n  3. Reguladoras: corrigen fallas (externalidades, monopolios, información asimétrica).",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
+  },
+  {
+    "id": "desarrollo_147",
+    "tema": "Información Imperfecta vs Asimétrica",
+    "frente": "¿Qué es la información asimétrica y el riesgo moral? ¿Cómo se relacionan con la necesidad de instituciones?",
+    "reverso": "• Información asimétrica: una parte de la transacción sabe más que la otra Y tiene incentivos para no compartir esa información. Transforma el problema de información en uno estratégico.\n• Ejemplo de Akerlof ('mercado de limones'): el vendedor de autos usados sabe más sobre el estado real del auto. El comprador teme ser engañado → ofrece menos o directamente no compra → el mercado puede destruirse.\n• Riesgo moral (estructura principal-agente): el agente (quien actúa) no soporta completamente las consecuencias del riesgo. Ejemplo: el banco (principal) presta dinero; el prestatario (agente) controla el uso pero no asume todo el riesgo → puede asumir riesgos excesivos o desviar recursos. No por mala fe, sino porque la estructura contractual altera incentivos.\n• Necesidad de instituciones: sin ellas estos problemas informacionales destruyen mercados enteros. Las instituciones reducen asimetrías, generan confianza, monitorean conductas, hacen cumplir acuerdos y sancionan incumplimientos.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
+  },
+  {
+    "id": "desarrollo_148",
+    "tema": "Rol del Estado en Instituciones",
+    "frente": "¿Por qué el desarrollo institucional depende del rol del Estado y cuáles son las dos condiciones fundamentales para que el Estado respalde los mercados?",
+    "reverso": "• El enforcement último siempre depende del Estado: incluso en economías de mercado, la garantía final de cumplimiento de contratos, propiedad y regulación descansa sobre la coerción legítima estatal.\n• Estado fuerte → instituciones efectivas. Estado débil o capturado → instituciones formales vacías (diferencia entre instituciones 'de jure' y 'de facto').\n• Las dos condiciones fundamentales:\n  1. Estado fuerte y capaz de respaldar un sistema jurídico formal que complemente las normas informales existentes. No basta con tener leyes escritas; hay que tener capacidad de hacerlas cumplir.\n  2. Que ese Estado respete las leyes y se abstenga de actuar de manera arbitraria. Un Estado que cambia las reglas constantemente destruye la previsibilidad que es la base de la inversión de largo plazo.\n• Problema en países con instituciones débiles: las personas vuelven a depender de redes personales, clientelismo, favoritismo y vínculos étnicos → limita la escala de los mercados, la productividad y la innovación.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
+  },
+  {
+    "id": "desarrollo_149",
+    "tema": "Generación de Confianza",
+    "frente": "¿Cuáles son las tres fuentes de surgimiento de las instituciones según el análisis histórico? ¿Qué rol tiene la complejidad social?",
+    "reverso": "• En sociedades pequeñas: predomina la confianza personal. Todos se conocen, hay relaciones repetidas y normas informales. Ejemplo: el comerciante puede vender 'fiado' porque conoce personalmente al comprador.\n• Con crecimiento económico aumenta la complejidad: urbanización, comercio, migraciones, globalización generan transacciones entre desconocidos. La confianza personal deja de ser suficiente.\n• Las instituciones modernas crean confianza impersonal: permiten cooperar más allá del círculo cercano. Uno confía en contratos, tribunales, bancos, registros.\n• Tres actores que construyen las instituciones:\n  1. El Estado: capacidad coercitiva, monopolio de la fuerza, poder regulatorio. Define gran parte de las reglas formales. Pero puede construir instituciones inclusivas O extractivas.\n  2. El sector privado: puede impulsar reformas y exigir seguridad jurídica, pero también puede capturar reguladores y sostener reglas ineficientes que los benefician.\n  3. Organizaciones internacionales: pueden transferir conocimiento y financiar reformas, pero el trasplante de 'recetas universales' sin considerar el contexto local suele fracasar (crítica al Consenso de Washington).",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
+  },
+  {
+    "id": "desarrollo_150",
+    "tema": "Acceso Diferencial a Instituciones",
+    "frente": "¿Por qué las fallas institucionales afectan desproporcionadamente a los pobres? Desarrollá al menos cuatro mecanismos concretos.",
+    "reverso": "• Corrupción como impuesto regresivo: los pobres pagan proporcionalmente mucho más de su ingreso en sobornos para acceder a servicios básicos (salud, educación), o directamente quedan excluidos si no pueden pagar.\n• Acceso diferencial a la justicia: el sistema judicial requiere conocimiento legal y capacidad de pagar representación letrada. El analfabetismo y la pobreza convierten a la justicia en una institución formalmente universal pero prácticamente inaccesible para los vulnerables.\n• Vulnerabilidad macroeconómica e inflación: los pobres no pueden dolarizar ahorros, comprar propiedades ni usar instrumentos financieros para protegerse. Sin acceso a crédito formal, cualquier shock negativo puede ser devastador.\n• Monopolios privados: cobran precios elevados por servicios esenciales (agua, luz, transporte, gas) que representan una proporción mucho mayor del presupuesto de un hogar pobre.\n• Protección de la propiedad: los ricos pueden permitirse seguridad privada y estructuras jurídicas complejas; los pobres dependen exclusivamente de un Estado frecuentemente incapaz.\n• Conclusión: las instituciones débiles no son neutrales; recaen sobre los más vulnerables y muchas veces están implícitamente diseñadas para proteger a quienes ya tienen poder.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
+  },
+  {
+    "id": "desarrollo_151",
+    "tema": "CA e Instituciones - Sen",
+    "frente": "¿Cómo entiende el Enfoque de Capacidades (Sen y Drèze) el rol de las instituciones y el debate Estado vs. mercado?",
+    "reverso": "• Para el CA, las instituciones — incluyendo el mercado — deben evaluarse no solo por su eficiencia económica sino por su contribución a la EXPANSIÓN DE LIBERTADES VALIOSAS de las personas.\n• Sen y Drèze: el desarrollo requiere múltiples instituciones que se complementan (mercado, servicios públicos, sistema judicial, partidos, medios de comunicación). No alcanza con optimizar una sola institución.\n• Posición sobre el debate Estado vs. mercado: el CA es deliberadamente AGNÓSTICO. No importa si los procesos están guiados por el Estado o por el mercado; importa si se logra expandir y respetar la agencia y el bienestar de las personas.\n• Advertencia central: el mercado puede PERPETUAR las inequidades de una sociedad. La libertad de participar en el mercado es valiosa, pero esa participación ocurre bajo términos que no siempre son equitativos.\n• Cuando no lo son, la participación política debe reformar los mecanismos de mercado para hacerlos más justos.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U3 - Desarrollo Humano"
+  },
+  {
+    "id": "desarrollo_152",
+    "tema": "Formales vs Informales",
+    "frente": "Diferenciá instituciones formales e informales. ¿Cuándo se complementan y cuándo entran en conflicto? ¿Qué diferencia hay entre institución 'de jure' y 'de facto'?",
+    "reverso": "• Instituciones formales: reglas explícitas, escritas, codificadas, respaldadas por autoridad legal con enforcement legal. Ejemplos: Constitución, leyes laborales, Banco Central, derechos de propiedad, código penal.\n• Instituciones informales: reglas no escritas que funcionan mediante costumbre, cultura, reputación, presión social, valores compartidos. La sanción es social y reputacional, no coercitiva estatal. Ejemplos: dejar propina, respetar turnos, normas familiares, confianza interpersonal.\n• Cuando se COMPLEMENTAN: una ley anticorrupción funciona mejor en culturas donde socialmente la corrupción está muy mal vista.\n• Cuando ENTRAN EN CONFLICTO: un país puede tener leyes modernas de transparencia pero una cultura clientelista profundamente arraigada que impide su aplicación real.\n• De jure vs. de facto: las instituciones 'de jure' son las que existen en papel (la ley escrita); las 'de facto' son las que efectivamente operan en la realidad. Muchos países en desarrollo tienen constituciones excelentes pero instituciones efectivas muy débiles → la diferencia entre ambas es el indicador real de calidad institucional.",
+    "srs": {
+      "intervalo": 1,
+      "repeticiones": 0,
+      "efacilidad": 2.5,
+      "next_review": "2026-05-31"
+    },
+    "unidad": "U8 - Instituciones y Desarrollo"
   }
 ]
