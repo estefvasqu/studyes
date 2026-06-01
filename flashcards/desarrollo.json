@@ -415,7 +415,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "U2 - Crecimiento Económico"
+    "unidad": "U7 - Empleo"
   },
   {
     "id": "desarrollo_025",
@@ -1117,10 +1117,10 @@
       "pre-distribución"
     ],
     "srs": {
-      "easiness_factor": 2.5,
+      "easiness_factor": 2.3600000000000003,
       "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-23"
+      "repetitions": 1,
+      "next_review": "2026-06-02"
     },
     "unidad": "U4 - Pobreza y Desigualdad"
   },
@@ -1159,7 +1159,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_066",
@@ -1178,7 +1178,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "U3 - Desarrollo Humano"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_067",
@@ -1215,7 +1215,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_069",
@@ -1233,7 +1233,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_070",
@@ -1251,7 +1251,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_071",
@@ -1269,7 +1269,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_072",
@@ -1287,7 +1287,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_073",
@@ -1306,7 +1306,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_074",
@@ -1324,7 +1324,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_075",
@@ -1360,7 +1360,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_077",
@@ -1379,7 +1379,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_078",
@@ -1397,7 +1397,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_079",
@@ -1414,7 +1414,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_080",
@@ -1432,7 +1432,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "U2 - Crecimiento Económico"
+    "unidad": "U7 - Empleo"
   },
   {
     "id": "desarrollo_081",
@@ -1450,7 +1450,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "U2 - Crecimiento Económico"
+    "unidad": "U7 - Empleo"
   },
   {
     "id": "desarrollo_082",
@@ -1540,7 +1540,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "N/A"
+    "unidad": "U7 - Empleo"
   },
   {
     "id": "desarrollo_087",
@@ -1631,7 +1631,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "N/A"
+    "unidad": "U7 - Empleo"
   },
   {
     "id": "desarrollo_092",
@@ -1649,7 +1649,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "N/A"
+    "unidad": "U7 - Empleo"
   },
   {
     "id": "desarrollo_093",
@@ -1667,7 +1667,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "N/A"
+    "unidad": "U7 - Empleo"
   },
   {
     "id": "desarrollo_094",
@@ -1685,7 +1685,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "N/A"
+    "unidad": "U7 - Empleo"
   },
   {
     "id": "desarrollo_095",
@@ -1900,7 +1900,7 @@
       "repetitions": 0,
       "next_review": "2026-05-23"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_107",
@@ -1967,7 +1967,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_111",
@@ -1980,7 +1980,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "U3 - Desarrollo Humano"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_112",
@@ -1993,7 +1993,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_113",
@@ -2006,7 +2006,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_114",
@@ -2019,7 +2019,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_115",
@@ -2032,7 +2032,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_116",
@@ -2045,7 +2045,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_117",
@@ -2058,7 +2058,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_118",
@@ -2071,7 +2071,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_119",
@@ -2100,7 +2100,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_121",
@@ -2113,7 +2113,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_122",
@@ -2126,7 +2126,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_123",
@@ -2152,7 +2152,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_125",
@@ -2165,7 +2165,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_126",
@@ -2178,7 +2178,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "U2 - Crecimiento Económico"
+    "unidad": "U7 - Empleo"
   },
   {
     "id": "desarrollo_127",
@@ -2233,7 +2233,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U7 - Empleo"
   },
   {
     "id": "desarrollo_131",
@@ -2246,7 +2246,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U7 - Empleo"
   },
   {
     "id": "desarrollo_132",
@@ -2259,7 +2259,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U7 - Empleo"
   },
   {
     "id": "desarrollo_133",
@@ -2272,7 +2272,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U7 - Empleo"
   },
   {
     "id": "desarrollo_134",
@@ -2285,7 +2285,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U7 - Empleo"
   },
   {
     "id": "desarrollo_135",
@@ -2324,7 +2324,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U7 - Empleo"
   },
   {
     "id": "desarrollo_138",
@@ -2337,7 +2337,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "N/A"
+    "unidad": "U6 - Educación"
   },
   {
     "id": "desarrollo_139",
@@ -2350,7 +2350,7 @@
       "efacilidad": 2.5,
       "next_review": "2026-05-31"
     },
-    "unidad": "U2 - Crecimiento Económico"
+    "unidad": "U7 - Empleo"
   },
   {
     "id": "desarrollo_140",
@@ -2499,26 +2499,14 @@
     "id": "desarrollo_151",
     "tema": "CA e Instituciones - Sen",
     "frente": "¿Cómo entiende el Enfoque de Capacidades (Sen y Drèze) el rol de las instituciones y el debate Estado vs. mercado?",
-    "reverso": "• Para el CA, las instituciones — incluyendo el mercado — deben evaluarse no solo por su eficiencia económica sino por su contribución a la EXPANSIÓN DE LIBERTADES VALIOSAS de las personas.\n• Sen y Drèze: el desarrollo requiere múltiples instituciones que se complementan (mercado, servicios públicos, sistema judicial, partidos, medios de comunicación). No alcanza con optimizar una sola institución.\n• Posición sobre el debate Estado vs. mercado: el CA es deliberadamente AGNÓSTICO. No importa si los procesos están guiados por el Estado o por el mercado; importa si se logra expandir y respetar la agencia y el bienestar de las personas.\n• Advertencia central: el mercado puede PERPETUAR las inequidades de una sociedad. La libertad de participar en el mercado es valiosa, pero esa participación ocurre bajo términos que no siempre son equitativos.\n• Cuando no lo son, la participación política debe reformar los mecanismos de mercado para hacerlos más justos.",
+    "reverso": "Para el CA, las instituciones —incluyendo el mercado— deben evaluarse no solo por su eficiencia económica sino por si expanden o restringen las libertades reales de las personas. El mercado puede ser valioso, pero no es neutro: su efecto depende del contexto institucional, las reglas que lo regulan y quiénes tienen acceso. Sen y Drèze rechazan tanto el dogma pro-mercado como el anti-mercado: lo que importa es si las instituciones permiten que las personas lleven vidas que tengan razón de valorar.",
+    "tags": [],
     "srs": {
-      "intervalo": 1,
-      "repeticiones": 0,
-      "efacilidad": 2.5,
-      "next_review": "2026-05-31"
+      "interval": 1,
+      "easiness_factor": 1.96,
+      "repetitions": 0,
+      "next_review": "2026-05-25"
     },
     "unidad": "U3 - Desarrollo Humano"
-  },
-  {
-    "id": "desarrollo_152",
-    "tema": "Formales vs Informales",
-    "frente": "Diferenciá instituciones formales e informales. ¿Cuándo se complementan y cuándo entran en conflicto? ¿Qué diferencia hay entre institución 'de jure' y 'de facto'?",
-    "reverso": "• Instituciones formales: reglas explícitas, escritas, codificadas, respaldadas por autoridad legal con enforcement legal. Ejemplos: Constitución, leyes laborales, Banco Central, derechos de propiedad, código penal.\n• Instituciones informales: reglas no escritas que funcionan mediante costumbre, cultura, reputación, presión social, valores compartidos. La sanción es social y reputacional, no coercitiva estatal. Ejemplos: dejar propina, respetar turnos, normas familiares, confianza interpersonal.\n• Cuando se COMPLEMENTAN: una ley anticorrupción funciona mejor en culturas donde socialmente la corrupción está muy mal vista.\n• Cuando ENTRAN EN CONFLICTO: un país puede tener leyes modernas de transparencia pero una cultura clientelista profundamente arraigada que impide su aplicación real.\n• De jure vs. de facto: las instituciones 'de jure' son las que existen en papel (la ley escrita); las 'de facto' son las que efectivamente operan en la realidad. Muchos países en desarrollo tienen constituciones excelentes pero instituciones efectivas muy débiles → la diferencia entre ambas es el indicador real de calidad institucional.",
-    "srs": {
-      "intervalo": 1,
-      "repeticiones": 0,
-      "efacilidad": 2.5,
-      "next_review": "2026-05-31"
-    },
-    "unidad": "U8 - Instituciones y Desarrollo"
   }
 ]
