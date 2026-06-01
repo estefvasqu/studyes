@@ -1135,10 +1135,10 @@
       "redistribución"
     ],
     "srs": {
-      "easiness_factor": 2.5,
+      "easiness_factor": 2.3600000000000003,
       "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-23"
+      "repetitions": 1,
+      "next_review": "2026-06-02"
     },
     "unidad": "U4 - Pobreza y Desigualdad"
   },
