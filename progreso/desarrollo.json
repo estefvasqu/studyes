@@ -1,7 +1,7 @@
 {
   "sesiones": [],
   "racha_dias": 1,
-  "ultimo_acceso": "2026-05-31",
+  "ultimo_acceso": "2026-06-02",
   "prioridades_manuales": [],
   "historial": [
     {
@@ -34,6 +34,43 @@
         "Industrialización",
         "Dimensiones del Desarrollo",
         "Distribución del Poder"
+      ]
+    },
+    {
+      "fecha": "2026-06-02",
+      "cards_estudiadas": 29,
+      "correctas": 10,
+      "incorrectas": 19,
+      "temas_practicados": [
+        "¿Qué es la cohesión social y qué la amenaza?",
+        "¿Cuáles son los principales problemas estructurales que caracterizan a los paíse",
+        "¿Cuáles son las 5 etapas de la Transición Demográfica?",
+        "¿Por qué el fraccionamiento social y la geografía pueden ser obstáculos al desar",
+        "¿Por qué la migración campo-ciudad en los países en desarrollo genera problemas ",
+        "¿Cuáles son las 5 etapas del modelo de Rostow?",
+        "¿En qué etapa de la transición demográfica ocurre el bono demográfico y por qué ",
+        "¿Qué es la Tesis del Desarrollo Dual?",
+        "¿Por qué el tamaño del país es un 'arma de doble filo' para el desarrollo?",
+        "¿Cuáles son los 10 mandamientos del Consenso de Washington?",
+        "¿Qué es la 'maldición de los recursos naturales' y cómo afecta al desarrollo?",
+        "Explicá la Teoría de la Dependencia Neocolonial: causas, mecanismos y actores.",
+        "¿Cómo se relacionan la trampa de la pobreza, el dualismo económico y la dependen",
+        "¿Qué es la Trampa de la Pobreza y cómo funciona el círculo vicioso?",
+        "¿Qué es el Bono Demográfico y cómo puede aprovecharse?",
+        "¿Por qué la migración rural-urbana en economías duales no genera desarrollo equi",
+        "¿Cuáles son las críticas al Consenso de Washington? ¿Qué lo reemplazó?",
+        "Compará el Consenso Post-WWII (keynesianismo) con el Consenso de Washington en r",
+        "Compará el modelo de Lewis con la Tesis del Desarrollo Dual: ¿en qué coinciden y",
+        "¿Cuáles son las principales diferencias entre economía tradicional y economía de",
+        "Integrá transición demográfica, bono demográfico y trampa demográfica: ¿cómo se ",
+        "Integrá los paradigmas de desarrollo: ¿qué aporta cada uno y cómo se relacionan ",
+        "¿Cuál es la diferencia entre PBI, PBN y PPA?",
+        "¿Quién fue Arthur Lewis y qué propuso sobre la economía dual?",
+        "¿Por qué la aplicación del Consenso de Washington fracasó en América Latina? Int",
+        "¿Por qué el modelo de Rostow fue criticado? ¿Qué supuestos cuestionables tiene?",
+        "Evaluá la Teoría de la Dependencia: ¿qué explica bien y qué no logra explicar?",
+        "Según Dudley Seers, ¿cuándo podemos hablar de verdadero desarrollo?",
+        "¿Cómo funciona la Trampa Demográfica? Relacionala con la Trampa de la Pobreza."
       ]
     }
   ]
