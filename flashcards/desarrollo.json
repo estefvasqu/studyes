@@ -2218,10 +2218,10 @@
       "intervalo": 1,
       "repeticiones": 0,
       "efacilidad": 2.5,
-      "next_review": "2026-06-02",
-      "easiness_factor": 2.3600000000000003,
-      "interval": 1,
-      "repetitions": 1
+      "next_review": "2026-06-08",
+      "easiness_factor": 2.4600000000000004,
+      "interval": 6,
+      "repetitions": 2
     },
     "unidad": "U3 - Desarrollo Humano"
   },
