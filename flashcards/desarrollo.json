@@ -414,9 +414,9 @@
     "tags": [],
     "srs": {
       "interval": 1,
-      "easiness_factor": 2.6,
-      "repetitions": 1,
-      "next_review": "2026-06-04"
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
     }
   },
   {
@@ -428,9 +428,9 @@
     "tags": [],
     "srs": {
       "interval": 1,
-      "easiness_factor": 1.96,
+      "easiness_factor": 2.5,
       "repetitions": 0,
-      "next_review": "2026-06-04"
+      "next_review": "2026-06-02"
     }
   },
   {
@@ -484,9 +484,9 @@
     "tags": [],
     "srs": {
       "interval": 1,
-      "easiness_factor": 2.3600000000000003,
-      "repetitions": 1,
-      "next_review": "2026-06-04"
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
     }
   },
   {
@@ -610,9 +610,9 @@
     "tags": [],
     "srs": {
       "interval": 1,
-      "easiness_factor": 1.96,
+      "easiness_factor": 2.5,
       "repetitions": 0,
-      "next_review": "2026-06-04"
+      "next_review": "2026-06-02"
     }
   },
   {
@@ -764,9 +764,9 @@
     "tags": [],
     "srs": {
       "interval": 1,
-      "easiness_factor": 2.3600000000000003,
-      "repetitions": 1,
-      "next_review": "2026-06-04"
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
     }
   },
   {
@@ -834,9 +834,9 @@
     "tags": [],
     "srs": {
       "interval": 1,
-      "easiness_factor": 2.3600000000000003,
-      "repetitions": 1,
-      "next_review": "2026-06-04"
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
     }
   },
   {
