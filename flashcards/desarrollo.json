@@ -414,9 +414,9 @@
     "tags": [],
     "srs": {
       "interval": 1,
-      "easiness_factor": 2.5,
-      "repetitions": 0,
-      "next_review": "2026-06-02"
+      "easiness_factor": 2.6,
+      "repetitions": 1,
+      "next_review": "2026-06-04"
     }
   },
   {
@@ -428,9 +428,9 @@
     "tags": [],
     "srs": {
       "interval": 1,
-      "easiness_factor": 2.5,
+      "easiness_factor": 1.96,
       "repetitions": 0,
-      "next_review": "2026-06-02"
+      "next_review": "2026-06-04"
     }
   },
   {
@@ -484,9 +484,9 @@
     "tags": [],
     "srs": {
       "interval": 1,
-      "easiness_factor": 2.5,
-      "repetitions": 0,
-      "next_review": "2026-06-02"
+      "easiness_factor": 2.3600000000000003,
+      "repetitions": 1,
+      "next_review": "2026-06-04"
     }
   },
   {
@@ -610,9 +610,9 @@
     "tags": [],
     "srs": {
       "interval": 1,
-      "easiness_factor": 2.5,
+      "easiness_factor": 1.96,
       "repetitions": 0,
-      "next_review": "2026-06-02"
+      "next_review": "2026-06-04"
     }
   },
   {
@@ -764,9 +764,9 @@
     "tags": [],
     "srs": {
       "interval": 1,
-      "easiness_factor": 2.5,
-      "repetitions": 0,
-      "next_review": "2026-06-02"
+      "easiness_factor": 2.3600000000000003,
+      "repetitions": 1,
+      "next_review": "2026-06-04"
     }
   },
   {
@@ -834,9 +834,9 @@
     "tags": [],
     "srs": {
       "interval": 1,
-      "easiness_factor": 2.5,
-      "repetitions": 0,
-      "next_review": "2026-06-02"
+      "easiness_factor": 2.3600000000000003,
+      "repetitions": 1,
+      "next_review": "2026-06-04"
     }
   },
   {
@@ -1195,6 +1195,286 @@
     "frente": "🔴 DIFÍCIL | Integrá los enfoques de Rawls, Sen y Alkire-Foster en una política de reducción de la pobreza multidimensional.",
     "reverso": "<p class=\"fc-header\">MARCO INTEGRADO:</p><ol><li>RAWLS (Justicia como equidad): Orientar políticas hacia los más desaventajados. El criterio maximin guía las prioridades presupuestarias.</li><li>SEN (Enfoque de Capacidades): No basta con transferir dinero. El objetivo es ampliar las libertades reales: educación, salud, participación política. La política debe remover obstáculos estructurales (discriminación, falta de acceso).</li><li>ALKIRE-FOSTER (Medición): Identificar quiénes son multidimensionalmente pobres y en qué dimensiones. Permite focalizar intervenciones y evaluar impacto.</li></ol><p class=\"fc-header\">POLÍTICA RESULTANTE:</p><ul><li>Transferencias condicionadas (ingreso + incentivos a educación/salud)</li><li>Pre-distribución: acceso igualitario a educación de calidad desde la primera infancia</li><li>Medición continua con IPM para monitorear progreso</li><li>Priorización de los grupos con mayor intensidad de privaciones.</li></ul>",
     "unidad": "U4 - Pobreza y Desigualdad",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_087",
+    "tema": "¿Qué es el Capital Humano y cómo considera a las personas?",
+    "frente": "🟢 FÁCIL | ¿Qué es el Capital Humano y cómo considera a las personas?",
+    "reverso": "<p>El Capital Humano (Becker y Schultz, años 60) entiende la educación como una INVERSIÓN instrumental para aumentar la productividad y el crecimiento económico.</p><p class=\"fc-header\">VISIÓN DE LAS PERSONAS:</p><ul><li>Las trata como RECURSOS HUMANOS (medios para la producción)</li><li>Las considera OBJETIVOS PASIVOS de las políticas</li></ul><p class=\"fc-header\">QUÉ PROMUEVE:</p><ul><li>Rentabilidad: invertir hoy (sacrificando consumo) para obtener mayores ingresos futuros</li><li>Herramienta clave: Ecuación de Mincer (estima el retorno salarial de la educación)</li></ul><p class=\"fc-header\">CRÍTICAS:</p><ul><li>Streeten: ignora a quienes no pueden ser productivos (ancianos, discapacitados)</li><li>Ignora el valor intrínseco de la educación</li><li>Se basa en preferencias adaptativas para diseñar políticas</li></ul>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_088",
+    "tema": "¿Qué son las 4-A de Tomasevski y con qué enfoque se relaciona?",
+    "frente": "🟢 FÁCIL | ¿Qué son las 4-A de Tomasevski y con qué enfoque se relaciona?",
+    "reverso": "<p>Katarina Tomasevski desarrolló las 4-A dentro del ENFOQUE DE DERECHOS HUMANOS para operacionalizar las obligaciones del Estado en educación:</p><ol><li>ASEQUIBILIDAD (Disponibilidad): establecimientos educativos existentes, gratuidad, obligatoriedad y respeto cultural</li><li><strong>ACCESIBILIDAD:</strong> educación para todos sin discriminación, no excluir por falta de ingresos</li><li>ACEPTABILIDAD (Calidad): docentes capacitados, contenidos adecuados, sin violencia, respeto a lenguas de minorías</li><li><strong>ADAPTABILIDAD:</strong> el sistema se adapta al alumno, no el alumno al sistema</li></ol><p>Se relaciona con el Enfoque de DERECHOS porque la educación es una obligación legal del Estado, exigible independientemente de su rentabilidad económica.</p>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_089",
+    "tema": "¿Qué es la Curva de Heckman y qué dice sobre cuándo invertir en educación?",
+    "frente": "🟢 FÁCIL | ¿Qué es la Curva de Heckman y qué dice sobre cuándo invertir en educación?",
+    "reverso": "<p>La Curva de Heckman muestra que la tasa de retorno de la inversión pública en capital humano es MÁXIMA en la primera infancia (0-5 años) y DECRECE con la edad:</p><ul><li>PRIMERA INFANCIA (0-5 años): retorno ~13% anual (ventanas biológicas críticas)</li><li><strong>EDUCACIÓN ESCOLAR (K-12):</strong> retorno medio</li><li><strong>CAPACITACIÓN LABORAL DE ADULTOS:</strong> retorno más bajo</li></ul><p class=\"fc-header\">MECANISMOS:</p><ul><li>Self-Productivity (Autoproductividad): habilidades tempranas facilitan aprender nuevas habilidades</li><li>Dynamic Complementarity (Complementariedad dinámica): aprender temprano hace que cada peso invertido en el futuro rinda más</li></ul><p><strong>CONCLUSIÓN:</strong> invertir temprano en poblaciones vulnerables es la política más eficiente para romper el ciclo de la pobreza.</p>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_090",
+    "tema": "¿Qué es la movilidad social y de qué depende según Becker y Tomes?",
+    "frente": "🟢 FÁCIL | ¿Qué es la movilidad social y de qué depende según Becker y Tomes?",
+    "reverso": "<p>La movilidad social analiza en qué medida la posición socioeconómica de una persona (su 'destino') es INDEPENDIENTE de la posición de sus padres (su 'origen').</p><p>SEGÚN BECKER Y TOMES (1979), depende de la transferencia intergeneracional de tres elementos:</p><ol><li><strong>TRANSMISIÓN GENÉTICA/CRIANZA:</strong> valores, intereses, hábitos</li><li><strong>INVERSIÓN EN CAPITAL HUMANO:</strong> educación y salud temprana</li><li><strong>HERENCIA FÍSICA:</strong> activos, vivienda, redes de contacto</li></ol><p>Clave: invertir en educación no rinde igual si la familia no transfiere simultáneamente capital social y redes de contacto.</p><p>La educación es necesaria pero no suficiente para la movilidad ascendente.</p>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_091",
+    "tema": "¿Cuál es la diferencia entre Competencias y Capacidades?",
+    "frente": "🟢 FÁCIL | ¿Cuál es la diferencia entre Competencias y Capacidades?",
+    "reverso": "<p>COMPETENCIAS (Enfoque Capital Humano):</p><ul><li>Habilidades funcionales para resolver problemas y demandas EXTERNAS</li><li>Responden a los requerimientos del mercado laboral</li><li>Enfoque puramente funcional y utilitario</li><li>Ej: saber programar, manejar una máquina, redactar informes</li></ul><p>CAPACIDADES (Enfoque Sen/Nussbaum):</p><ul><li>Libertades u oportunidades para elegir comportamientos y acciones valiosas</li><li>Responden a una demanda INTERNA del individuo</li><li>El objetivo es elegir libremente el estilo de vida que uno valora</li><li>Enfoque ético y normativo</li></ul><p><strong>CLAVE:</strong> las competencias sirven al mercado; las capacidades sirven a la persona.</p>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_092",
+    "tema": "¿Qué es la Curva Gran Gatsby y qué relación establece?",
+    "frente": "🟢 FÁCIL | ¿Qué es la Curva Gran Gatsby y qué relación establece?",
+    "reverso": "<p>La Curva Gran Gatsby es un gráfico que muestra la relación entre desigualdad y movilidad social a nivel mundial.</p><p class=\"fc-header\">RELACIÓN QUE ESTABLECE:</p><ul><li>A mayor desigualdad de ingresos en un país (Gini más alto) → MENOR movilidad intergeneracional</li><li>En sociedades muy desiguales, tu DESTINO está casi totalmente determinado por tu ORIGEN</li><li>Alta desigualdad = alta 'persistencia intergeneracional': el nivel educativo e ingresos de los hijos está predeterminado por el de sus padres</li></ul><p><strong>CONCLUSIÓN:</strong> la educación no puede ser un ascensor social efectivo en sociedades muy desiguales; la desigualdad estructural bloquea la movilidad independientemente del esfuerzo individual.</p>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_093",
+    "tema": "Compará los tres enfoques de la educación: Capital Humano, Capacidades y Derecho",
+    "frente": "🟡 MEDIA | Compará los tres enfoques de la educación: Capital Humano, Capacidades y Derechos Humanos.",
+    "reverso": "<p class=\"fc-header\">CAPITAL HUMANO:</p><ul><li>Propósito: aumentar productividad y crecimiento</li><li>Personas: recursos (medios)</li><li>Foco: resultados económicos (salarios, retornos)</li><li>Herramienta: Ecuación de Mincer</li><li>Crítica: ignora improductivos y valor intrínseco</li></ul><p>CAPACIDADES (Sen/Nussbaum):</p><ul><li>Propósito: expandir libertades reales</li><li>Personas: agentes activos y fines en sí mismos</li><li>Foco: los tres estadios (acceso + trayectoria + resultados) + contexto</li><li>Herramienta: debate social sobre qué capacidades priorizar</li><li>Crítica: difícil de operacionalizar estadísticamente</li></ul><p class=\"fc-header\">DERECHOS HUMANOS:</p><ul><li>Propósito: garantizar obligación legal del Estado</li><li>Personas: sujetos de derecho</li><li>Foco: acceso formal</li><li>Herramienta: 4-A de Tomasevski</li><li>Crítica: garantiza acceso pero no calidad ni expansión de libertades</li></ul>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_094",
+    "tema": "¿Cuáles son los 5 factores que determinan la demanda educativa en países en desa",
+    "frente": "🟡 MEDIA | ¿Cuáles son los 5 factores que determinan la demanda educativa en países en desarrollo?",
+    "reverso": "<p>En países en desarrollo la educación es un mercado imperfecto donde la demanda tiene motivación económica:</p><ol><li><strong>DIFERENCIAL DE INGRESOS:</strong> brecha salarial esperada entre sector moderno (formal, requiere títulos) vs. sector tradicional</li><li><strong>PROBABILIDAD DE CONSEGUIR EMPLEO:</strong> el título es necesario pero no suficiente; el individuo calcula chances reales de éxito en el sector formal</li><li><strong>COSTOS DIRECTOS:</strong> matrícula, uniformes, libros, transporte</li><li><strong>COSTO DE OPORTUNIDAD INDIRECTO:</strong> el salario que el joven deja de percibir por estudiar en vez de trabajar → factor clave de deserción en familias pobres</li><li><strong>FACTORES NO ECONÓMICOS:</strong> tradición familiar, cultura, estatus social, nivel educativo de los padres, tamaño de la familia</li></ol>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_095",
+    "tema": "¿Qué es el Credencialismo y por qué genera una externalidad negativa?",
+    "frente": "🟡 MEDIA | ¿Qué es el Credencialismo y por qué genera una externalidad negativa?",
+    "reverso": "<p>El CREDENCIALISMO ocurre cuando los empleadores exigen cada vez más títulos para puestos que no los requieren, porque hay un exceso de graduados respecto a empleos disponibles.</p><p class=\"fc-header\">CÓMO SE GENERA:</p><ol><li>Las familias presionan por más educación para mejorar ingresos</li><li>El Estado cede abriendo más vacantes</li><li>La oferta de graduados supera los empleos del sector moderno</li><li>Empleadores usan el título como filtro, no como señal de competencia real</li><li>El título pierde valor real → se exigen títulos más altos para el mismo puesto</li></ol><p class=\"fc-header\">EXTERNALIDAD NEGATIVA:</p><ul><li>Lo que conviene al individuo (más educación) NO es eficiente para el conjunto social</li><li>El Estado gasta en formar graduados que no encuentra empleo acorde</li><li>Esos recursos podrían haberse invertido en salud, infraestructura o primera infancia</li><li>Genera desempleo calificado y frustración social.</li></ul>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_096",
+    "tema": "Explicá los 5 componentes del vínculo educación-desarrollo según Todaro (2014).",
+    "frente": "🟡 MEDIA | Explicá los 5 componentes del vínculo educación-desarrollo según Todaro (2014).",
+    "reverso": "<ol><li><strong>CRECIMIENTO ECONÓMICO:</strong> la educación califica la fuerza laboral, forma líderes, difunde alfabetización y mejora la provisión de bienes públicos</li><li><strong>POBREZA Y DESIGUALDAD:</strong> paradoja regresiva → los pobres desertan por costos de oportunidad; quienes llegan a la universidad son los sectores medios/altos; el Estado financia con impuestos de todos → subsidio regresivo de pobres a ricos</li><li><strong>MIGRACIÓN Y BRAIN DRAIN:</strong> mayor educación → mayor propensión a migrar del campo a la ciudad; internacionalmente → fuga de cerebros: el país pobre paga la formación y el país rico captura los beneficios</li><li>MUJERES, <strong>FERTILIDAD Y SALUD:</strong> el mayor multiplicador del desarrollo → sube costo de oportunidad → retrasa matrimonio → reduce fertilidad → madres educadas invierten mejor en salud y educación de sus hijos</li><li><strong>DESARROLLO RURAL:</strong> currículum urbano-céntrico exporta jóvenes a la ciudad en lugar de empoderarlos para desarrollar el campo; se necesitan contenidos agrícolas, cooperativismo y habilidades locales</li></ol>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.3600000000000003,
+      "repetitions": 1,
+      "next_review": "2026-06-05"
+    }
+  },
+  {
+    "id": "des_097",
+    "tema": "¿Cuáles son los factores estructurales que limitan la movilidad social?",
+    "frente": "🟡 MEDIA | ¿Cuáles son los factores estructurales que limitan la movilidad social?",
+    "reverso": "<p>Más allá de la educación, 4 mecanismos bloquean el ascenso social:</p><ol><li>CAPITAL SOCIAL ('a quién conocés'): las familias de altos ingresos heredan redes de contacto que son el mayor predictor de movilidad ascendente; los pobres no tienen acceso a esas redes</li><li>EMPAREJAMIENTO SELECTIVO (homogamia): los matrimonios se dan entre personas del mismo nivel socioeconómico → concentra recursos en la cúspide → mayor inversión por hijo en los ricos</li><li><strong>SEGREGACIÓN GEOGRÁFICA:</strong> alta correlación entre lugar de residencia y estrato social → niños pobres confinados a zonas con peores escuelas, salud y seguridad → sin interacción con niños ricos → sin capital social</li><li><strong>DISCRIMINACIÓN:</strong> barreras no formales en mercado laboral y de vivienda → impiden ascenso aunque se tengan los títulos adecuados</li></ol><p>Resultado: la escuela deja de igualar y se convierte en una caja de resonancia que REPRODUCE la desigualdad de los hogares (Tiramonti, 2022).</p>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_098",
+    "tema": "¿Qué es la segmentación educativa y cómo se relaciona con la movilidad social?",
+    "frente": "🟡 MEDIA | ¿Qué es la segmentación educativa y cómo se relaciona con la movilidad social?",
+    "reverso": "<p>La SEGMENTACIÓN EDUCATIVA (Tiramonti, Kruger) describe cómo los sistemas educativos de la región operan bajo <strong>FRAGMENTACIÓN:</strong> cada grupo sociocultural se encierra en su propio circuito de escuelas.</p><p class=\"fc-header\">CÓMO FUNCIONA:</p><ul><li>Escuelas de élite: saberes, redes y códigos del mundo corporativo/profesional</li><li>Escuelas de clase media: cultura y expectativas de ascenso moderado</li><li>Escuelas de sectores populares: saberes básicos, baja expectativa, escasos recursos</li></ul><p class=\"fc-header\">CONSECUENCIA:</p><ul><li>Cada circuito reproduce los capitales (cultural, social, económico) de su grupo de origen</li><li>Los niños pobres no interactúan con niños ricos → no acumulan capital social movilizador</li><li>La escuela dejó de igualar para CRISTALIZAR la desigualdad</li></ul><p><strong>VÍNCULO CON GRAN GATSBY:</strong> la segmentación es el mecanismo concreto por el cual la alta desigualdad bloquea la movilidad intergeneracional.</p>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_099",
+    "tema": "¿Por qué educar a las mujeres tiene el mayor efecto multiplicador en el desarrol",
+    "frente": "🟡 MEDIA | ¿Por qué educar a las mujeres tiene el mayor efecto multiplicador en el desarrollo?",
+    "reverso": "<p>La educación femenina activa una cadena de efectos que se refuerzan mutuamente:</p><ol><li><strong>MERCADO LABORAL:</strong> sube el costo de oportunidad de la mujer → retrasa el matrimonio y la maternidad</li><li><strong>FERTILIDAD:</strong> menos hijos, pero con mayor inversión por hijo ('cantidad vs. calidad')</li><li><strong>SALUD INFANTIL:</strong> madres educadas invierten significativamente más en nutrición, salud y estimulación temprana de sus hijos</li><li><strong>EDUCACIÓN DE LA PRÓXIMA GENERACIÓN:</strong> madres educadas valoran y promueven la educación de sus hijos → efecto intergeneracional</li><li><strong>ROMPE EL CICLO:</strong> corta el mecanismo de transmisión de la pobreza de madres a hijos</li></ol><p><strong>VÍNCULO CON HECKMAN:</strong> la inversión en educación femenina temprana potencia el bono demográfico y maximiza los retornos futuros de la inversión en primera infancia.</p>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_100",
+    "tema": "¿Cómo el Enfoque de Capacidades critica tanto al Capital Humano como al Enfoque ",
+    "frente": "🟡 MEDIA | ¿Cómo el Enfoque de Capacidades critica tanto al Capital Humano como al Enfoque de Derechos?",
+    "reverso": "<p class=\"fc-header\">CRÍTICA AL CAPITAL HUMANO:</p><ul><li>El HC usa preferencias adaptativas para diseñar políticas: los pobres que solo aspiran a terminar la primaria aparecen como 'satisfechos' → legitima la exclusión</li><li>Trata la educación como medio (ingresos) e ignora su valor como fin (expansión de libertades)</li><li>Ignora los factores de conversión: el mismo recurso educativo no rinde igual para todos</li></ul><p class=\"fc-header\">CRÍTICA AL ENFOQUE DE DERECHOS:</p><ul><li>Garantizar acceso formal (construir escuelas, matricular niños) no basta si la calidad interna es baja</li><li>Cumplir formalmente con un derecho no sirve si no expande libertades reales (Tikly y Barret)</li><li>El Enfoque de Derechos se enfoca en el ACCESO; el CA exige mirar también TRAYECTORIA y RESULTADOS</li></ul><p class=\"fc-header\">ALTERNATIVA CA:</p><ul><li>Pedagogías transformadoras</li><li>Inclusión de voces marginadas</li><li>Formación docente profunda: 'no pueden expandir capacidades en alumnos si no se expanden primero las propias' (Boni)</li></ul>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_101",
+    "tema": "¿Por qué la educación puede AUMENTAR la desigualdad en países en desarrollo? Arg",
+    "frente": "🔴 DIFÍCIL | ¿Por qué la educación puede AUMENTAR la desigualdad en países en desarrollo? Argumentá con mecanismos concretos.",
+    "reverso": "<p><strong>PARADOJA:</strong> la educación, pensada para igualar, puede ser un mecanismo REGRESIVO en países desiguales.</p><p class=\"fc-header\">MECANISMO 1 — DESERCIÓN DIFERENCIAL:</p><ul><li>Los pobres desertan por costos de oportunidad (trabajo infantil) y desnutrición</li><li>Quienes llegan a la universidad son desproporcionadamente de estratos medios y altos</li></ul><p class=\"fc-header\">MECANISMO 2 — SUBSIDIO REGRESIVO:</p><ul><li>La educación superior pública se financia con impuestos generales (pagados por todos)</li><li>Los pobres pagan impuestos pero sus hijos no llegan a la universidad</li><li>Resultado: transferencia de ingresos de pobres a ricos</li></ul><p class=\"fc-header\">MECANISMO 3 — CREDENCIALISMO:</p><ul><li>El título pierde valor real; quienes tienen redes (capital social) consiguen trabajo igualmente</li><li>Los pobres con títulos siguen desempleados; los ricos sin títulos consiguen empleo vía contactos</li></ul><p class=\"fc-header\">MECANISMO 4 — SEGMENTACIÓN:</p><ul><li>Cada circuito escolar reproduce el capital de su grupo → la escuela cristaliza, no iguala</li></ul><p><strong>CONCLUSIÓN:</strong> sin políticas redistributivas previas (pre-distribución), la expansión educativa puede ampliar la brecha.</p>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_102",
+    "tema": "Evaluá críticamente la teoría de Heckman: ¿qué explica bien y qué riesgos tiene ",
+    "frente": "🔴 DIFÍCIL | Evaluá críticamente la teoría de Heckman: ¿qué explica bien y qué riesgos tiene su aplicación?",
+    "reverso": "<p class=\"fc-header\">QUÉ EXPLICA BIEN:</p><ul><li>Fundamento neurobiológico sólido: ventanas críticas y sensibles del desarrollo cerebral</li><li>Explica por qué intervenir en primera infancia es más eficiente que remediar después</li><li>Autoproductividad y complementariedad dinámica: mecanismos coherentes y verificables</li><li>Provee justificación para políticas de primera infancia (jardines, nutrición, estimulación temprana)</li></ul><p class=\"fc-header\">RIESGOS Y CRÍTICAS:</p><ol><li><strong>RIESGO DE EXCLUSIÓN:</strong> aplicación dogmática puede dar por 'perdidos' a adultos y jóvenes que pasaron su ventana óptima → abandono de políticas de segunda oportunidad</li><li><strong>EVIDENCIA AMBIGUA:</strong> algunos programas de primera infancia no muestran retornos superiores; algunos de adultos tampoco tienen balance costo-beneficio negativo</li><li><strong>REDUCCIONISMO:</strong> reduce el valor de la educación a su rentabilidad futura → cae en la misma trampa del Capital Humano que critica Sen</li><li><strong>IGNORA CONTEXTO ESTRUCTURAL:</strong> la inversión temprana no rinde si el entorno sigue siendo desigual (segregación, discriminación)</li></ol><p><strong>CONCLUSIÓN:</strong> Heckman es valioso como argumento para priorizar la primera infancia, pero no puede justificar el abandono de políticas educativas para otras etapas.</p>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_103",
+    "tema": "Integrá la Curva Gran Gatsby, la segmentación educativa y los factores estructur",
+    "frente": "🔴 DIFÍCIL | Integrá la Curva Gran Gatsby, la segmentación educativa y los factores estructurales: ¿puede la educación ser un ascensor social en América Latina?",
+    "reverso": "<p class=\"fc-header\">DIAGNÓSTICO INTEGRADO:</p><p class=\"fc-header\">LA GRAN GATSBY ESTABLECE EL MARCO:</p><ul><li>Alta desigualdad (Gini elevado en AL) → baja movilidad intergeneracional</li><li>El origen predetermina el destino con altísima probabilidad</li></ul><p class=\"fc-header\">LA SEGMENTACIÓN ES EL MECANISMO:</p><ul><li>Cada circuito escolar reproduce el capital cultural y social de su grupo</li><li>Los pobres acceden a educación de baja calidad que no les da las herramientas para competir</li><li>Los ricos acceden a redes, saberes y certificaciones que valen más en el mercado laboral</li></ul><p class=\"fc-header\">LOS FACTORES ESTRUCTURALES REFUERZAN:</p><ul><li>Capital social: los pobres no tienen las redes de contacto que abren puertas</li><li>Homogamia: concentra recursos en la cúspide</li><li>Segregación geográfica: confina a los pobres a bienes públicos de peor calidad</li><li>Discriminación: bloquea el ascenso incluso con títulos</li></ul><p><strong>CONCLUSIÓN:</strong> en el contexto actual de AL, la educación SOLA no puede ser ascensor social efectivo. Requiere: pre-distribución (reducir desigualdad antes), inversión en calidad (no solo acceso), políticas de integración territorial, y acción afirmativa que rompa la segmentación.</p>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_104",
+    "tema": "¿Cómo se relacionan el Brain Drain, el desarrollo rural y la migración con el fr",
+    "frente": "🔴 DIFÍCIL | ¿Cómo se relacionan el Brain Drain, el desarrollo rural y la migración con el fracaso del sistema educativo en los países en desarrollo?",
+    "reverso": "<p><strong>LOS TRES FENÓMENOS COMPARTEN UNA CAUSA RAÍZ:</strong> un currículo diseñado para otro contexto.</p><p>BRAIN DRAIN (nivel internacional):</p><ul><li>El país pobre financia (con impuestos de todos) la formación de profesionales de alto nivel</li><li>Esos profesionales migran a países ricos que capturan los beneficios sin pagar los costos</li><li>Los que se quedan orientan su investigación hacia los problemas del primer mundo</li><li>Resultado: colonización intelectual + vaciamiento de capital humano local</li></ul><p>DESARROLLO RURAL (nivel local):</p><ul><li>El currículo urbano-céntrico prepara a los jóvenes rurales SOLO para migrar a la ciudad</li><li>No les enseña agricultura, cooperativismo ni habilidades para desarrollar el campo</li><li>Resultado: el campo pierde sus jóvenes más educados → cae la productividad agrícola</li></ul><p class=\"fc-header\">MIGRACIÓN INTERNA:</p><ul><li>A mayor educación → mayor propensión a migrar del campo a la ciudad</li><li>Pero el sector moderno no absorbe a todos → informalidad urbana</li></ul><p><strong>VÍNCULO INTEGRADO:</strong> el sistema educativo actúa como motor de expulsión del territorio en vez de herramienta de desarrollo local → amplifica el dualismo económico.</p>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_105",
+    "tema": "¿Por qué las fallas de información castigan desproporcionadamente a los pobres? ",
+    "frente": "🔴 DIFÍCIL | ¿Por qué las fallas de información castigan desproporcionadamente a los pobres? Relacionalo con educación y capital humano.",
+    "reverso": "<p>TIPOS DE FALLAS INFORMATIVAS (Banco Mundial):</p><ol><li><strong>BRECHAS DE CONOCIMIENTO:</strong> distribución asimétrica de conocimientos técnicos (agricultura, salud, software)</li></ol><ul><li>Se combaten con educación, apertura y conectividad</li></ul><ol><li><strong>PROBLEMAS INFORMATIVOS:</strong> asimetrías sobre atributos OCULTOS (calidad de un bien, esfuerzo del trabajador, riesgo de un deudor)</li></ol><ul><li>Generan selección adversa, exclusión crediticia y externalidades</li><li>No se resuelven solo con educación → requieren acción institucional (leyes, agencias de riesgo, estándares)</li></ul><p class=\"fc-header\">POR QUÉ CASTIGAN MÁS A LOS POBRES:</p><ul><li>No tienen avales ni colaterales → quedan excluidos del crédito (trampa de Galor-Zeira)</li><li>No tienen abogados ni redes → no pueden hacer cumplir contratos</li><li>No tienen acceso a información de mercado → compran caro y venden barato</li><li>Sus títulos educativos son 'señales débiles' en mercados donde los contactos importan más</li></ul><p class=\"fc-header\">VÍNCULO CON CAPITAL HUMANO:</p><ul><li>Invertir en educación de pobres no rinde si las fallas informativas siguen excluyéndolos</li><li>Se necesita simultáneamente: educación + instituciones que corrijan las asimetrías + capital social</li></ul>",
+    "unidad": "U6 - Educación y Desarrollo",
+    "tags": [],
+    "srs": {
+      "interval": 1,
+      "easiness_factor": 2.5,
+      "repetitions": 0,
+      "next_review": "2026-06-02"
+    }
+  },
+  {
+    "id": "des_106",
+    "tema": "Integrá los tres enfoques educativos con las 4-A de Tomasevski y el esquema de A",
+    "frente": "🔴 DIFÍCIL | Integrá los tres enfoques educativos con las 4-A de Tomasevski y el esquema de Acceso-Trayectoria-Resultados.",
+    "reverso": "<p class=\"fc-header\">ESQUEMA DE TRES ESTADIOS DEL SISTEMA EDUCATIVO:</p><ul><li><strong>ACCESO:</strong> entrar al sistema</li><li><strong>TRAYECTORIA:</strong> permanecer (repitencia, abandono)</li><li><strong>RESULTADOS:</strong> aprendizajes reales</li></ul><p class=\"fc-header\">CÓMO SE POSICIONA CADA ENFOQUE:</p><p>ENFOQUE DE DERECHOS (4-A de Tomasevski):</p><ul><li>Se concentra históricamente en el ACCESO</li><li>Asequibilidad y Accesibilidad garantizan que haya escuelas y que todos puedan entrar</li><li>Crítica: matricular niños no garantiza que aprendan</li></ul><p class=\"fc-header\">CAPITAL HUMANO:</p><ul><li>Se concentra en los RESULTADOS (retornos salariales, productividad)</li><li>Si los resultados no generan ingresos, la inversión no se justifica</li><li>Crítica: ignora por qué tantos niños no llegan a los resultados (trayectoria)</li></ul><p class=\"fc-header\">ENFOQUE DE CAPACIDADES:</p><ul><li>Exige mirar los TRES estadios de forma integral + el contexto</li><li>La Aceptabilidad y Adaptabilidad de Tomasevski son compatibles con el CA: no basta el acceso si el proceso no expande libertades</li><li>La trayectoria importa: la deserción revela que el sistema no se adaptó al estudiante</li></ul><p><strong>CONCLUSIÓN:</strong> los tres enfoques son complementarios; ninguno solo es suficiente para una política educativa integral.</p>",
+    "unidad": "U6 - Educación y Desarrollo",
     "tags": [],
     "srs": {
       "interval": 1,
