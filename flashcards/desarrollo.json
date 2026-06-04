@@ -1324,9 +1324,9 @@
     "tags": [],
     "srs": {
       "interval": 1,
-      "easiness_factor": 2.5,
-      "repetitions": 0,
-      "next_review": "2026-06-02"
+      "easiness_factor": 2.3600000000000003,
+      "repetitions": 1,
+      "next_review": "2026-06-05"
     }
   },
   {
