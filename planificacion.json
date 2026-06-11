@@ -1,5 +1,11 @@
 {
   "version": 1,
-  "items": {},
+  "items": {
+    "desarrollo:U9": {
+      "semanas": [
+        "2026-07-20"
+      ]
+    }
+  },
   "custom": []
 }
